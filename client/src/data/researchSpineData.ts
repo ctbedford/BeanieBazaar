@@ -296,7 +296,220 @@ const researchSpineData: ResearchSpineData = {
       key_outputs_or_impact_on_cos: [
         "Detailed templates and data requirements for COS Auto-JBP Deck Builder (COS-F03).",
         "Input for retailer-specific fiscal calendar logic in COS (COS-F07 component)."
-      ]
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Adapting Commerce-OS for the UK requires a deep understanding of each major retailer's operational rhythms, supplier engagement models (like JBP cadence), and buyer motivations, which can differ significantly from US counterparts.",
+          section_tldr: "This session focuses on Node 2: 'Retailer Profiles & Incentive Models', detailing fiscal calendars, JBP approaches, and typical buyer objectives for key UK grocery retailers."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "UK retailers operate on varied fiscal calendars, generally engage in annual or bi-annual JBP cycles with ongoing dialogues, and their buyers focus on volume, value, category growth, and margin delivery, though specific OKRs and margin rules are confidential and highly nuanced.",
+          section_tldr: "Understanding individual UK retailer timelines and engagement styles is crucial; while detailed buyer OKRs are private, their general objectives align with achieving category leadership and profitability."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "Each UK retailer has distinct characteristics in its financial reporting, supplier engagement approach, and strategic priorities, necessitating tailored strategies and data inputs for Commerce-OS.",
+          section_tldr: "This section details available information on fiscal calendars, inferred JBP practices, and general buyer objectives for Tesco, Sainsbury's, Asda, Morrisons, Aldi, Lidl, Ocado, and Costco, highlighting the need to adapt US-centric views.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R02",
+                node_title: "Retailer Profiles & Incentive Models",
+                portability_flag: "🔀 Adapt",
+                priority: "High",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Profiling key UK retailers (Tesco, Sainsbury's, Asda, Morrisons, Aldi, Lidl, Ocado, Costco) by examining their fiscal calendars, typical JBP cadences, and generally understood buyer OKRs and margin considerations.",
+                question_bank: [
+                  "What is the fiscal year-end for Tesco, Sainsbury's, Asda, Morrisons, Aldi, Lidl, Ocado, and Costco in the UK?",
+                  "What is the typical Joint Business Planning (JBP) cadence and process for suppliers engaging with these retailers?",
+                  "What are the common Objectives and Key Results (OKRs) or performance metrics for buyers at these UK retailers?",
+                  "What are the general principles or common knowledge regarding margin rules and expectations when supplying these UK retailers?",
+                  "How do these operational aspects differ from typical US retailer practices?"
+                ],
+                key_findings: [
+                  {
+                    title: "Tesco Profile",
+                    critical_takeaway: "Tesco operates on a February fiscal year-end and uses a structured supplier engagement process, with buyer objectives focused on both sales performance and profitability.",
+                    points: [
+                      {
+                        text: "Fiscal Year: Typically ends in February.",
+                        citation: "GuruFocus; Tesco.com"
+                      },
+                      {
+                        text: "JBP Cadence: Assumed to be annual, aligned with the fiscal year, with regular category reviews. Tesco provides a supplier helpline and a portal for new supplier submissions, indicating structured engagement processes.",
+                        citation: "Suppliers - Tesco PLC"
+                      },
+                      {
+                        text: "Buyer OKRs (General): Focus on sales volume and value, market share, category growth, profitability (Tesco's gross margin was reported as 7.22% for FY ending Feb 2025), stock availability, promotional effectiveness, and new product development.",
+                        citation: "GuruFocus"
+                      },
+                      {
+                        text: "Margin Rules (General): Confidential. Margins are negotiated. Tesco aims for competitive pricing while maintaining its margin. Their reported gross margin provides a high-level indicator but doesn't reflect individual supplier terms.",
+                        citation: "Industry understanding"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Sainsbury's Profile",
+                    critical_takeaway: "Sainsbury's fiscal year typically ends in March, with a focus on long-term supplier relationships and strategies centered on food volume growth and operational efficiency.",
+                    points: [
+                      {
+                        text: "Fiscal Year: Typically ends around the first week of March (e.g., '52 weeks ended 1 March 2025').",
+                        citation: "Preliminary Results - Sainsbury's PLC"
+                      },
+                      {
+                        text: "JBP Cadence: Likely annual, aligned with fiscal reporting. Sainsbury's emphasizes long-term supplier relationships and collaboration, e.g., through its Pork Steering Group, suggesting ongoing dialogue and structured planning.",
+                        citation: "Proudly sourcing British pork - Sainsbury's"
+                      },
+                      {
+                        text: "Buyer OKRs (General): Driven by their 'Next Level' strategy focusing on food volume growth ahead of market, customer satisfaction, and operational efficiency. Key metrics likely include sales, profit, market share, supply chain efficiency, and sustainability goals.",
+                        citation: "Industry understanding"
+                      },
+                      {
+                        text: "Margin Rules (General): Confidential. S&P Global Ratings noted Sainsbury's adjusted EBITDA margins at about 6.5%-6.7%. Focus is on maintaining a competitive price position while delivering value and quality.",
+                        citation: "S&P Global Ratings on Sainsbury's"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Asda Profile",
+                    critical_takeaway: "Asda's financial year ends in December, with a focus on value-driven strategies and improving margins through their structured supplier engagement processes.",
+                    points: [
+                      {
+                        text: "Fiscal Year: Financial year (FY) ends in December (e.g., 'FY24 results' for year ending December 2024).",
+                        citation: "Asda updates on FY24 results - Asda Corporate"
+                      },
+                      {
+                        text: "JBP Cadence: Likely follows an annual cycle. Asda has a new supplier portal and uses platforms like RangeMe for new product submissions, indicating structured processes for supplier engagement.",
+                        citation: "Welcome to Asda Supplier | Asda Supplier, Becoming a Supplier - Asda corporate"
+                      },
+                      {
+                        text: "Buyer OKRs (General): Focused on delivering value ('Rollback to Asda Price' strategy), improving gross margins (noted improvement in FY24), enhancing product range, store standards, and customer satisfaction. Likely includes sales targets, margin growth, market share, and operational improvements.",
+                        citation: "Industry understanding"
+                      },
+                      {
+                        text: "Margin Rules (General): Confidential. Emphasis on price competitiveness and value for customers. Margin strategy would involve balancing low prices with overall profitability.",
+                        citation: "Industry understanding"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Morrisons Profile",
+                    critical_takeaway: "Morrisons has a late October fiscal year-end and focuses on direct supplier relationships, with buyer objectives centered on sales growth, availability, and loyalty expansion.",
+                    points: [
+                      {
+                        text: "Fiscal Year: Ends in late October (e.g., '52 weeks ending 27 October 2024').",
+                        citation: "Morrisons trading update - Morrisons Corporate"
+                      },
+                      {
+                        text: "JBP Cadence: Assumed annual cycle. Morrisons has specific programs for suppliers, like 'Growing British Brands' and processes for 'Direct To Store' suppliers, suggesting structured engagement and planning phases.",
+                        citation: "Becoming A Morrisons Daily Direct To Store Supplier"
+                      },
+                      {
+                        text: "Buyer OKRs (General): Key objectives include LFL sales growth, improving availability, sharper pricing, effective promotions, and growing their loyalty scheme (More Card). Buyers would be measured on category sales, profit, stock management, and supplier collaboration.",
+                        citation: "Industry understanding"
+                      },
+                      {
+                        text: "Margin Rules (General): Confidential. For their wholesale franchise partners, Morrisons mentions 'exceptional double-digit margins,' suggesting they aim for strong margins themselves to pass on benefits. This indicates a focus on profitable sales.",
+                        citation: "Franchise - Morrisons PDF"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Discount Retailers (Aldi & Lidl)",
+                    critical_takeaway: "Aldi and Lidl operate on calendar-year fiscal reporting with a strong focus on efficiency, value, and limited SKUs, driving high volume sales with tight margin control.",
+                    points: [
+                      {
+                        text: "Aldi Fiscal Year: Privately owned, but results reported for 12 months to December 2023 indicate a calendar year basis.",
+                        citation: "ALDI ANNOUNCES £800M INVESTMENT - Aldi Press Centre"
+                      },
+                      {
+                        text: "Lidl Fiscal Year: Privately owned. Financial year referenced often aligns with typical UK tax year or calendar year for reporting investment periods.",
+                        citation: "Lidl to invest GBP500 million - Morningstar"
+                      },
+                      {
+                        text: "JBP Approach: Both focus on long-term supplier partnerships with emphasis on efficiency and value. Aldi has supplier engagement on climate sustainability, while Lidl runs a 'Supplier Engagement Programme'.",
+                        citation: "Partnering for progress - Aldi South Group, Supplier Engagement Programme - Lidl Ireland"
+                      },
+                      {
+                        text: "Buyer Focus: Strong price proposition, high-volume sales of curated ranges, operational efficiency, and quality assurance. Discounters manage limited SKUs with expectation of high turnover.",
+                        citation: "Industry understanding"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Online & Specialty Retailers",
+                    critical_takeaway: "Ocado and Costco operate on distinctive models - Ocado with a continuous range review focused on unique products, and Costco with a membership-based approach centered on bulk items and limited SKUs.",
+                    points: [
+                      {
+                        text: "Ocado Fiscal Year: Ocado Group results typically around February, with quarterly trading statements.",
+                        citation: "Financial Calendar | Ocado Group"
+                      },
+                      {
+                        text: "Ocado Approach: Continuous range review rather than fixed windows. Suppliers apply online; buyers seek new, unique products and competitive commercials.",
+                        citation: "Supply Ocado"
+                      },
+                      {
+                        text: "Costco Fiscal Year: Aligns with US parent company, ending around August/September.",
+                        citation: "Costco Wholesale Corporation Reports Second Quarter Results"
+                      },
+                      {
+                        text: "Costco Approach: Annual planning focused on high-volume bulk items with limited SKU count. Profitability model differs with significant reliance on membership fees, allowing for tighter supplier margins.",
+                        citation: "Complete Guide to Costco Dropshipping - HustleGotReal"
+                      }
+                    ]
+                  }
+                ],
+                source_links: [
+                  {
+                    title: "Tesco PLC Suppliers",
+                    url: "https://www.tescoplc.com/contacts/suppliers/"
+                  },
+                  {
+                    title: "Sainsbury's Preliminary Results March 2025",
+                    url: "https://www.about.sainsburys.co.uk/news/latest-news/2025/17-04-2025-preliminary-results-for-the-52-weeks-to-1st-march-2025"
+                  },
+                  {
+                    title: "Asda Supplier Portal",
+                    url: "https://www.asdasupplier.com/"
+                  },
+                  {
+                    title: "Morrisons Trading Update Oct 2024",
+                    url: "https://www.morrisons-corporate.com/media-centre/corporate-news/morrisons-trading-update-for-q4-and-full-year-202324/"
+                  },
+                  {
+                    title: "Aldi UK Investment and Results (Dec 2023)",
+                    url: "https://www.aldipresscentre.co.uk/business-news/aldi-announces-800m-investment-in-britain-after-record-sales/"
+                  },
+                  {
+                    title: "Ocado Group Financial Calendar",
+                    url: "https://www.ocadogroup.com/investors/financial-calendar"
+                  },
+                  {
+                    title: "Costco Wholesale Corporation Q2 2025 Results",
+                    url: "https://investor.costco.com/news/news-details/2025/Costco-Wholesale-Corporation-Reports-Second-Quarter-and-Year-To-Date-Operating-Results-For-Fiscal-2025-and-February-Sales-Results/default.aspx"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Information on fiscal calendars and JBP approaches is primarily derived from public financial reporting and corporate supplier portals; however, specific buyer OKRs and margin rules are confidential and thus based on general industry understanding.",
+          section_tldr: "This section confirms that findings are based on publicly available data, with an explicit acknowledgment of the commercial sensitivity and unavailability of detailed buyer incentive structures and margin policies."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "Effective UK retailer engagement hinges on understanding each entity's unique fiscal rhythm, anticipating their JBP cycles with tailored proposals, and aligning with buyer objectives that typically revolve around category growth, profitability, and market share, even if specific targets remain opaque.",
+          section_tldr: "Recapping core themes: diverse retailer operational calendars and the necessity for adaptable JBP strategies are key, alongside a general understanding of buyer motivations in the absence of explicit OKR data."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 2 provides a foundational understanding of UK retailer operational frameworks; the subsequent nodes will build on this by examining the specific Retail Media Networks and Data Providers associated with these key players.",
+          section_tldr: "This analysis of UK Retailer Profiles & Incentive Models is complete, paving the way for investigating the media and data ecosystems supporting them."
+        }
+      }
     },
     {
       node_id: "R03",
