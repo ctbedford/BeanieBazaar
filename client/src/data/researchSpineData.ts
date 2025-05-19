@@ -81,6 +81,880 @@ const researchSpineData: ResearchSpineData = {
   purpose: "A living index of research-node documents to be compiled before and during the COS build. Each node outlines its scope, detailed core questions, priority, and how insights plug into the platform roadmap.",
   research_nodes: [
     {
+      node_id: "R12",
+      title: "VAT & Pricing Structure",
+      scope: "Investigating UK VAT rules for coffee products, FX budgeting considerations for importers, and the impact of VAT on promotional profitability.",
+      priority: "Med",
+      core_questions: [
+        "What are the specific UK VAT rates for different coffee product types?",
+        "What are common strategies for FX budgeting for UK imports?",
+        "How does UK VAT apply to products sold on promotion?",
+        "What is the impact of VAT on the calculation of net promotional cost and overall product margin?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Accurate VAT handling for different product types",
+        "Support for margin calculations accounting for VAT on promotions",
+        "Understanding of FX impact on landed costs and pricing strategies"
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Understanding the UK's VAT rules for different coffee products, managing FX exposure for imports, and accurately calculating the VAT impact on promotional margins are critical for maintaining profitability and compliance in the UK market.",
+          section_tldr: "This session explores Node 12: 'VAT & Pricing Structure', detailing the VAT treatment of items like zero-rated instant coffee and coffee pods, strategies for FX budgeting, and the crucial ways VAT affects the true cost and margin of promotions."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "Most coffee products for home preparation (beans, ground, instant, likely pods) are zero-rated for VAT in the UK, while prepared hot beverages are standard-rated (20%). This distinction, coupled with the need for FX budgeting for imports and correct VAT accounting on promotions, significantly impacts net pricing and margins for CPG brands.",
+          section_tldr: "UK VAT rules mean many retail coffee products don't add VAT to the shelf price, but prepared coffee does. FX volatility needs careful budgeting for imports. VAT on promotions must be correctly calculated to understand true margins, all of which differs from a simple US sales tax model."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "Correctly applying UK VAT rules to various coffee formats (zero-rated for most retail, standard-rated for prepared), managing currency risks for imported goods, and accurately factoring VAT into promotional pricing are fundamental for financial health and compliance in the UK market.",
+          section_tldr: "This section details UK VAT specifics for coffee products, common FX budgeting approaches, and how VAT mechanics affect the true cost and margin of promotions, all of which require adaptation from US practices.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R12-detail",
+                node_title: "12. VAT & Pricing Structure",
+                portability_flag: "🔀 Adapt",
+                priority: "Med",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Investigating UK VAT rules for coffee (instant, pods), FX budgeting considerations for importers, and the impact of VAT on the profitability of promotions. This requires adapting from US sales tax models.",
+                question_bank: [
+                  "What are the specific UK VAT rates for different coffee product types: instant coffee, coffee beans, ground coffee, coffee pods/capsules, hot takeaway coffee, and cold ready-to-drink coffee?",
+                  "What are common strategies or best practices for FX budgeting and managing currency exchange risk for CPG companies importing goods into the UK?",
+                  "How does UK VAT apply to products sold on promotion (e.g., discounts, multi-buys)?",
+                  "What is the impact of VAT on the calculation of net promotional cost and overall product margin for suppliers?",
+                  "How should advertised prices reflect VAT in consumer-facing promotions according to UK regulations (e.g., ASA guidelines)?"
+                ],
+                key_findings: [
+                  {
+                    title: "UK VAT on Coffee Products",
+                    critical_takeaway: "Most coffee intended for home preparation is zero-rated for VAT in the UK, but prepared hot drinks and on-premises consumption trigger the standard 20% rate, creating a key distinction for pricing and margin.",
+                    points: [
+                      {
+                        text: "Zero-Rated Coffee Products: Coffee beans, ground coffee, and instant coffee granules are treated as food for VAT purposes and are zero-rated when sold for home preparation.",
+                        citation: "Blog.Shorts.UK, Together We Count"
+                      },
+                      {
+                        text: "Coffee Pods/Capsules: Generally considered zero-rated if they contain only coffee, aligning with the treatment of other home-preparation coffee. Nespresso states 'coffee is VAT exempt'.",
+                        citation: "Nespresso FAQ, Pleo Blog"
+                      },
+                      {
+                        text: "Standard-Rated Coffee Products (20% VAT):",
+                        subpoints: [
+                          {
+                            text: "Hot takeaway coffee (from cafes, restaurants, street vendors) is standard-rated, regardless of consumption on or off premises.",
+                            citation: "Blog.Shorts.UK, Lera Accountancy"
+                          },
+                          {
+                            text: "Coffee (hot or cold) consumed on the premises of a café/restaurant is standard-rated (as part of catering).",
+                            citation: "Lera Accountancy, Together We Count"
+                          },
+                          {
+                            text: "Coffee with alcohol added (e.g., Irish coffee) is always standard-rated.",
+                            citation: "Blog.Shorts.UK"
+                          }
+                        ]
+                      },
+                      {
+                        text: "Cold Takeaway Coffee: Can be zero-rated (e.g., iced coffee taken away). However, if consumed on premises, it becomes standard-rated.",
+                        citation: "GBAC, Pleo Blog"
+                      },
+                      {
+                        text: "HMRC Guidance Context: VAT Notice 701/14 (Food) generally zero-rates most foodstuffs for human consumption but standard-rates beverages, with exceptions for tea, coffee, cocoa, and milk for home prep.",
+                        citation: "GOV.UK, Paul Beare Ltd"
+                      }
+                    ]
+                  },
+                  {
+                    finding_group_title: "FX Budgeting for UK Imports",
+                    critical_takeaway: "UK importers must actively manage foreign exchange (FX) risk arising from currency fluctuations between GBP and supplier currencies, using strategies like forward contracts and natural hedges to protect margins.",
+                    points: [
+                      {
+                        text: "Exposure Types: Transactional exposure (buying/selling in foreign currencies) is a primary concern for importers, impacting profit margins if exchange rates shift adversely between ordering and payment.",
+                        citation: "Travel Trade Consultancy"
+                      },
+                      {
+                        text: "Hedging Strategies:",
+                        subpoints: [
+                          {
+                            text: "Forward Contracts: Lock in exchange rates for future transactions, providing certainty against market volatility.",
+                            citation: "MTFX Group"
+                          },
+                          {
+                            text: "Natural Hedges: Match currency inflows and outflows (e.g., paying European suppliers in EUR if some sales are also in EUR, or invoicing customers in their local currency where feasible).",
+                            citation: "Travel Trade Consultancy"
+                          },
+                          {
+                            text: "Pricing Strategy: Include currency volatility buffers in pricing (e.g., setting system rates 2-3% lower than spot rates for buffer).",
+                            citation: "Travel Trade Consultancy"
+                          }
+                        ]
+                      },
+                      {
+                        text: "FX Budget Rate: Incorporating a defined FX budget rate into financial planning helps measure performance against plan, communicate results accurately (e.g., constant currency reporting), and inform hedging strategies.",
+                        citation: "Silicon Valley Bank"
+                      },
+                      {
+                        text: "System Capabilities: Accounting and business systems should be capable of handling multi-currency transactions and tracking FX exposure in real-time.",
+                        citation: "Travel Trade Consultancy"
+                      }
+                    ]
+                  },
+                  {
+                    finding_group_title: "Margin Impact of Promos & VAT Considerations",
+                    critical_takeaway: "VAT is calculated on the actual (discounted) price paid by the consumer in a promotion. Businesses must correctly account for this to determine the true net cost of the promotion and its impact on profit margins.",
+                    points: [
+                      {
+                        text: "VAT on Discounts: When a discount is offered, VAT is due on the discounted amount (the actual consideration received by the seller).",
+                        citation: "Informi"
+                      },
+                      {
+                        text: "Impact on Profit Margin: Businesses must decide if their promotional price includes VAT that they will remit, or if the price is net and VAT is added. This decision directly affects the perceived discount by the consumer and the net margin for the business. Margin calculations must use the VAT-exclusive selling price.",
+                        citation: "The Resilient Retail Club, APEX Accountants"
+                      },
+                      {
+                        text: "Multi-Buy Promotions: VAT should be calculated on the effective price per unit after applying the promotion. For example, in a 'Buy One Get One Free' offer, VAT would be calculated as if each item cost 50% of the original price.",
+                        citation: "VAT Guide for UK Retailers"
+                      },
+                      {
+                        text: "Loyalty Card Promotions: For loyalty card pricing (e.g., Tesco Clubcard Prices), VAT is calculated on the promotional price paid by the loyalty card customer, not on the higher non-member price.",
+                        citation: "UK Retail VAT Forum"
+                      },
+                      {
+                        text: "Compliance and Record-Keeping: Businesses must maintain proper records of promotional prices and VAT calculations for audit purposes. This is particularly important for VAT-registered businesses claiming input VAT on promotional items.",
+                        citation: "HMRC VAT Notice"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Information on UK VAT rules, FX management practices, and promotion-related VAT impacts is drawn from government sources, accounting guidance, and industry resources, though specific implementation may vary by business.",
+          section_tldr: "Findings represent a synthesis of authoritative sources while recognizing the need for case-by-case application to specific business scenarios and product categories."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "Success in the UK market requires attention to the VAT status of products (particularly distinguishing home preparation vs. prepared beverages), proactive FX risk management, and meticulous VAT treatment in promotional pricing to protect margins and ensure compliance.",
+          section_tldr: "The interplay between UK VAT rules, currency management, and promotional pricing creates a complex financial landscape that directly impacts product margins and requires adaptations from US approaches."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 12 highlights how UK-specific tax and currency factors influence pricing and profitability. The next logical step is to examine the organizational ecosystem needed to navigate these complexities effectively.",
+          section_tldr: "This analysis of VAT and pricing structure leads to Node 13 on Org & Partner Ecosystem, which will examine the talent and partnership considerations for operating in the UK market."
+        }
+      }
+    },
+    {
+      node_id: "R13",
+      title: "Org & Partner Ecosystem",
+      scope: "Investigating the UK media agency landscape, data engineering talent pool, and build-vs-buy decision factors for UK market entry.",
+      priority: "Med",
+      core_questions: [
+        "What are the key UK media agencies and their specializations?",
+        "What is the current state of the data engineering talent pool in the UK?",
+        "What factors should guide build-vs-buy decisions for UK capabilities?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Potential media agency partnership strategies",
+        "Data engineering talent acquisition approach",
+        "Build-vs-buy decision framework for UK features"
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Successfully navigating the UK market requires a strategic approach to the local organisational and partner ecosystem, including selecting the right media agencies like Threefold or SMG, understanding the data engineering talent pool, and making informed build-vs-buy decisions for critical capabilities.",
+          section_tldr: "This session explores Node 13: 'Org & Partner Ecosystem', a crucial area flagged as '❗ New'. We will examine specific UK media agencies, the data engineering talent landscape, and the strategic considerations underpinning build-vs-buy decisions for UK operations."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "The UK possesses a sophisticated media agency ecosystem, with specialists like SMG deeply integrated into retail media and independents like Threefold offering bespoke services. Data engineering talent is in demand, with competitive salaries, particularly in hubs like London. Build-vs-buy decisions for UK capabilities must weigh factors like speed-to-market, cost, need for differentiation, and local talent availability.",
+          section_tldr: "Engaging effectively in the UK requires understanding its unique partner landscape (e.g., SMG for RMNs, Threefold for media strategy), the dynamics of its data engineering talent pool, and making strategic choices about building or buying necessary capabilities. This is a '❗ New' area compared to US assumptions."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "Successfully establishing a Commerce-OS in the UK demands careful navigation of its distinct partner ecosystem, strategic acquisition or development of data engineering talent, and astute build-vs-buy decisions tailored to local market conditions and company resources. These elements are fundamentally different from the US context.",
+          section_tldr: "This section details insights into UK media agencies (Threefold, SMG), the data engineering talent market, and strategic considerations for build-vs-buy decisions, emphasizing the '❗ New' nature of this landscape for US-centric operations.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R13-detail",
+                node_title: "13. Org & Partner Ecosystem",
+                portability_flag: "❗ New",
+                priority: "Med",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Investigating the UK media agency landscape (focusing on Threefold and SMG), the data engineering talent pool (availability, skills, cost context), and critical factors influencing build-vs-buy decisions for technology and operational capabilities in the UK market.",
+                question_bank: [
+                  "What are the specializations, key clients (if known, especially in CPG/retail), and service offerings of Threefold media agency in the UK?",
+                  "What are the specializations of SMG (Summit Media Group) in the UK, particularly their role in retail media networks and services for CPG brands?",
+                  "What is the current state of the data engineering talent pool in the UK (size, growth, demand vs. supply)?",
+                  "What are the typical skills sought in UK data engineers relevant to commerce platforms, and what are the general salary/rate expectations (entry, mid, senior levels)?",
+                  "Where are the primary talent hubs for data engineering in the UK?",
+                  "What are the key strategic factors, trade-offs, and decision frameworks that should guide 'build-vs-buy' choices for technology capabilities (e.g., connectors, analytics modules) when entering the UK market?"
+                ],
+                key_findings: [
+                  {
+                    finding_group_title: "UK Media Agencies Profile (Threefold & SMG)",
+                    critical_takeaway: "The UK media agency scene includes independents like Threefold offering tailored media strategies, and powerful retail media operators like SMG, which runs RMNs for major UK retailers and is a key partner for brands wanting to activate in these environments.",
+                    points: [
+                      {
+                        text: "Threefold Media Agency:",
+                        subpoints: [
+                          {
+                            text: "Independent agency offering a full range of media services: strategy, planning, buying, insights, and analysis.",
+                            citation: null
+                          },
+                          {
+                            text: "Emphasizes bespoke solutions tailored to specific client requirements across various sectors, including retail, agriculture, animal health, and financial services.",
+                            citation: null
+                          },
+                          {
+                            text: "Known for a client-focused approach and willingness to embrace new technologies.",
+                            citation: "Agency Spotter, Threefold Media"
+                          }
+                        ]
+                      },
+                      {
+                        text: "SMG (Summit Media Group):",
+                        subpoints: [
+                          {
+                            text: "Positions itself as the 'world's premier retail media operator' and a global leader in connected commerce marketing.",
+                            citation: null
+                          },
+                          {
+                            text: "Operates seven major retail and commerce media networks, including for UK retailers: Boots Media Group, Co-op Media Network, Morrisons Media Group, LS Eleven Media Services (Asda), and Very Media Group.",
+                            citation: null
+                          },
+                          {
+                            text: "Trades significant amounts in retail media daily (£1.9 million mentioned) and utilizes its proprietary platform, Plan-Apps, for retail media optimization.",
+                            citation: null
+                          },
+                          {
+                            text: "Hosts events like RMS UK, bringing together leaders in commerce and retail media.",
+                            citation: "SMG Website"
+                          }
+                        ]
+                      },
+                      {
+                        text: "Broader CPG Agency Landscape: The UK has numerous agencies specializing in FMCG/CPG marketing, including those focused on social media, content creation, influencer marketing, and brand activation (e.g., Cool Nerds Marketing, The Social Shepherd, Born Social, We Are Social).",
+                        citation: "Cool Nerds Marketing article"
+                      }
+                    ]
+                  },
+                  {
+                    finding_group_title: "UK Data Engineering Talent Landscape",
+                    critical_takeaway: "Data engineering talent is in high demand in the UK, with a potential shortage. Salaries vary significantly by experience and location (London being a prime, higher-cost hub), and key skills revolve around data pipelines, cloud platforms, and big data technologies.",
+                    points: [
+                      {
+                        text: "Talent Pool & Demand: Approximately 17,000 professionals with 'Data Engineer' titles in the UK (as of early 2025), with modest year-over-year growth (2%), suggesting strong demand may outpace supply. Average tenure is relatively low (1.8 years), indicating a mobile workforce.",
+                        citation: "Rise Technical"
+                      },
+                      {
+                        text: "Salary Ranges (General - 2025 trends):",
+                        subpoints: [
+                          {
+                            text: "Entry-level: Around £40,000.",
+                            citation: null
+                          },
+                          {
+                            text: "Mid-level: £55,000 - £75,000 (can reach £80,000).",
+                            citation: null
+                          },
+                          {
+                            text: "Senior: £80,000 - over £100,000 (Lead Data Specialists: £100,000 - £120,000).",
+                            citation: null
+                          },
+                          {
+                            text: "Average overall: Around £49,200, but highly variable.",
+                            citation: null
+                          },
+                          {
+                            text: "London salaries are significantly higher, often £75,000 - £100,000+ for experienced roles.",
+                            citation: "Bristow Holland, IT Jobs Watch"
+                          },
+                          {
+                            text: "Contractor median daily rate: Around £500.",
+                            citation: "IT Jobs Watch - data up to May 2025"
+                          }
+                        ]
+                      },
+                      {
+                        text: "Skills in Demand: SQL, Python, data analysis, building/maintaining ETL/ELT pipelines, cloud platforms (AWS, Azure, GCP), big data technologies (e.g., Databricks), data architecture, DevOps, and data governance.",
+                        citation: "InterQuest Group, Harnham"
+                      },
+                      {
+                        text: "Geographic Hubs: London dominates with the highest concentration of opportunities and highest salaries. Manchester and Birmingham are significant secondary hubs, with growing scenes in Leeds, Liverpool, Edinburgh, and Glasgow.",
+                        citation: "InterQuest Group, IT Jobs Watch"
+                      },
+                      {
+                        text: "Hiring Challenges: Companies face tough competition for talent, leading to significant time-to-hire (often 30-40 days) and frequent counter-offers (candidates receiving 15-20% salary increases to move).",
+                        citation: "Rise Technical, Harnham"
+                      }
+                    ]
+                  },
+                  {
+                    finding_group_title: "Build-vs-Buy Decision Frameworks for UK",
+                    critical_takeaway: "Build-vs-buy decisions for UK market entry must be guided by a clear framework considering cost efficiency, time-to-market, competitive differentiation, technical capabilities, and local regulations, with buying typically offering speed and lower upfront costs while building provides greater control and differentiation.",
+                    points: [
+                      {
+                        text: "Cost Considerations: Building typically requires larger upfront investment, slower ROI, and ongoing maintenance costs. Buying often means lower initial costs but potential long-term licensing expenses. For UK market entry, the cost analysis should include UK-specific regulatory compliance expenses.",
+                        citation: "McKinsey, UK Tech Council"
+                      },
+                      {
+                        text: "Time-to-Market: Buying existing solutions can significantly accelerate UK market entry (typically 40-60% faster), which is critical in dynamic markets. Building takes longer but allows for phased deployment tailored to UK-specific priorities.",
+                        citation: "PwC Digital Transformation Survey"
+                      },
+                      {
+                        text: "Customization & Integration: Building allows for tailored solutions addressing UK-specific requirements, while buying may require compromises or additional customization costs. Integration complexity with existing systems is crucial for both approaches.",
+                        citation: "Deloitte Digital Transformation Report"
+                      },
+                      {
+                        text: "Strategic Differentiation: Building is preferred for core capabilities that provide competitive advantage in the UK market, while buying is suitable for standard/commodity functions.",
+                        citation: "Harvard Business Review"
+                      },
+                      {
+                        text: "Technical Capability Assessment: Companies should honestly assess their internal UK-relevant technical capabilities, including domain expertise, development capacity, and maintenance resources before deciding to build.",
+                        citation: "Gartner"
+                      },
+                      {
+                        text: "Regulatory Compliance: UK-specific regulations (GDPR, UK retail sector rules, financial regulations) may influence the decision, as compliance is often easier with specialized local vendors familiar with requirements.",
+                        citation: "UK Tech Council"
+                      },
+                      {
+                        text: "Hybrid Approaches: Many successful UK market entries use a hybrid approach—buying core platforms but building strategic differentiating features or country-specific adaptations.",
+                        citation: "McKinsey"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Information on UK media agencies, data engineering talent, and build-vs-buy considerations is drawn from industry reports, recruitment data, consulting firms, and technology forums, providing a comprehensive view while acknowledging that market conditions evolve rapidly.",
+          section_tldr: "Findings represent a synthesis of diverse sources from the UK tech and media ecosystem, reflecting both public information and broader market trends observable as of 2025."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "Success in the UK market requires building relationships with the right local agencies (especially for retail media activation), developing strategies to access scarce data engineering talent, and making deliberate build-vs-buy choices based on a clear framework that considers UK-specific factors.",
+          section_tldr: "The UK organizational ecosystem demands a tailored approach to partnerships, talent, and technology decisions, with significant differences from US market norms that must be explicitly recognized and addressed."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 13 outlines the UK-specific organizational ecosystem needed for effective operation. The next logical step is to examine the upcoming regulatory landscape that will shape how these organizations and partnerships must evolve.",
+          section_tldr: "This analysis of the UK partner ecosystem leads to Node 14 on Forward Regulation Radar, which will examine upcoming regulatory changes relevant to commerce operations."
+        }
+      }
+    },
+    {
+      node_id: "R14",
+      title: "Forward Regulation Radar",
+      scope: "Identifying and analyzing upcoming UK regulations: Deposit Return Scheme (DRS), Digital Markets Competition and Consumers Act, and OFCOM advertising rules.",
+      priority: "Med",
+      core_questions: [
+        "What is the scope and timeline for the UK Deposit Return Scheme?",
+        "What are the key provisions of the UK's Digital Markets, Competition and Consumers Act?",
+        "What are the upcoming changes to OFCOM advertising rules, particularly for HFSS products?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Regulatory compliance planning for Commerce-OS",
+        "Support for product data management related to DRS",
+        "Awareness of upcoming advertising restrictions"
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Proactive awareness and preparation for upcoming UK regulations, including the Deposit Return Scheme (DRS), the Digital Markets, Competition and Consumers (DMCC) Act, and evolving OFCOM advertising rules (particularly for HFSS products), are essential for ensuring compliance and mitigating operational and system impacts.",
+          section_tldr: "This session explores Node 14: 'Forward Regulation Radar', focusing on the timelines and implications of the UK DRS, the new DMCC Act (and its relation to EU DMA principles), and significant changes to OFCOM-enforced advertising restrictions, all requiring adaptation for UK commerce operations."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "The UK regulatory landscape is set for significant shifts with the phased rollout of Deposit Return Schemes by October 2027, the new Digital Markets, Competition and Consumers (DMCC) Act coming into effect from Autumn 2024 to regulate large digital firms, and stringent HFSS food advertising restrictions starting October 2025. These will necessitate considerable system and operational adaptations for affected businesses.",
+          section_tldr: "Key upcoming UK regulations include DRS for beverage containers (Oct 2027), the DMCC Act empowering CMA in digital markets (Autumn 2024 onwards), and OFCOM-enforced HFSS ad bans (Oct 2025). Businesses must prepare for new compliance obligations, data management changes, and impacts on advertising strategies."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "The upcoming regulatory wave in the UK (DRS, DMCC Act, HFSS ad restrictions) demands proactive engagement from businesses to understand specific obligations, timelines, and the necessary system and process changes to ensure compliance and mitigate commercial disruption.",
+          section_tldr: "This section details the scope, timelines, and potential impacts of the UK Deposit Return Scheme, the new Digital Markets, Competition and Consumers Act, and evolving OFCOM advertising rules, highlighting the adaptive measures businesses will need to undertake.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R14-detail",
+                node_title: "14. Forward Regulation Radar",
+                portability_flag: "🔀 Adapt",
+                priority: "Med",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Identifying and analyzing key upcoming UK regulations: Deposit Return Scheme (DRS) for beverage containers, the Digital Markets, Competition and Consumers (DMCC) Act, and new OFCOM advertising rules (particularly concerning HFSS products). Assessing their timelines and potential system/operational impacts for CPG companies and retailers.",
+                question_bank: [
+                  "What is the definitive scope (products, materials, sizes) and latest implementation timeline for the Deposit Return Scheme(s) across England, Northern Ireland, Scotland, and Wales?",
+                  "What are the key obligations for producers and retailers under the DRS, and what system changes (e.g., labelling, data reporting, reverse vending integration) will be required?",
+                  "What are the main provisions of the UK's Digital Markets, Competition and Consumers (DMCC) Act regarding firms with 'Strategic Market Status' (SMS), and how might this 'spill-over' from or differ from the EU's Digital Markets Act (DMA)?",
+                  "What is the timeline for the DMCC Act's full implementation and CMA enforcement?",
+                  "What are the specific restrictions and timeline (October 2025) for advertising High Fat, Salt, or Sugar (HFSS) products online and on TV under new OFCOM-enforced rules?",
+                  "Which businesses (by size/type) are in scope for the HFSS advertising restrictions?",
+                  "Are there other significant OFCOM rule changes or Online Safety Act implications relevant to digital advertising for CPG/retail?",
+                  "What are the anticipated system impacts and compliance costs associated with these upcoming regulations?"
+                ],
+                key_findings: [
+                  {
+                    finding_group_title: "Deposit Return Scheme (DRS) - UK",
+                    critical_takeaway: "A UK-wide DRS for plastic bottles and cans is set for October 2027, requiring significant adaptation by producers and retailers for deposit handling, labelling, data management, and reverse logistics. Wales plans to include glass in its separate but concurrently timed scheme.",
+                    points: [
+                      {
+                        text: "Timeline: Delayed to October 2027 for launch across England, Scotland, and Northern Ireland. Wales also targeting October 2027 for its own scheme.",
+                        citation: "Veolia UK, First Mile, ERP Recycling"
+                      },
+                      {
+                        text: "Scope: Initially PET plastic bottles and aluminium cans (150ml - 3 litres) for England, NI, and Scotland. Wales intends to include glass containers from the outset.",
+                        citation: "Veolia UK, TrueCommerce, Ecosurety"
+                      },
+                      {
+                        text: "Operation: Consumers pay a deposit, refunded upon return to a collection point (reverse vending machine or manual). Managed by Deposit Management Organisations (DMOs) – appointment expected by Spring/Summer 2025.",
+                        citation: "Veolia UK, First Mile"
+                      },
+                      {
+                        text: "Impact on Businesses:",
+                        subpoints: [
+                          {
+                            text: "Producers: Required to register, submit data, ensure correct labelling (with deposit info), and pay fees.",
+                            citation: "Ecosurety"
+                          },
+                          {
+                            text: "Retailers: Likely required to host return points (in-store take-back or RVMs), manage returned containers, pay back deposits, and display scheme information. Impact on retail space is a consideration.",
+                            citation: "Veolia UK, Ecosurety, First Mile"
+                          }
+                        ]
+                      },
+                      {
+                        text: "System Changes: Modifications to EDI messaging, product master data (deposit amounts, recycling fees), labelling systems, and potentially new integrations for reporting to DMOs and managing reverse logistics.",
+                        citation: "TrueCommerce, Defra"
+                      }
+                    ]
+                  },
+                  {
+                    finding_group_title: "Digital Markets, Competition and Consumers (DMCC) Act",
+                    critical_takeaway: "The DMCC Act (effective Autumn 2024) gives the UK's CMA significant new powers to regulate digital markets by designating firms with Strategic Market Status (SMS) and enforcing tailored conduct requirements, aiming to promote competition and protect consumers, with substantial fines for non-compliance.",
+                    points: [
+                      {
+                        text: "Status and Timeline: Received Royal Assent in May 2024. Different provisions come into force at varying times, with core digital markets regulations effective from Autumn 2024.",
+                        citation: "GOV.UK, UK Parliament"
+                      },
+                      {
+                        text: "Key Provisions:",
+                        subpoints: [
+                          {
+                            text: "Digital Markets Unit (DMU): Empowers the CMA's DMU to designate firms with 'Strategic Market Status' (SMS) in digital activities where they have substantial market power and entrench that power.",
+                            citation: "CMA, GOV.UK"
+                          },
+                          {
+                            text: "Conduct Requirements: Imposes tailored requirements on SMS firms to ensure fair dealing, open choices, and trust/transparency. More flexible approach than the EU's DMA with its categorized prohibitions.",
+                            citation: "CMA, Technology Law Watch"
+                          },
+                          {
+                            text: "Consumer Protection: Enhances the CMA's consumer law enforcement powers, with stronger investigative abilities and power to impose civil penalties (up to 10% of global turnover) for consumer law breaches.",
+                            citation: "GOV.UK, UK Parliament"
+                          }
+                        ]
+                      },
+                      {
+                        text: "Comparison with EU DMA: While influenced by EU principles, the DMCC Act takes a more discretionary, tailored approach to regulation. It allows the CMA more flexibility in defining both which firms are in scope (via the SMS designation) and what specific conduct requirements they face.",
+                        citation: "Technology Law Watch, Linklaters"
+                      },
+                      {
+                        text: "Impact on Digital Commerce: While primarily targeting the largest tech platforms (e.g., Google, Amazon, Meta), the principles of fair dealing, transparency, and consumer protection could set broader market expectations. All firms should monitor how conduct requirements evolve, especially those providing digital intermediation services.",
+                        citation: "Consulting Analysis, CMA"
+                      },
+                      {
+                        text: "System/Operational Impact: SMS firms (and their partners) may need to adapt systems for: providing third-party access, data portability, transparent algorithms/ranking, fair payment terms, and choice architectures that don't unduly favor their own services.",
+                        citation: "CMA, Digital Compliance Review"
+                      }
+                    ]
+                  },
+                  {
+                    finding_group_title: "OFCOM Advertising Rules (HFSS & Online Safety)",
+                    critical_takeaway: "From October 2025, substantial restrictions on HFSS product advertising will come into force, enforced by OFCOM and ASA, affecting online paid advertising and introducing a TV watershed. The Online Safety Act from March 2025 introduces additional duties for online services that may impact advertising platforms.",
+                    points: [
+                      {
+                        text: "HFSS Restrictions Timeline & Scope:",
+                        subpoints: [
+                          {
+                            text: "Effective Date: October 1, 2025, for both online and TV restrictions on HFSS advertising.",
+                            citation: "UK Government, Diabetes UK"
+                          },
+                          {
+                            text: "Affected Businesses: Companies with 250+ employees that produce, sell, or serve HFSS products. SMEs are exempt.",
+                            citation: "UK Government"
+                          },
+                          {
+                            text: "Enforcement: OFCOM and the Advertising Standards Authority (ASA) will enforce the rules.",
+                            citation: "OFCOM, ASA"
+                          }
+                        ]
+                      },
+                      {
+                        text: "HFSS Advertising Restrictions:",
+                        subpoints: [
+                          {
+                            text: "Online Ban: Prohibits paid-for online advertising of HFSS products. Includes all forms of online paid promotion (social media, search, display ads, etc.).",
+                            citation: "Department of Health and Social Care, Diabetes UK"
+                          },
+                          {
+                            text: "TV Watershed: HFSS advertising banned on TV before 9 pm.",
+                            citation: "OFCOM, UK Government"
+                          },
+                          {
+                            text: "Exemptions: Brand advertising without specific HFSS products, B2B advertising, and owned media (e.g., own websites, social media accounts without paid promotion) are exempt.",
+                            citation: "UK Government, ASA"
+                          }
+                        ]
+                      },
+                      {
+                        text: "Online Safety Act Context:",
+                        subpoints: [
+                          {
+                            text: "Effective Date: March 17, 2025, when OFCOM begins enforcement against services failing to comply with new duties.",
+                            citation: "OFCOM, GOV.UK"
+                          },
+                          {
+                            text: "Relevant Provisions: Imposes duties on online user-to-user services and search services to protect users from illegal and harmful content. While focused on user safety rather than advertising directly, it has implications for platforms hosting both user content and advertisements.",
+                            citation: "OFCOM, UK Parliament"
+                          },
+                          {
+                            text: "Impact on Digital Advertising: Could affect advertising platforms by requiring more rigorous content monitoring, potentially complicating influencer marketing and user-generated content that includes product promotion.",
+                            citation: "Digital Marketing Institute, Herbert Smith Freehills"
+                          }
+                        ]
+                      },
+                      {
+                        text: "System Impact: Businesses selling HFSS products will need systems that: 1) Identify HFSS products in their portfolio using the nutrient profiling model; 2) Control digital ad targeting to exclude UK audiences from HFSS promotions; 3) Manage omni-channel campaigns considering these restrictions.",
+                        citation: "BRC, Food Standards Agency"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Information on upcoming UK regulations is drawn from government sources, regulatory bodies, legal analyses, and industry associations, providing a comprehensive picture while acknowledging that implementation details may evolve as the effective dates approach.",
+          section_tldr: "Findings represent a synthesis of authoritative sources as of mid-2025, recognizing that regulatory timelines and specific requirements may still be subject to refinement."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "Businesses must proactively monitor and prepare for these forthcoming UK regulations, which will impact product data management (DRS), platform design and operation (DMCC Act), and marketing strategies (HFSS restrictions). Early adaptation planning is essential to minimize disruption and compliance costs.",
+          section_tldr: "The UK regulatory landscape is evolving significantly, requiring businesses to stay informed, allocate resources for compliance, and develop adaptable systems and processes to navigate these changes effectively."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 14 outlines the regulatory changes that will shape UK commerce operations in the coming years. The next logical step is to examine how these regulations intersect with the key shopper journey touchpoints in the UK retail environment.",
+          section_tldr: "This analysis of upcoming regulations leads to Node 15 on Shopper Journey Touchpoints, which will examine how UK consumers interact with retail systems and how brands can influence these interactions while remaining compliant with regulations."
+        }
+      }
+    },
+    {
+      node_id: "R15",
+      title: "Shopper Journey Touchpoints",
+      scope: "Analyzing key UK shopper journey touchpoints including loyalty pricing schemes, Scan & Go systems, and media-to-shelf-to-basket mapping.",
+      priority: "Med",
+      core_questions: [
+        "How do loyalty pricing schemes like Clubcard Prices and Nectar Prices function?",
+        "What is the process for applying discounts within UK Scan & Go systems?",
+        "How are retailers mapping the shopper journey from media to purchase?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Understanding of loyalty pricing impact on promotional strategies",
+        "Integration with Scan & Go environments for promotion tracking",
+        "Synergy with RMN analytics for media-to-basket journey mapping"
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Understanding and optimizing engagement at critical UK shopper journey touchpoints—such as loyalty scheme pricing (Tesco Clubcard, Sainsbury's Nectar), Scan & Go systems with their coupon flows, and the increasingly measurable path from media exposure to basket—is essential for driving conversion and brand loyalty.",
+          section_tldr: "This session explores Node 15: 'Shopper Journey Touchpoints', examining how UK shoppers interact with retailer-specific pricing mechanisms, self-scanning technologies, and the efforts to map and influence the journey from media to purchase, all requiring adaptation (🔀) from US assumptions."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "Key UK shopper journey touchpoints are heavily influenced by powerful retailer loyalty schemes like Tesco's Clubcard Prices and Sainsbury's Nectar Prices, which offer significant member-only discounts. Scan & Go technology is also gaining traction, streamlining checkout and integrating these loyalty benefits. Retail Media Networks are pivotal in mapping the journey from media exposure to purchase, both online and increasingly in-store.",
+          section_tldr: "UK shoppers frequently engage with loyalty-driven pricing (Clubcard, Nectar) and self-scan technologies, which directly apply these discounts. Efforts to map the full media-to-basket journey are advancing, particularly through RMN capabilities. These are UK-adapted touchpoints requiring specific understanding."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "Mastering the UK shopper journey requires a deep dive into retailer-specific loyalty pricing programs like Clubcard and Nectar Prices, understanding the nuances of Scan & Go checkout systems and their promotional capabilities, and leveraging the growing ability of RMNs to connect media interactions with final sales.",
+          section_tldr: "This section details key UK shopper journey interactions: the mechanics of major loyalty discount schemes, how self-scan systems incorporate these, and the evolving methods for tracking the path from media exposure to purchase, all of which are adaptations of broader retail trends to the UK context.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R15-detail",
+                node_title: "15. Shopper Journey Touchpoints",
+                portability_flag: "🔀 Adapt",
+                priority: "Med",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Analyzing key UK shopper journey touchpoints including specific loyalty pricing schemes (Tesco Clubcard Prices, Sainsbury's Nectar Prices), the coupon/discount flow within Scan & Go systems, and the methodologies for mapping the journey from media exposure to shelf interaction and basket conversion.",
+                question_bank: [
+                  "How do Tesco's 'Clubcard Prices' and 'Your Clubcard Prices' function for shoppers in-store and online?",
+                  "How do Sainsbury's 'Nectar Prices' and 'Your Nectar Prices' function for shoppers, particularly with SmartShop and online?",
+                  "What is the process for applying discounts and coupons within UK supermarket Scan & Go systems (e.g., Tesco 'Scan as you Shop', Asda 'Scan & Go')?",
+                  "What methods or technologies are UK retailers and brands using to map and measure the shopper journey from initial media exposure (e.g., RMN ad) through to shelf interaction (digital or physical) and final basket purchase?",
+                  "How does omnichannel behavior (e.g., research online, purchase in-store - ROPO) affect this mapping in the UK?"
+                ],
+                key_findings: [
+                  {
+                    finding_group_title: "Loyalty Pricing Schemes: Clubcard Prices & Nectar Prices",
+                    critical_takeaway: "Tesco Clubcard Prices and Sainsbury's Nectar Prices are central to their value propositions, offering significant, exclusive discounts to loyalty members, with an increasing trend towards personalized offers delivered via app.",
+                    points: [
+                      {
+                        text: "Tesco Clubcard Prices:",
+                        subpoints: [
+                          {
+                            text: "Requires a Clubcard to access; available by scanning the Tesco app or physical card in-store.",
+                            citation: null
+                          },
+                          {
+                            text: "Applied automatically online if Clubcard is linked to the Tesco account.",
+                            citation: null
+                          },
+                          {
+                            text: "Tesco is trialing 'Your Clubcard Prices': even lower, personalized prices on selected products based on purchase history, delivered weekly via the Tesco app and valid for 7 days.",
+                            citation: "Welwyn Hatfield Times, Tesco.com"
+                          }
+                        ]
+                      },
+                      {
+                        text: "Sainsbury's Nectar Prices:",
+                        subpoints: [
+                          {
+                            text: "Available by scanning/swiping Nectar card or app at checkout in-store, or by linking Nectar card to Sainsbury's online account.",
+                            citation: null
+                          },
+                          {
+                            text: "Clearly displayed on shelf-edge labels (in-store) and product listings (online).",
+                            citation: null
+                          },
+                          {
+                            text: "'Your Nectar Prices' are personalized lower prices for digitally registered Nectar customers using SmartShop (in-store self-scan) or shopping online, based on shopping habits. These are applied automatically at checkout.",
+                            citation: "Sainsbury's Help Centre, Nectar.com"
+                          }
+                        ]
+                      },
+                      {
+                        text: "Shopper Impact: Widespread participation in these schemes (e.g., 77% of regular grocery shoppers have Tesco Clubcard). Accessing loyalty prices is a primary motivation for joining. These schemes drive repeat purchases and can influence where consumers shop, although some shoppers are skeptical about the genuineness of savings compared to 'usual' prices.",
+                        citation: "NatCen, The Reward Collection"
+                      }
+                    ]
+                  },
+                  {
+                    finding_group_title: "Scan-&-Go Coupon Flow",
+                    critical_takeaway: "UK Scan & Go systems (like Tesco's and Asda's) streamline shopping by allowing customers to scan and pack as they go, with promotional discounts and loyalty prices typically applied automatically at checkout when the associated loyalty card is active.",
+                    points: [
+                      {
+                        text: "Functionality: Customers use retailer-provided handsets or their own mobile phones (via an app) to scan product barcodes as they shop. The system maintains a running total.",
+                        citation: "Asda Scan & Go, Tesco Scan as you Shop"
+                      },
+                      {
+                        text: "Checkout: Shoppers proceed to a dedicated Scan & Go checkout area (or sometimes a regular till), scan a QR code to transfer their scanned items, and then pay.",
+                        citation: null
+                      },
+                      {
+                        text: "Discount Application (Tesco): For 'Scan as you Shop', all items, including 'Buy one, get one free' and multibuys, must be scanned individually to ensure discounts are applied correctly. Clubcard points are also collected. Clubcard Prices would be applied if the Clubcard is scanned at the start.",
+                        citation: "Tesco Scan as you Shop"
+                      },
+                      {
+                        text: "Discount Application (General): Loyalty-linked discounts like Nectar Prices (for Sainsbury's SmartShop users) are generally applied automatically when the loyalty card is linked to the Scan & Go session. The focus is on automatic application of prevailing offers rather than a distinct 'coupon clipping' flow within the scanning process itself for many standard promotions.",
+                        citation: null
+                      },
+                      {
+                        text: "Service Checks: Retailers perform random service checks to ensure accuracy and prevent misuse.",
+                        citation: "Tesco Scan as you Shop"
+                      }
+                    ]
+                  },
+                  {
+                    finding_group_title: "Media → Shelf → Basket Mapping (UK)",
+                    critical_takeaway: "UK retailers and RMNs are investing heavily in connecting online and in-store touchpoints to track the shopper journey from initial media exposure to final purchase, with a growing focus on linking online advertising to in-store sales using loyalty data, location services, and emerging technologies.",
+                    points: [
+                      {
+                        text: "Retail Media Networks: UK RMNs (like Tesco Media & Insight Platform, Boots Media Group, and Asda Media Partnerships) use first-party loyalty data to connect ad impressions with transactions, providing closed-loop measurement that links advertising (both on and off retailer properties) with purchase behavior.",
+                        citation: "Retail Media Network whitepapers, Criteo"
+                      },
+                      {
+                        text: "Omnichannel Mapping: Research shows that 82% of UK shoppers research online before purchasing in-store. Retailers are increasingly able to track this using loyalty IDs across digital properties and in-store purchases, though full attribution remains challenging.",
+                        citation: "Google/Ipsos, Retail Week"
+                      },
+                      {
+                        text: "In-Store Technologies: Advanced retailers are deploying shelf sensors, computer vision, and proximity beacons to track in-store browsing behavior and connect it with eventual purchases. Sainsbury's 'Smart Store' initiative and Tesco's experimental 'Store of the Future' are testing such technologies.",
+                        citation: "Retail Tech Innovation Summit, Retail Gazette"
+                      },
+                      {
+                        text: "Mobile-Enhanced Journey: UK retailer apps increasingly include features like product scanning, aisle location, and personalized offers to influence the journey from consideration to purchase. These provide additional data points for mapping the shopper path.",
+                        citation: "Retail App Usage Study, Mobile Marketing Magazine"
+                      },
+                      {
+                        text: "Attribution Challenges: UK retailers acknowledge significant challenges in accurate multi-touch attribution, especially for 'dark social' (conversations in messaging apps, verbal recommendations) and cross-device shopping behaviors. Most use a combination of algorithms for attribution rather than a single model.",
+                        citation: "UK Digital Marketing Association, Marketing Week"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Information on UK shopper journey touchpoints is drawn from retailer materials, marketing research, and industry analyses, representing both public-facing consumer information and deeper marketing insights.",
+          section_tldr: "Findings represent a synthesis of retailer-published information, consumer research, and industry analysis, with the recognition that some proprietary aspects of loyalty systems and RMN capabilities may not be fully visible in public sources."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "Success in influencing UK shopper journeys requires understanding the central role of loyalty pricing schemes, the streamlined experience of Scan & Go systems, and the increasingly sophisticated measurement of the path from media exposure to purchase, all of which present opportunities for brands to optimize their presence at key touchpoints.",
+          section_tldr: "UK shopper journeys are heavily shaped by retailer-specific loyalty programs and technologies, requiring brands to adapt their strategies to these systems and leverage growing capabilities to track and influence the journey from awareness to purchase."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 15 highlights the importance of key touchpoints in the UK shopper journey. The next logical step is to examine the emerging rapid-commerce ecosystem that is creating new touchpoints and opportunities for brands.",
+          section_tldr: "This analysis of shopper journey touchpoints leads to Node 16 on Rapid-Commerce & Aggregators, which will examine platforms like Deliveroo, Uber Eats, and Ocado Zoom as additional, opportunistic routes to the UK consumer."
+        }
+      }
+    },
+    {
+      node_id: "R16",
+      title: "Rapid-Commerce & Aggregators",
+      scope: "Profiling key UK rapid-commerce platforms and aggregators, focusing on their sponsored listing opportunities, API feed availability, and SKU management considerations.",
+      priority: "Low/Opportunistic",
+      core_questions: [
+        "What advertising opportunities do UK rapid-commerce platforms offer?",
+        "What API capabilities do they provide for integration?",
+        "How can brands manage SKU duplication on these platforms?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Potential API connectors for product listing and inventory management",
+        "Product information syndication to reduce SKU duplication",
+        "Assessment of advertising opportunities on q-commerce platforms"
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "UK rapid-commerce platforms like Deliveroo, Uber Eats, and Ocado Zoom offer emerging advertising (sponsored listings) and integration (API feeds) opportunities for CPG brands, though navigating SKU management and the dynamic nature of this 'low/opportunistic' priority channel requires careful consideration.",
+          section_tldr: "This session explores Node 16: 'Rapid-Commerce & Aggregators', examining Deliveroo, Uber Eats, Getir, and Ocado Zoom. We'll look at their advertising features, API capabilities for partners, and challenges like SKU duplication, understanding these are UK-adapted (🔀) channels to be approached opportunistically."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "Leading UK rapid-commerce players like Deliveroo, Uber Eats, and Ocado (via Ocado Ads for Zoom) are developing retail media offerings with sponsored listings. They also provide partner APIs for menu, order, and catalog management, which can help mitigate SKU duplication issues. Getir's direct CPG advertising tools are less publicly detailed. This channel remains opportunistic and requires careful integration.",
+          section_tldr: "UK q-commerce platforms offer advertising and API integration opportunities for brands, though SKU consistency can be a challenge. Deliveroo, Uber Eats, and Ocado are more advanced in their retail media offerings than Getir based on public information. This is an adaptive (🔀) and opportunistic channel."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "Engaging with UK rapid-commerce platforms offers opportunistic avenues for brand visibility and sales, primarily through sponsored listings and direct integrations via APIs. However, brands must actively manage their product data to combat SKU duplication and navigate a fast-evolving market with varying levels of advertising sophistication among players.",
+          section_tldr: "This section details Deliveroo, Uber Eats, Getir, and Ocado Zoom, focusing on their advertising options, API capabilities for partners, and the inherent challenges of SKU management in the q-commerce space. These require UK-adapted approaches and are considered opportunistic.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R16-detail",
+                node_title: "16. Rapid-Commerce & Aggregators",
+                portability_flag: "🔀 Adapt",
+                priority: "Low/Opportunistic",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Profiling key UK rapid-commerce platforms and aggregators: Deliveroo, Uber Eats, Getir, and Ocado Zoom. Focus on their sponsored listing opportunities, API feed availability for integration, and common challenges like SKU duplication.",
+                question_bank: [
+                  "What types of sponsored listings or advertising opportunities do Deliveroo, Uber Eats, Getir, and Ocado Zoom offer to CPG brands or retail partners in the UK?",
+                  "What API feed capabilities (for product catalogs, inventory, orders, etc.) do these platforms provide for integration by their partners (restaurants, retailers, CPG brands with direct listings)?",
+                  "What are the common issues or best practices related to SKU management and preventing product duplication when listing products on these rapid-commerce platforms?",
+                  "How do the advertising and integration offerings differ across these key UK rapid-commerce players?"
+                ],
+                key_findings: [
+                  {
+                    rc_platform_profile: {
+                      platform_name: "Deliveroo",
+                      sponsored_listings_and_advertising: [
+                        "'Marketer Adverts': Cost-per-click (CPC) service for partners to boost visibility in high-traffic spots (Featured, Offers, Popular Brands, search results). Options for continuous or one-off campaigns, automated or manual bidding.",
+                        "'Deliveroo Media and Ecommerce': Broader advertising platform launched (initially UK, with Criteo) for consumer FMCG brands, including ads on order tracker page, website, app, and through social/email/push campaigns, alongside sponsored search. Enables brands to provide samples via Editions kitchens and HOP stores."
+                      ],
+                      api_feeds_and_integration: [
+                        "Offers extensive API suites: 'Partner Platform Suite' (orders, menus, site status for restaurants), 'Retail Platform Suite' (catalogue API for up to 30k items, picking API for grocery/retail), and 'Signature Suite' (custom delivery experiences using Deliveroo couriers).",
+                        "Menu API allows updates to stock status, pictures, prices, POS IDs, allergen info from partner's in-store system."
+                      ],
+                      sku_management_considerations: [
+                        "Catalogue API for retail partners helps manage master catalogues, which should aid in SKU consistency for direct partners.",
+                        "General challenge for brands if products are listed by many independent restaurants/stores with varying data quality. Centralized brand management of product information is advisable where possible."
+                      ]
+                    }
+                  },
+                  {
+                    rc_platform_profile: {
+                      platform_name: "Uber Eats",
+                      sponsored_listings_and_advertising: [
+                        "'Sponsored Listings': Allows restaurant partners to improve visibility at the top of Uber Eats listings. Managed via self-serve Uber Eats Manager platform, with performance tracking (clicks, orders).",
+                        "'Sponsored Items': Launched in the UK (powered by Criteo) for FMCG brands to have product listings directly on the Uber Eats app, targeting ready-to-purchase consumers. PepsiCo was an early UK partner.",
+                        "In the US, Uber Eats partnered with Instacart for 'Carrot Ads' to expand CPG advertising reach; UK model currently emphasizes Criteo partnership for Sponsored Items."
+                      ],
+                      api_feeds_and_integration: [
+                        "Provides a comprehensive Marketplace API suite covering: Menu API (get/upsert menu, update items), Order API (manage orders), Store API (manage store details/status), Promotions API, and Reporting API.",
+                        "Integration timelines typically 4-8 weeks. Requires NDA and API licensing agreement."
+                      ],
+                      sku_management_considerations: [
+                        "Menu API allows partners to manage their product listings, which is key for SKU accuracy for those directly integrated.",
+                        "Similar to other aggregators, ensuring consistent SKU representation can be challenging if multiple third-party sellers list the same brand's products without central oversight."
+                      ]
+                    }
+                  },
+                  {
+                    rc_platform_profile: {
+                      platform_name: "Getir",
+                      sponsored_listings_and_advertising: [
+                        "Limited public information on Getir's CPG advertising tools for the UK market specifically, suggesting they may be less developed than competitors in this area or less publicly documented.",
+                        "In other markets, Getir has offered sponsored placements and featured spots in app, but a formalized media network comparable to competitors is not prominently marketed.",
+                        "Getir's UK presence has seen fluctuations; announced in early 2023 they were cutting 1,500 UK jobs but still operational as of 2025 with adjusted footprint."
+                      ],
+                      api_feeds_and_integration: [
+                        "Less transparent public API documentation compared to Deliveroo and Uber Eats. Integration appears to be more partner-specific.",
+                        "Partner integrations focus on inventory management and order fulfillment rather than open API ecosystem."
+                      ],
+                      sku_management_considerations: [
+                        "Centralized inventory model with dark stores, potentially offering more SKU consistency than marketplace models since Getir controls inventory directly.",
+                        "Limited integration options may make it more challenging for brands to manage product information directly."
+                      ]
+                    }
+                  },
+                  {
+                    rc_platform_profile: {
+                      platform_name: "Ocado Zoom",
+                      sponsored_listings_and_advertising: [
+                        "Advertising primarily through 'Ocado Ads' (powered by Zitcha), which covers Ocado Retail including Zoom. Offers a full-funnel retail media approach.",
+                        "Provides sponsored product listings, display media, off-site media, and sampling/loyalty offers. Emphasis on using Ocado's customer data for precise targeting.",
+                        "'Ocado Retail Media' includes onsite, paid social, CRM opportunities, and insight analysis, with Zoom being included in this ecosystem."
+                      ],
+                      api_feeds_and_integration: [
+                        "Benefits from Ocado's broader technology infrastructure, including its OSP (Ocado Smart Platform).",
+                        "Integration generally managed through Ocado's central technology teams rather than open API ecosystem, reflecting the more integrated nature of Ocado as both a technology provider and retailer."
+                      ],
+                      sku_management_considerations: [
+                        "As part of the broader Ocado ecosystem, Zoom benefits from Ocado's sophisticated warehouse and inventory management systems, potentially reducing SKU duplication issues.",
+                        "Product information typically managed through Ocado's central systems, with strong emphasis on data quality and accuracy reflecting Ocado's overall technology-first approach."
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Information on UK rapid-commerce platforms is drawn from company materials, developer documentation, industry analyses, and digital marketing sources, providing insights while acknowledging the dynamic nature of this fast-evolving sector.",
+          section_tldr: "Findings represent a synthesis of publicly available information, recognizing that this rapidly evolving space sees frequent changes in offerings, partnerships, and capabilities that may not be fully reflected in published materials."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "While currently an opportunistic channel, UK rapid-commerce platforms offer growing potential for brand visibility and data-rich direct-to-consumer engagement through strategic use of their advertising platforms and API integrations, though success requires dedicated resources to manage product information and maintain consistent representation.",
+          section_tldr: "UK q-commerce platforms represent an evolving opportunity that brands can explore on an opportunistic basis, with Deliveroo, Uber Eats, and Ocado offering the most developed advertising and integration capabilities for CPG brands based on current public information."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 16 completes our exploration of the UK commerce landscape, examining an emerging, opportunistic channel. The comprehensive research spine now provides a solid foundation for strategic decision-making around UK market entry and optimization.",
+          section_tldr: "With the addition of this final research node on rapid-commerce platforms, the Commerce-OS Research Spine provides a comprehensive view of the UK market landscape, from core retail operations to emerging channels and future regulatory considerations."
+        }
+      }
+    },
+    {
       node_id: "R01",
       title: "Macro UK Commerce Environment & Regulatory Landscape",
       scope: "Economic trends (inflation, consumer spending), grocery channel share shifts (online, convenience, discounters), prevalent promotional mechanics and norms, key regulatory timelines (HFSS, EPR, Digital Services Act, VAT implications).",
@@ -736,7 +1610,7 @@ const researchSpineData: ResearchSpineData = {
           content_sections: [
             {
               node_document: {
-                node_id: "R04",
+                node_id: "R04-detail",
                 node_title: "Data Providers & Clean-Room Tech",
                 portability_flag: "🔀 Adapt",
                 priority: "High",
@@ -2123,7 +2997,7 @@ const researchSpineData: ResearchSpineData = {
           content_sections: [
             {
               node_document: {
-                node_id: "R11",
+                node_id: "R11-detail",
                 node_title: "Trade-Promotion Mechanics",
                 portability_flag: "❗ New",
                 priority: "High",
