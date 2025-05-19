@@ -1,0 +1,274 @@
+# Replit AI Prompt: Beanies Commerce OS Info Hub MVP
+
+project_overview:
+  name: "Beanies Commerce OS Info Hub MVP"
+  purpose: "A minimal viable web application to display key information and plans related to the Beanies Commerce Operating System (COS) initiative. The app should be expository, easy to navigate, and serve as a dynamic documentation portal. Content should be modular and driven by JSON data."
+  target_users: "Internal stakeholders (COO, SVP Data Science & Product, project team)."
+
+tech_stack:
+  frontend_framework: "React (with TypeScript if possible, otherwise JavaScript)"
+  ui_library: "Shadcn UI (ensure components are initialized and Tailwind CSS is configured)"
+  styling: "Tailwind CSS (as per Shadcn UI setup)"
+  state_management: "React Context API or Zustand for simple navigation state (if needed beyond basic prop drilling for MVP)."
+  deployment_target: "Replit (implied)"
+
+mvp_scope_initial_sheets:
+  - "Project & Sprint Master Plan"
+  - "KPI & Metrics Dashboard Framework"
+  - "COS Feature Development & Gap Analysis Tracker"
+
+data_structures_and_loading:
+  source_type: "Local JSON files/objects (for MVP)"
+  future_consideration: "Design should allow for fetching from a backend API later."
+  notes: "For each sheet in the MVP scope, define a clear JSON structure. The app will load and parse these JSON objects to render the views."
+  sample_json_structures:
+    project_plan_json_example: |
+      {
+        "phases": [
+          {
+            "id": "P0",
+            "name": "Phase 0: Charter & Data Access",
+            "duration": "Week 0-1",
+            "objective": "Establish project charter, define vision & problem, secure initial data access credentials.",
+            "eos_milestone": "EOS Vision/Traction mtg (COO + SVP)",
+            "key_success_metrics": "Charter signed; data credentials unblocked.",
+            "sprints_or_tasks": [
+              { "id": "S0.1", "name": "Define Problem statement", "status": "Completed", "owner": "Project Lead" },
+              { "id": "S0.2", "name": "Create KPI north-star sheet", "status": "Completed", "owner": "Project Lead" }
+            ]
+          },
+          {
+            "id": "P1",
+            "name": "Phase 1: Analyze",
+            "duration": "Weeks 1-3 (Sprints 1-2)",
+            "objective": "Consolidate datasets, establish baseline KPIs, draft opportunity map, create glossary.",
+            "eos_milestone": "Weekly L10 (15 min IDS)",
+            "key_success_metrics": "Baseline KPIs published; glossary accepted.",
+            "sprints_or_tasks": [
+              { "id": "S1.1.1", "name": "Develop Unified data lake stub", "status": "In Progress", "owner": "Data Engineering" },
+              { "id": "S1.2.2", "name": "Develop Glossary v1", "status": "To Do", "owner": "Product Manager" }
+            ]
+          }
+        ]
+      }
+    kpi_dashboard_json_example: |
+      {
+        "kpis": [
+          {
+            "id": "KPI001",
+            "name": "Rate of Sale (ROS)",
+            "description": "Measures the rate at which products are sold in specific stores over a defined period.",
+            "current_value": "£6.31 (52 wks JS)",
+            "target_value": "≥ 20% uplift on pilot SKUs",
+            "trend": "Stable",
+            "notes": "Critical velocity metric for Beanies SKUs."
+          },
+          {
+            "id": "KPI002",
+            "name": "ACV Distribution",
+            "description": "Percentage of total category sales volume in stores where a specific SKU is listed.",
+            "current_value": "45% (Hazelnut example)",
+            "target_value": "+10% distribution points",
+            "trend": "Needs Improvement",
+            "notes": "Key for identifying distribution gaps."
+          }
+        ]
+      }
+    feature_tracker_json_example: |
+      {
+        "features": [
+          {
+            "id": "COS-F01",
+            "name": "Multi-Retailer Data Ingestion (UK Focus)",
+            "description": "Ingest, normalize, and store POS, panel, media logs...",
+            "current_pathx_status": { "coverage": "Full (for US/North America)", "notes": "Connectors US-centric" },
+            "gap_for_uk": "Specific connectors for UK retailers...",
+            "dev_effort_sprints": 2,
+            "status": "To Do"
+          },
+          {
+            "id": "COS-F03",
+            "name": "Automated JBP Deck Builder",
+            "description": "Service to auto-generate retailer-specific JBP decks...",
+            "current_pathx_status": { "coverage": "None", "notes": "Manual PPT export" },
+            "gap_for_uk": "Templating engine, retailer style guides...",
+            "dev_effort_sprints": 2,
+            "status": "To Do"
+          }
+        ]
+      }
+
+app_structure_and_layout:
+  main_layout_component: "MainLayout.tsx"
+  navigation_component: "SidebarNav.tsx"
+  content_area_component: "ContentDisplay.tsx" # This will host the specific view components
+  overall_structure: |
+    - A fixed sidebar for navigation.
+    - A main content area to the right of the sidebar that renders the selected sheet/view.
+    - Ensure responsive design for mobile viewing (e.g., sidebar can become a drawer/sheet).
+
+navigation_config:
+  - name: "Project Plan"
+    path: "/project-plan"
+    json_source_key: "project_plan_json_example" # Key to access data in a combined JSON or filename
+    view_component: "ProjectPlanView.tsx"
+  - name: "KPI Dashboard"
+    path: "/kpi-dashboard"
+    json_source_key: "kpi_dashboard_json_example"
+    view_component: "KpiDashboardView.tsx"
+  - name: "Feature Tracker"
+    path: "/feature-tracker"
+    json_source_key: "feature_tracker_json_example"
+    view_component: "FeatureTrackerView.tsx"
+
+component_definitions: # Define functions/components for Replit AI
+  - component_name: "App.tsx"
+    purpose: "Main application entry point. Sets up routing (if needed for multi-page feel, or manages selected view state for SPA) and renders the MainLayout."
+    props: []
+    shadcn_components_to_use: [] # Likely just structural divs
+    behavior_notes: "Should manage which view (Project Plan, KPI, Feature Tracker) is currently active based on navigation."
+
+  - component_name: "MainLayout.tsx"
+    purpose: "Provides the overall page structure including the sidebar and content area."
+    props:
+      - name: "children"
+        type: "React.ReactNode"
+        description: "The main content to display (i.e., the active view component)."
+    shadcn_components_to_use:
+      - "Resizable (for sidebar/content split, optional for MVP)"
+      - "Sheet (for mobile navigation drawer)"
+    behavior_notes: "Contains SidebarNav and the area where ContentDisplay (hosting the active view) will be rendered."
+
+  - component_name: "SidebarNav.tsx"
+    purpose: "Displays navigation links for different information sheets. Updates the active view in App.tsx on link click."
+    props:
+      - name: "navItems"
+        type: "Array<{ name: string; path: string; icon?: React.ReactNode }>" # Icon optional
+        description: "Array of navigation items, derived from navigation_config."
+      - name: "currentViewPath"
+        type: "string"
+        description: "The path of the currently active view."
+      - name: "onNavigate"
+        type: "(path: string) => void"
+        description: "Callback function to change the active view."
+    shadcn_components_to_use:
+      - "Button (variant='ghost' or 'link' for nav items)"
+      - "ScrollArea (if many nav items)"
+      - "Icons (e.g., from lucide-react, if adding icons)"
+    behavior_notes: "Highlights the active navigation item. On mobile, this might be part of a Shadcn Sheet component triggered by a burger icon."
+
+  - component_name: "ContentDisplay.tsx"
+    purpose: "A wrapper component that dynamically renders the selected view component based on the current navigation state."
+    props:
+      - name: "activeView"
+        type: "string" # e.g., 'project-plan', 'kpi-dashboard'
+        description: "Identifier for the currently selected view."
+      - name: "jsonData" # Pass all JSON data here, or fetch within specific views
+        type: "object"
+        description: "An object containing all loaded JSON data, keyed by json_source_key."
+    shadcn_components_to_use: []
+    behavior_notes: |
+      Uses a switch or mapping to render the correct view component (ProjectPlanView, KpiDashboardView, etc.)
+      and passes the relevant slice of jsonData to it.
+
+  # --- View Components (one for each MVP sheet) ---
+  - component_name: "ProjectPlanView.tsx"
+    purpose: "Displays the Project & Sprint Master Plan information from its JSON data."
+    props:
+      - name: "data"
+        type: "object" # Corresponds to project_plan_json_example structure
+        description: "The project plan data."
+    shadcn_components_to_use:
+      - "Card, CardHeader, CardTitle, CardContent, CardDescription"
+      - "Accordion, AccordionItem, AccordionTrigger, AccordionContent (for phases)"
+      - "Table, TableHeader, TableRow, TableHead, TableBody, TableCell (for tasks/sprints within phases)"
+      - "Badge (for status)"
+      - "Separator"
+    behavior_notes: "Render phases as Accordion items. Within each phase, display objective, milestones, and tasks in a structured way, potentially using Cards for phase overview and Tables for task lists."
+
+  - component_name: "KpiDashboardView.tsx"
+    purpose: "Displays the KPI & Metrics Dashboard Framework information."
+    props:
+      - name: "data"
+        type: "object" # Corresponds to kpi_dashboard_json_example structure
+        description: "The KPI data."
+    shadcn_components_to_use:
+      - "Card, CardHeader, CardTitle, CardContent, CardDescription"
+      - "Grid (Tailwind CSS for layout of cards)"
+      - "Badge (for trend)"
+      - "Tooltip (for descriptions)"
+    behavior_notes: "Render each KPI as a Shadcn Card. Use a grid layout for the cards. Display current value, target, and trend prominently."
+
+  - component_name: "FeatureTrackerView.tsx"
+    purpose: "Displays the COS Feature Development & Gap Analysis Tracker information."
+    props:
+      - name: "data"
+        type: "object" # Corresponds to feature_tracker_json_example structure
+        description: "The feature tracker data."
+    shadcn_components_to_use:
+      - "Card, CardHeader, CardTitle, CardContent"
+      - "Table, TableHeader, TableRow, TableHead, TableBody, TableCell"
+      - "Badge (for status, coverage)"
+      - "Accordion (optional, if feature details are extensive)"
+    behavior_notes: "Render features in a Table or a list of Cards. Clearly display name, description, PathX status, gap, effort, and current status."
+
+  # --- Reusable Presentational Components (Optional but Recommended) ---
+  - component_name: "DataTable.tsx"
+    purpose: "A generic, reusable component to render tabular data using Shadcn Table."
+    props:
+      - name: "columns"
+        type: "Array<{ header: string; accessorKey: string }>" # Simplified column definition
+        description: "Defines table columns."
+      - name: "data"
+        type: "Array<object>"
+        description: "Array of data objects to display."
+    shadcn_components_to_use:
+      - "Table, TableHeader, TableRow, TableHead, TableBody, TableCell"
+    behavior_notes: "Renders a Shadcn Table based on the provided columns and data. Could be used by ProjectPlanView and FeatureTrackerView."
+
+  - component_name: "InfoCard.tsx"
+    purpose: "A generic, reusable card component for displaying summarized information."
+    props:
+      - name: "title"
+        type: "string"
+        description: "Card title."
+      - name: "description"
+        type: "string"
+        description: "Card description or subtitle."
+      - name: "metrics"
+        type: "Array<{ label: string; value: string; unit?: string }>"
+        description: "Key metrics to display in the card content."
+      - name: "status"
+        type: "string"
+        description: "Optional status to display, perhaps with a Badge."
+    shadcn_components_to_use:
+      - "Card, CardHeader, CardTitle, CardDescription, CardContent"
+      - "Badge"
+    behavior_notes: "Could be used by KpiDashboardView for each KPI."
+
+styling_notes:
+  - "Prioritize clarity and readability."
+  - "Use Shadcn UI component defaults as much as possible."
+  - "Employ Tailwind CSS for layout (flexbox, grid) and any custom spacing/typography needs."
+  - "Ensure a clean, professional, and 'expository' look and feel."
+  - "The app should be responsive and usable on mobile devices (e.g., sidebar collapses into a drawer)."
+
+initialization_and_setup:
+  - "Ensure `npx shadcn-ui@latest init` has been run and basic components (like Button, Card, Table, Accordion, Sheet, ScrollArea) are added to the project."
+  - "Set up Tailwind CSS correctly as per Shadcn UI documentation."
+  - "For MVP, JSON data can be imported directly into the relevant view components or a central data context."
+
+function_definitions_summary_for_ai: |
+  Please define the following React functional components with the specified props and behaviors, using Shadcn UI components and Tailwind CSS for styling:
+  1.  `App.tsx` (Main application component, handles view state)
+  2.  `MainLayout.tsx` (Overall page structure with sidebar and content area)
+  3.  `SidebarNav.tsx` (Navigation links)
+  4.  `ContentDisplay.tsx` (Renders the active view component)
+  5.  `ProjectPlanView.tsx` (Displays project plan data)
+  6.  `KpiDashboardView.tsx` (Displays KPI data)
+  7.  `FeatureTrackerView.tsx` (Displays feature tracker data)
+  8.  (Optional but recommended) `DataTable.tsx` (Reusable table component)
+  9.  (Optional but recommended) `InfoCard.tsx` (Reusable card component)
+
+  Load data from the provided sample JSON structures for the MVP. Ensure modularity for future expansion.
+
