@@ -169,7 +169,7 @@ const researchSpineData: ResearchSpineData = {
                     ]
                   },
                   {
-                    finding_group_title: "FX Budgeting for UK Imports",
+                    title: "FX Budgeting for UK Imports",
                     critical_takeaway: "UK importers must actively manage foreign exchange (FX) risk arising from currency fluctuations between GBP and supplier currencies, using strategies like forward contracts and natural hedges to protect margins.",
                     points: [
                       {
@@ -204,7 +204,7 @@ const researchSpineData: ResearchSpineData = {
                     ]
                   },
                   {
-                    finding_group_title: "Margin Impact of Promos & VAT Considerations",
+                    title: "Margin Impact of Promos & VAT Considerations",
                     critical_takeaway: "VAT is calculated on the actual (discounted) price paid by the consumer in a promotion. Businesses must correctly account for this to determine the true net cost of the promotion and its impact on profit margins.",
                     points: [
                       {
@@ -298,7 +298,7 @@ const researchSpineData: ResearchSpineData = {
                 ],
                 key_findings: [
                   {
-                    finding_group_title: "UK Media Agencies Profile (Threefold & SMG)",
+                    title: "UK Media Agencies Profile (Threefold & SMG)",
                     critical_takeaway: "The UK media agency scene includes independents like Threefold offering tailored media strategies, and powerful retail media operators like SMG, which runs RMNs for major UK retailers and is a key partner for brands wanting to activate in these environments.",
                     points: [
                       {
@@ -1578,7 +1578,7 @@ const researchSpineData: ResearchSpineData = {
       }
     },
     {
-      node_id: "R04",
+      node_id: "R04-A",
       title: "Data Providers & Clean-Room Tech",
       scope: "Analysis of key UK data providers and clean-room technology enablers: Crisp (Atheon), NielsenIQ, Kantar, LiveRamp, and dunnhumby.",
       priority: "High",
@@ -3158,7 +3158,7 @@ const researchSpineData: ResearchSpineData = {
       }
     },
     {
-      node_id: "R04",
+      node_id: "R04-B",
       title: "UK Coffee Category Shopper Insights & Path to Purchase",
       scope: "UK coffee shopper demographics, purchase drivers, behavioral segments, and digital/physical path to purchase analysis.",
       priority: "Medium",
