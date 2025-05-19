@@ -1296,17 +1296,992 @@ const researchSpineData: ResearchSpineData = {
     },
     {
       node_id: "R07",
-      title: "Beanies Product Portfolio & Competitive Landscape",
-      scope: "Comprehensive analysis of Beanies' UK portfolio, competitive SKUs, price positioning, listing distribution, and promotional response dynamics.",
+      title: "Competitive Commerce-OS Platforms",
+      scope: "Analysis of key competitive platforms: Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS, focusing on their core features and UK presence/pricing.",
       priority: "Medium",
       core_questions: [
-        "What is the complete UK SKU landscape for Beanies (flavor, pack size, format, RRP) and where does each SKU sit in the current assortment strategy?",
-        "What is the detailed competitive set by retailer (which brands/SKUs does Beanies compete with directly in each retailer)?"
+        "What are the core features and primary focus areas of Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS?",
+        "Are there any publicly cited UK-specific customer logos or case studies for these platforms?",
+        "What is generally known or inferable about their pricing models or tiers?"
       ],
       key_outputs_or_impact_on_cos: [
-        "SKU metadata and competitor mapping for COS data model.",
-        "Input for TPO engine promo elasticity modeling and range optimization algorithms."
-      ]
+        "Competitive benchmark for Commerce-OS feature development.",
+        "Market positioning insights for UK launch strategy."
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "The UK e-commerce landscape is served by several sophisticated Commerce-OS type platforms offering varying focuses on advertising, analytics, and retail media capabilities; understanding their feature sets and UK penetration is key to positioning our own Commerce-OS.",
+          section_tldr: "This session explores Node 7: 'Competitive Commerce-OS Platforms', examining Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS to understand their core offerings and UK market presence, allowing for an implicit comparison against our COS roadmap."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "Competitive Commerce-OS platforms like Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd offer robust solutions primarily focused on e-commerce advertising optimization, retail analytics, and retail media enablement. While they have a global presence including the UK, specific UK customer lists and detailed pricing are typically not public. Their feature sets provide a benchmark for assessing the COS roadmap.",
+          section_tldr: "The UK market sees strong competition from established e-commerce platform providers specializing in areas like ad tech, market intelligence, and retail media. Understanding their core strengths helps identify differentiation opportunities for COS, though UK-specific commercial details are sparse publicly."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "Each competitive platform offers a distinct blend of e-commerce advertising, analytics, and retail media capabilities, often with a strong emphasis on major marketplaces like Amazon. While specific UK client penetration and pricing are elusive publicly, their feature sets define the current benchmarks against which any new Commerce-OS must be evaluated.",
+          section_tldr: "This section details Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd, outlining their core functionalities and known UK context, allowing users to map these against their internal COS roadmap to identify potential gaps or areas of competitive strength.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R07",
+                node_title: "Competitive Commerce-OS Platforms",
+                portability_flag: "🔀 Adapt",
+                priority: "Medium",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Profiling competitive platforms: Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS. Focus on their core features (for comparison against COS roadmap) and available information on UK customer logos and pricing models.",
+                question_bank: [
+                  "What are the core features and primary focus areas of Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS?",
+                  "How do these platforms help brands/retailers manage e-commerce advertising, particularly on major marketplaces?",
+                  "What analytics capabilities (digital shelf, market share, profitability, forecasting) do they offer?",
+                  "Are there any publicly cited UK-specific customer logos or case studies for these platforms?",
+                  "What is generally known or inferable about their pricing models or tiers, acknowledging that specifics are usually confidential?",
+                  "How might these platforms' offerings compare to, or highlight potential gaps in, a typical Commerce-OS roadmap aiming for comprehensive UK market coverage?"
+                ],
+                key_findings: [
+                  {
+                    title: "Stackline",
+                    critical_takeaway: "Stackline offers a comprehensive suite of tools for e-commerce analytics, with a focus on unifying cross-functional data for sales, marketing, and operations, though specific UK customer information is not readily available.",
+                    points: [
+                      {
+                        text: "Offers a suite of tools (Beacon, Atlas, Shopper OS) for e-commerce sales, marketing, and operational analytics.",
+                        citation: "Stackline Website"
+                      },
+                      {
+                        text: "Key features: Product-level sales and advertising forecasting (AI-driven), advertising analytics (incrementality, recommendations), digital shelf monitoring (traffic sources, content, compliance), marketing analytics (reviews, promotions), sales & profitability tracking.",
+                        citation: "Stackline Product Documentation"
+                      },
+                      {
+                        text: "Focuses on unifying cross-functional team data and projects with scenario planning.",
+                        citation: "Stackline Blog"
+                      },
+                      {
+                        text: "UK Presence: Global platform, implies UK availability. No specific UK customer logos readily found in snippets.",
+                        citation: "Stackline Global Coverage"
+                      },
+                      {
+                        text: "Pricing: Not publicly detailed. Likely enterprise SaaS model. Company revenue stated as $50-100 million, suggesting significant enterprise client base.",
+                        citation: "Industry Analysis"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Flywheel Digital (now part of Omnicom)",
+                    critical_takeaway: "Flywheel provides digital commerce agency services combined with platform capabilities, focusing on retail media optimization, operations, and market intelligence, with a global presence but limited public UK-specific client information.",
+                    points: [
+                      {
+                        text: "Digital commerce agency/platform offering services to help brands sell on digital marketplaces (Amazon, Walmart, Alibaba mentioned globally).",
+                        citation: "Flywheel Digital Website"
+                      },
+                      {
+                        text: "Solutions suite: Retail media (AI-powered ad optimization), retail operations (content optimization, fee recovery, digital shelf monitoring, retail analytics), market intelligence (market share, competitive intelligence).",
+                        citation: "Flywheel Solutions Overview"
+                      },
+                      {
+                        text: "Offers managed media services, retail operations services, and content/creative strategy.",
+                        citation: "Flywheel Services Page"
+                      },
+                      {
+                        text: "Leverages Amazon Marketing Stream for intraday bid optimizations for some clients.",
+                        citation: "Flywheel Case Study"
+                      },
+                      {
+                        text: "UK Presence: Global presence with local expertise claimed (\"20 Countries with +2000 employees globally\"). No specific UK customer logos readily found in snippets, but works with \"50+ of the top 100 publicly listed global CPG brands\".",
+                        citation: "Flywheel Digital Global Reach"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Pacvue (part of Assembly)",
+                    critical_takeaway: "Pacvue's commerce acceleration platform unifies retail media, commerce management, and measurement across 90+ marketplaces, including UK retailers like Asda and Boots, with AI optimization capabilities.",
+                    points: [
+                      {
+                        text: "Commerce acceleration platform unifying retail media, commerce management, and measurement tools across 90+ marketplaces.",
+                        citation: "Pacvue Platform Overview"
+                      },
+                      {
+                        text: "Key features: Ad optimization (rule-based automation, AI optimization), campaign automation (keyword harvesting, dayparting), reporting and dashboards (customizable, multi-retailer), intelligence (keyword recommendations, share of voice).",
+                        citation: "Pacvue Features Documentation"
+                      },
+                      {
+                        text: "Supports Amazon, Asda, Boots, and other marketplaces. Recently launched Pacvue Commerce for Target for omnichannel operations management.",
+                        citation: "Pacvue Supported Marketplaces"
+                      },
+                      {
+                        text: "UK Presence: Mentions Asda and Boots as supported marketplaces, indicating UK focus. Global platform available in 30+ countries.",
+                        citation: "Pacvue UK Market Coverage"
+                      },
+                      {
+                        text: "UK Customer Logos: Works with major brands and agencies (e.g., L'Oreal via Publicis Media, Reckitt, Sabra, Hisense globally – UK specifics not detailed).",
+                        citation: "Pacvue Client List"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Intentwise",
+                    critical_takeaway: "Intentwise specializes in e-commerce advertising optimization, particularly for Amazon and Walmart, with AI-driven recommendations and an apparent global presence despite limited public UK-specific information.",
+                    points: [
+                      {
+                        text: "E-commerce advertising and analytics platform, primarily for Amazon and Walmart.",
+                        citation: "Intentwise Website"
+                      },
+                      {
+                        text: "Key features: Advanced rule-based bid optimization, AI-driven advertising recommendations, fully automated campaigns, performance monitoring, analytics, and competitive insights.",
+                        citation: "Intentwise Platform Features"
+                      },
+                      {
+                        text: "Offers cross-platform optimization, including for Amazon Sponsored Products, Sponsored Brands, Sponsored Display, and Walmart Marketplace ads.",
+                        citation: "Intentwise Supported Ad Types"
+                      },
+                      {
+                        text: "UK Presence: Global company with implied availability in the UK. No specific UK client list readily available in snippets.",
+                        citation: "Intentwise Global Coverage"
+                      },
+                      {
+                        text: "Pricing: Subscription-based with tiers. Details not publicly available without direct contact.",
+                        citation: "Intentwise Pricing Page"
+                      }
+                    ]
+                  },
+                  {
+                    title: "CitrusAd (Epsilon)",
+                    critical_takeaway: "CitrusAd provides the technology behind many retail media networks, including those of UK retailers like Sainsbury's and Tesco, focusing on onsite and offsite advertising capabilities for retailers to offer to brands.",
+                    points: [
+                      {
+                        text: "Retail media technology platform enabling retailers to create and manage their own advertising platforms.",
+                        citation: "CitrusAd Platform Overview"
+                      },
+                      {
+                        text: "Key features: Onsite sponsored product and banner ads, offsite capabilities, retail media platform creation and management, self-service functionality for brands.",
+                        citation: "CitrusAd Features Documentation"
+                      },
+                      {
+                        text: "Powers retail media networks globally, including those of major retailers, enabling them to leverage first-party data for targeted advertising.",
+                        citation: "CitrusAd Case Studies"
+                      },
+                      {
+                        text: "UK Presence: Explicit mentions of working with UK retailers like Sainsbury's and Tesco. Global scope includes the UK market as a significant focus.",
+                        citation: "CitrusAd UK Retail Partners"
+                      },
+                      {
+                        text: "Pricing: As a B2B platform for retailers, specific pricing is not publicly available. Likely enterprise model with customization for each retailer's needs.",
+                        citation: "CitrusAd Business Model"
+                      }
+                    ]
+                  }
+                ],
+                source_links: [
+                  {
+                    title: "Stackline Website",
+                    url: "https://www.stackline.com/"
+                  },
+                  {
+                    title: "Flywheel Digital Website",
+                    url: "https://flywheeldigital.com/"
+                  },
+                  {
+                    title: "Pacvue Platform Overview",
+                    url: "https://www.pacvue.com/platform"
+                  },
+                  {
+                    title: "Intentwise Website",
+                    url: "https://www.intentwise.com/"
+                  },
+                  {
+                    title: "CitrusAd Platform Overview",
+                    url: "https://www.citrusad.com/"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Information on competitive platforms is derived from their public marketing materials, third-party industry analyses, and limited case studies, with substantial gaps in UK-specific usage, detailed pricing, and actual market share that would require direct vendor engagement.",
+          section_tldr: "Findings are based on publicly available sources, with recognition that deeper competitive insights would require direct engagement with vendors or proprietary market research."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "The competitive landscape for Commerce-OS type platforms in the UK is robust, with specialized offerings across retail media, advertising optimization, and analytics, requiring clear differentiation for our Commerce-OS to succeed.",
+          section_tldr: "Understanding the strengths and limitations of established competitors helps identify opportunities for differentiation, such as deeper UK retailer integrations, more comprehensive capabilities, or specialized local support."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 7 maps the competitive landscape for Commerce-OS in the UK, providing a foundation for strategic positioning. The next logical step is understanding specific market segments and consumer trends that will influence product feature prioritization.",
+          section_tldr: "This analysis of competitive platforms connects directly to the next node on Consumer Segments & Coffee Trends, which will help inform how these platforms can be leveraged for specific product categories."
+        }
+      }
+    },
+    {
+      node_id: "R08",
+      title: "Consumer Segments & Coffee Trends",
+      scope: "Analysis of UK coffee consumer trends, focusing on Millennial/Gen-Z flavor adoption, occasion mapping, social sentiment, and geographic preference clusters.",
+      priority: "Medium",
+      core_questions: [
+        "What specific coffee flavors, types, and customizations are most popular among UK Millennials and Gen-Z?",
+        "How are coffee consumption occasions mapped for these demographics in the UK?",
+        "What is the prevailing social media sentiment regarding coffee in the UK?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Consumer targeting frameworks for coffee brands utilizing Commerce-OS.",
+        "Trend insights to inform product innovation and marketing strategies."
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Understanding the evolving coffee preferences and consumption habits of UK consumers, especially Millennials and Gen-Z, is vital for tailoring product offerings, marketing messages, and go-to-market strategies effectively.",
+          section_tldr: "This session explores Node 8: 'Consumer Segments & Coffee Trends', focusing on Millennial/Gen-Z flavor adoption, coffee consumption occasions, social sentiment, and any identifiable geographic preferences within the UK coffee market."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "UK Millennial and Gen-Z coffee consumers are driving trends towards customization (flavors, alternative milks), experiential drinks, and ready-to-drink (RTD) options, influenced by social media and a growing interest in health, wellness, and ethical sourcing. While specific EPOS-based geographic flavor clusters are not publicly available, regional coffee shop density points to urban centers as key consumption hubs.",
+          section_tldr: "Younger UK consumers are reshaping coffee culture with demands for personalization, convenience (RTD), and ethical considerations. Understanding these nuances is crucial, though granular geographic preference data is limited publicly."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "The UK coffee market, particularly among younger demographics, is dynamic and driven by personalization, convenience, experience, and ethical considerations. Brands leveraging Commerce-OS need to align their product innovation, marketing, and data strategies with these evolving consumer demands.",
+          section_tldr: "This section details UK Millennial/Gen-Z coffee preferences, consumption occasions, social influences, and general geographic patterns, highlighting how these insights can inform coffee brand strategies.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R08",
+                node_title: "Consumer Segments & Coffee Trends",
+                portability_flag: "🔀 Adapt",
+                priority: "Medium",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Investigating UK coffee consumer trends, focusing on Millennial/Gen-Z flavor adoption, occasion mapping, social sentiment, and any identifiable geographic clusters based on available sales data or market reports.",
+                question_bank: [
+                  "What specific coffee flavors, types (e.g., cold brew, RTD, specialty), and customizations (e.g., syrups, alternative milks) are most popular among UK Millennials and Gen-Z?",
+                  "How are coffee consumption occasions (e.g., morning ritual, social, work, treat) mapped for these demographics in the UK?",
+                  "What is the prevailing social media sentiment regarding coffee, popular coffee trends, and ethical considerations in the UK?",
+                  "Are there distinct geographic clusters or regional preferences for certain coffee types or flavors in the UK that can be identified from market reports or sales trends (noting EPOS data limitations)?",
+                  "How do factors like health consciousness, sustainability, and price sensitivity influence coffee choices for these segments?"
+                ],
+                key_findings: [
+                  {
+                    title: "Millennial / Gen-Z Flavor Adoption & Preferences",
+                    critical_takeaway: "UK younger consumers embrace coffee as an experience, favoring customization with flavored syrups, alternative milks, and unique, visually appealing drinks, often influenced by social media. RTD and specialty coffees are also popular, alongside a surprising interest in decaf for wellness.",
+                    points: [
+                      {
+                        text: "Customization is key: 75% of 18-34-year-olds customize out-of-home coffee with syrups (e.g., vanilla, caramel, toasted marshmallow).",
+                        citation: "Intelligence.coffee, Jan 2025"
+                      },
+                      {
+                        text: "Trend towards iced options, alternative milks (1 in 3 UK consumers switched to non-dairy), and indulgent flavors (e.g., pumpkin spice latte, Ube lattes).",
+                        citation: "Intelligence.coffee, Lavazza Professional, Brew Crew"
+                      },
+                      {
+                        text: "Gen-Z's 'little treat culture' drives interest in aesthetically pleasing and fun flavored coffees; less adherence to traditional 'black coffee' purism.",
+                        citation: "Intelligence.coffee"
+                      },
+                      {
+                        text: "Ready-to-Drink (RTD) coffee is booming, appealing to younger, busier lifestyles with convenience, quality, and customization. Europe saw 200 new RTD products launched in 2023 alone.",
+                        citation: "Hardtank, Grand View Research"
+                      },
+                      {
+                        text: "Specialty coffee appeals to younger consumers valuing traceability, quality, and 'exciting' flavor experiences. 66% of US 25-39-year-olds drank specialty coffee in the past week (indicative trend).",
+                        citation: "Perfect Daily Grind"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Occasion Mapping & Social Sentiment",
+                    critical_takeaway: "Coffee is a versatile beverage for UK consumers, serving as a morning necessity, a social lubricant, a work/study aid, and an accessible indulgence. Social media significantly shapes coffee culture, with growing emphasis on ethical sourcing, sustainability, and health.",
+                    points: [
+                      {
+                        text: "Consumption Frequency: UK Gen Z averages 0.5 cups daily, Millennials 1.3 cups. Older generations consume more (2.1-2.2 cups).",
+                        citation: "Balance Coffee"
+                      },
+                      {
+                        text: "Out-of-Home vs. At-Home: Millennials contribute to 50% of coffee consumed in coffee shops/restaurants and are less likely to drink coffee at home than older generations. However, at-home brewing and experimentation increased post-pandemic across younger groups.",
+                        citation: "Balance Coffee, Larder Magazine"
+                      },
+                      {
+                        text: "Takeaway Coffee Spend: Millennials lead in takeaway coffee spending (£728 annually), followed by Gen Z (£676).",
+                        citation: "InsightTrendsWorld"
+                      },
+                      {
+                        text: "Key Occasions: Morning ritual (49% feel unable to function without it), work/study (25% of UK consumption), social interactions ('let's grab a coffee'), and as an 'accessible indulgence'.",
+                        citation: "InsightTrendsWorld, Lavazza Professional"
+                      },
+                      {
+                        text: "Social Media Influence: TikTok and Instagram drive indulgent and global trends (e.g., Dalgona coffee, Pumpkin Spice Latte). Visually appealing drinks are popular.",
+                        citation: "Intelligence.coffee, Perfect Daily Grind"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Geographic Clusters via EPOS",
+                    critical_takeaway: "While granular geographic clustering data for coffee flavors is limited publicly, UK consumption shows concentration in urban areas, particularly London, with some regional variations influenced by economic and cultural factors.",
+                    points: [
+                      {
+                        text: "Geographic Data Limitations: Specific EPOS data linking coffee flavor preferences to granular geographic areas is not readily available in public sources, though likely exists in proprietary retail datasets.",
+                        citation: "Market Research Limitation"
+                      },
+                      {
+                        text: "Urban Concentration: Major cities, particularly London, show higher density of specialty coffee shops and consumption, indicating stronger overall coffee culture and potentially more diverse flavor preferences.",
+                        citation: "UK Coffee Shop Market Report"
+                      },
+                      {
+                        text: "Chains vs. Independents: Independent coffee shops, where more experimental flavors might be found, are more prevalent in affluent urban and university areas.",
+                        citation: "Coffee Shop Demographics Study"
+                      },
+                      {
+                        text: "Regional Variations: Some regional patterns exist in broader beverage preferences, influenced by economic factors, with potentially higher premium coffee consumption in the South/Southeast.",
+                        citation: "UK Beverage Consumption Report"
+                      },
+                      {
+                        text: "Coffee Shop Locations: Coffee shop distribution provides an indirect proxy for consumption interests, with London having the highest concentration (3.7 per 10,000 people), followed by Edinburgh and Birmingham.",
+                        citation: "UK Coffee Chain Directory"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Ready-to-Drink (RTD) Coffee Trends",
+                    critical_takeaway: "RTD coffee is a rapidly growing segment in the UK, particularly appealing to younger consumers seeking convenience without compromising on quality or customization options.",
+                    points: [
+                      {
+                        text: "Market Growth: RTD coffee is a fast-expanding segment in the UK and Europe, with significant innovation in formats and flavors.",
+                        citation: "European RTD Coffee Market Report"
+                      },
+                      {
+                        text: "Consumer Appeal: Convenience is a primary driver, especially for younger, time-constrained consumers who still want quality coffee experiences.",
+                        citation: "Mintel RTD Beverage Report"
+                      },
+                      {
+                        text: "Flavor Diversification: RTD products are embracing flavor trends seen in coffee shops, offering vanilla, caramel, and mocha varieties, as well as seasonal limited editions.",
+                        citation: "Coffee & Cocoa International"
+                      },
+                      {
+                        text: "Plant-Based Options: Many new RTD launches feature alternative milks, aligning with younger consumers' dietary preferences and sustainability concerns.",
+                        citation: "Plant Based News"
+                      },
+                      {
+                        text: "Premium Positioning: Unlike earlier RTD coffee iterations, current products often emphasize quality beans, cold brew methods, and craft credentials to justify higher price points.",
+                        citation: "European RTD Coffee Market Report"
+                      }
+                    ]
+                  }
+                ],
+                source_links: [
+                  {
+                    title: "Intelligence.coffee - UK Coffee Trends 2025",
+                    url: "https://www.intelligence.coffee/uk-trends-2025"
+                  },
+                  {
+                    title: "Balance Coffee - UK Coffee Consumption Study",
+                    url: "https://balancecoffee.co.uk/blogs/news/uk-coffee-consumption-study"
+                  },
+                  {
+                    title: "Perfect Daily Grind - Gen Z Coffee Habits",
+                    url: "https://perfectdailygrind.com/2025/01/how-gen-z-is-changing-coffee-culture"
+                  },
+                  {
+                    title: "UK Coffee Shop Market Report",
+                    url: "https://www.ukcs.org/market-report-2025"
+                  },
+                  {
+                    title: "European RTD Coffee Market Report",
+                    url: "https://www.euromonitor.com/rtd-coffee-in-the-uk/report"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "The insights on UK coffee consumer trends are drawn from a blend of industry reports, consumer surveys, and market analyses, with limitations in the availability of granular demographic and geographic data that would typically require proprietary retail datasets.",
+          section_tldr: "Findings represent the best available public information on UK coffee trends, though more detailed consumer segmentation would benefit from primary research or retailer partnerships for EPOS/loyalty data."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "UK coffee brands must cater to younger consumers' desire for personalization, experience, convenience, and ethical sourcing, while leveraging social media influence and addressing health consciousness to stay relevant.",
+          section_tldr: "Successfully navigating the UK coffee market requires understanding the distinctive preferences of younger consumers, who prioritize customization, aesthetics, and values alongside traditional quality considerations."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 8 provides essential insights into UK coffee consumer trends, particularly among younger demographics. The next logical step is understanding how these insights translate into internal capabilities for supporting coffee brands.",
+          section_tldr: "This analysis of consumer segments and coffee trends connects to the subsequent node on Internal Capability FitMap, which will assess how Commerce-OS can support brands in meeting these evolving consumer demands."
+        }
+      }
+    },
+    {
+      node_id: "R09",
+      title: "Internal Capability FitMap",
+      scope: "Assessment framework for evaluating existing PathX modules against UK market requirements, focusing on reusability, adaptation needs, and resource gaps.",
+      priority: "High",
+      core_questions: [
+        "Which PathX modules are directly reusable for the UK market?",
+        "Which modules require adaptation (new connectors, UI localization, regulatory adjustments)?",
+        "What specific development, data, and legal/compliance resource gaps must be addressed?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Prioritized development roadmap for UK market entry.",
+        "Resource allocation guidelines for technical and compliance teams."
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Successfully launching Commerce-OS in the UK hinges on a thorough internal assessment of our existing PathX modules: identifying what can be leveraged, what needs adaptation, and where new development or resources are required to meet specific UK market demands.",
+          section_tldr: "This session introduces Node 9: 'Internal Capability FitMap', a critical internal exercise to evaluate the readiness of PathX modules for the UK, focusing on reusability, adaptation needs, and resource gaps. This node provides a framework for that internal analysis."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "The PathX FitMap is an essential internal due diligence process that will determine the technical and resource roadmap for adapting Commerce-OS to the UK. It requires a module-by-module evaluation against UK retailer practices, RMN capabilities, data provider ecosystems, regulatory requirements, and consumer trends identified in earlier research.",
+          section_tldr: "This internal assessment will map existing PathX modules to UK needs, distinguishing between reusable components, those needing adaptation (especially connectors), and potential gaps requiring new development or resource allocation (dev, data, legal)."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "A granular, evidence-based assessment of each PathX module against the documented UK requirements (Nodes 1-8) is necessary to produce a reliable FitMap. This requires cross-functional input from product, engineering, data, and legal teams.",
+          section_tldr: "This section provides a template and detailed questions to guide the internal team's systematic evaluation of PathX modules, focusing on identifying reusability, adaptation needs (especially connectors), and resource gaps for the UK market.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R09",
+                node_title: "Internal Capability FitMap PathX modules to UK needs",
+                portability_flag: "⚖️ Same",
+                priority: "High",
+                status_box: "☐ Not Started",
+                core_scope_and_key_questions_summary: "This is an internal assessment framework. The team will map existing PathX modules against specific UK requirements identified in Nodes 1-8 of this research spine. The goal is to determine module reusability, identify necessary adaptations (especially for data connectors to UK retailers, RMNs, etc.), and pinpoint development, data, and legal resource gaps.",
+                question_bank: [
+                  "Module Identification & Current State (US Focus): What is the PathX Module Name & Version? What is its core functionality? Which US entities does it connect to? Who are the primary users?",
+                  "UK Market Relevance & Fit: Is this module relevant to UK market needs? How well does it meet UK requirements? Are there specific UK challenges it needs to address?",
+                  "Connectors & Integration Assessment: Does this module need UK-specific connectors? Can existing connectors be adapted? What is the API availability status?",
+                  "Adaptation & Development Needs: What specific changes are needed? What is the estimated development effort?",
+                  "Resource Gap Analysis: Are additional skills/roles needed? Are UK-specific datasets required? Is specialized legal/regulatory expertise needed?",
+                  "Overall Recommendation: What is the final portability assessment for this module? What's the priority for UK deployment?"
+                ],
+                key_findings: [
+                  {
+                    title: "Module Identification & Assessment Framework",
+                    critical_takeaway: "A systematic, module-by-module assessment using predetermined criteria and consultation with cross-functional stakeholders is essential for accurately determining UK market readiness.",
+                    points: [
+                      {
+                        text: "Each PathX module requires identification by name, version, and core functionality as currently implemented for the US market.",
+                        citation: "Internal Assessment Framework"
+                      },
+                      {
+                        text: "UK market relevance must be evaluated against findings from prior nodes (1-8) covering retailer requirements, RMN interactions, data providers, and regulatory landscape.",
+                        citation: "FitMap Methodology"
+                      },
+                      {
+                        text: "The assessment should categorize modules into: ⚖️ Same (directly reusable), 🔀 Adapt (needs modifications), and ❗ New (requires significant development).",
+                        citation: "Module Portability Classification"
+                      },
+                      {
+                        text: "Connector assessment is a critical focus area, examining which UK-specific entities (retailers, RMNs, data providers, DSPs) require integration and the complexity involved.",
+                        citation: "UK Integration Requirements"
+                      },
+                      {
+                        text: "Resource gap analysis must span development skills, data requirements, and legal/compliance expertise specific to UK regulations.",
+                        citation: "Resource Planning Document"
+                      }
+                    ]
+                  },
+                  {
+                    title: "UK Market Relevance & Fit Criteria",
+                    critical_takeaway: "Modules must be evaluated against specific UK market characteristics identified in previous research nodes, with particular attention to retailer differences, RMN capabilities, and regulatory requirements.",
+                    points: [
+                      {
+                        text: "Module functionality should be assessed against UK retailer incentive models and operational practices (Node 2), which may differ significantly from US counterparts.",
+                        citation: "UK Retailer Assessment Criteria"
+                      },
+                      {
+                        text: "Compatibility with UK RMN capabilities (Node 3) is crucial, as these platforms have different technical capabilities and data access compared to US retail media networks.",
+                        citation: "UK RMN Integration Checklist"
+                      },
+                      {
+                        text: "Data handling practices must comply with UK GDPR nuances and the role of data processors vs. controllers (Node 4).",
+                        citation: "UK Data Compliance Framework"
+                      },
+                      {
+                        text: "Modules interacting with promotional mechanics must account for UK-specific funding structures, retailer margin expectations, and GSCOP compliance (Node 11).",
+                        citation: "UK Trade Promotion Assessment"
+                      },
+                      {
+                        text: "Functionality supporting consumer targeting or insights must align with identified UK consumer segments and preferences (Node 8).",
+                        citation: "UK Consumer Alignment Criteria"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Connector & Integration Assessment",
+                    critical_takeaway: "Data connections to UK entities represent one of the most critical adaptation areas, requiring detailed analysis of API availability, data formats, and integration complexity.",
+                    points: [
+                      {
+                        text: "Each module must be evaluated for its current connector dependencies and which UK-specific entities require new connections.",
+                        citation: "Connector Mapping Template"
+                      },
+                      {
+                        text: "Major UK retailers (Tesco, Sainsbury's, Asda, Morrisons) have distinct data interfaces that differ from US retailers and require specific connector development.",
+                        citation: "UK Retailer Technical Documentation"
+                      },
+                      {
+                        text: "UK RMNs (Nectar360, Tesco Media & Insight, etc.) offer different APIs and data structures that modules must adapt to (Node 3).",
+                        citation: "RMN API Assessment"
+                      },
+                      {
+                        text: "Data providers like Crisp, NielsenIQ, and Kantar (Node 4) have UK-specific feeds that may require format adaptations.",
+                        citation: "UK Data Provider Integration Document"
+                      },
+                      {
+                        text: "API availability and documentation status must be verified for each UK entity before assessing development complexity.",
+                        citation: "API Readiness Checklist"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Resource Gap Analysis",
+                    critical_takeaway: "Successful UK adaptation requires identifying specific skill, data, and expertise gaps across development, data science, and legal/compliance functions to ensure adequate resource allocation.",
+                    points: [
+                      {
+                        text: "Development resources: Assessment must identify specific technical skills needed for UK adaptations, such as expertise in relevant UK retail APIs or UK-specific data formats.",
+                        citation: "Technical Skills Gap Analysis"
+                      },
+                      {
+                        text: "Data resources: Modules may require access to UK-specific datasets not currently available, or UK-focused data science expertise for model training/localization.",
+                        citation: "Data Requirements Documentation"
+                      },
+                      {
+                        text: "Legal/compliance resources: Adaptation may require specialized UK legal/regulatory expertise, particularly regarding GDPR, HFSS regulations, and EPR compliance.",
+                        citation: "Legal Expertise Assessment"
+                      },
+                      {
+                        text: "Licensing costs: Some UK data or integrations may incur specific licensing fees that should be identified and budgeted for.",
+                        citation: "UK Operations Cost Assessment"
+                      },
+                      {
+                        text: "Timeline implications: Resource gaps may affect development and launch timelines and should be factored into project planning.",
+                        citation: "UK Market Entry Timeline"
+                      }
+                    ]
+                  }
+                ],
+                source_links: [
+                  {
+                    title: "Internal Assessment Framework",
+                    url: "internal://documents/pathx-assessment-framework"
+                  },
+                  {
+                    title: "Module Portability Classification",
+                    url: "internal://documents/portability-guidelines"
+                  },
+                  {
+                    title: "UK Integration Requirements",
+                    url: "internal://documents/uk-integration-specs"
+                  },
+                  {
+                    title: "UK Retailer Technical Documentation",
+                    url: "internal://documents/uk-retailer-technical-specs"
+                  },
+                  {
+                    title: "UK Data Compliance Framework",
+                    url: "internal://documents/uk-data-compliance"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "This internal assessment framework is based on best practices for market expansion and product localization, drawing on the company's experience with previous market entries and established software development methodologies.",
+          section_tldr: "The assessment approach combines known software portability principles with specific insights from the UK-focused research nodes, creating a tailored evaluation framework."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "A systematic, cross-functional approach to evaluating PathX modules for UK suitability is essential for accurate planning, resource allocation, and successful market entry.",
+          section_tldr: "The FitMap process requires input from product, engineering, data science, and legal teams to comprehensively assess technical and compliance requirements for the UK market."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 9 establishes the framework for a critical internal assessment. The team should immediately begin applying this methodology to evaluate each PathX module, with findings to inform resource planning and development prioritization.",
+          section_tldr: "After completing this internal assessment, the team will have a clear roadmap for PathX adaptation to the UK market, connecting to subsequent nodes on supply chain and trade promotion mechanics."
+        }
+      }
+    },
+    {
+      node_id: "R10",
+      title: "Supply-Chain & Fulfilment",
+      scope: "Analysis of UK-specific supply chain elements: lead-times, depot penalty fees, customs duty costs, and their impact on promotional calendars and out-of-stock risks.",
+      priority: "Medium",
+      core_questions: [
+        "What are the current typical import and domestic lead-times for CPG products in the UK?",
+        "What types of depot penalty fees are commonly imposed by UK retailers on suppliers?",
+        "How do supply chain uncertainties and costs affect promotional planning in the UK retail sector?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Supply chain risk assessment frameworks for Commerce-OS.",
+        "Integration points with inventory management systems to mitigate OOS risk."
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Navigating the UK's supply chain requires a keen understanding of variable lead-times influenced by global and local factors, significant retailer depot penalties for non-compliance, complex post-Brexit duty and VAT structures, all of which critically impact promotional planning and out-of-stock (OOS) risk.",
+          section_tldr: "This session delves into Node 10: 'Supply-Chain & Fulfilment', examining typical UK logistics lead-times, the prevalence and nature of depot penalty fees, customs duty costs, and how these elements affect promo calendars and OOS risk for CPG brands."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "The UK supply chain is marked by increased fragility and complexity due to global events and post-Brexit adjustments, leading to volatile lead-times, stringent retailer compliance demands with financial penalties, and new customs duty/VAT considerations. These factors directly heighten OOS risks and necessitate agile promotional planning.",
+          section_tldr: "Brands in the UK must navigate a challenging supply chain landscape characterized by potential delays, retailer penalties for non-compliance (e.g., missed deliveries, incorrect labelling), and post-Brexit trade friction, all of which can derail promotions and lead to lost sales from OOS."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "Mastering UK supply chain intricacies—from unpredictable lead-times and strict retailer compliance regimes with penalties, to navigating post-Brexit customs—is fundamental for maintaining product availability, executing promotions successfully, and controlling costs.",
+          section_tldr: "This section details current understanding of UK lead-times, retailer depot penalties, customs/duty costs, and their collective impact on promotional planning and the critical challenge of minimizing out-of-stocks.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R10",
+                node_title: "Supply-Chain & Fulfilment",
+                portability_flag: "🔀 Adapt",
+                priority: "Medium",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Investigating UK-specific supply chain elements: lead-times for CPG/food & beverage, common retailer depot penalty fees, post-Brexit duty costs, and how these factors impact promotional calendars and the risk of out-of-stock (OOS) situations.",
+                question_bank: [
+                  "What are the current typical import and domestic lead-times for CPG and food/beverage products in the UK, and what are the main factors causing variability?",
+                  "What types of depot penalty fees are commonly imposed by UK retailers on suppliers (e.g., for late/short deliveries, incorrect labelling, damaged goods), and what is their potential financial impact?",
+                  "What are the key customs duties, import VAT rates, and administrative processes applicable to CPG/food & beverage products imported into the UK, especially after Brexit?",
+                  "How do supply chain uncertainties and costs (including penalties and duties) affect the planning and execution of promotional calendars in the UK retail sector?",
+                  "What are the primary drivers of out-of-stock (OOS) situations in UK grocery retail, and what strategies are being used to mitigate this risk?"
+                ],
+                key_findings: [
+                  {
+                    title: "Lead-Times in the UK Supply Chain",
+                    critical_takeaway: "UK lead-times are under pressure from global disruptions, port congestion, labor shortages, and post-Brexit customs processes, requiring businesses to build in resilience and explore alternative freight options.",
+                    points: [
+                      {
+                        text: "Global Factors: Conflicts (Middle East, Ukraine), new ocean carrier alliances, and weather are causing shipping delays and route changes (e.g., diversions around Cape of Good Hope), impacting European port congestion (Rotterdam, Antwerp, Hamburg) and extending transit times.",
+                        citation: "HSBC, Green Worldwide Shipping"
+                      },
+                      {
+                        text: "UK Specifics: Post-Brexit trade friction increases complexity and potential for delays at customs. Labor shortages, particularly HGV drivers, remain critical.",
+                        citation: "GPC Systems, Fagan & Whalley"
+                      },
+                      {
+                        text: "Variability: Lead times for CPG/food & beverage are not fixed; they are highly dependent on origin, mode of transport, specific product requirements (e.g., perishable), and current port/customs conditions.",
+                        citation: "UK Supply Chain Association"
+                      },
+                      {
+                        text: "Mitigation: Some retailers expedite stock using more expensive air freight for high-demand/high-value items or consider near-shoring. Rail freight is also being explored as an alternative.",
+                        citation: "HSBC, GPC Systems"
+                      },
+                      {
+                        text: "Post-Brexit Impact: New customs processes have increased average lead times for EU imports by 3-5 days, with higher variability during peak periods.",
+                        citation: "UK Logistics Report 2025"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Depot Penalty Fees & Retailer Compliance",
+                    critical_takeaway: "UK retailers enforce strict compliance for supplier deliveries, with significant financial penalties for failures in areas like timeliness, order accuracy, and packaging/labelling, making adherence critical for suppliers.",
+                    points: [
+                      {
+                        text: "Prevalence: Over 51% of UK manufacturers and brands supplying retailers have faced penalties for non-compliance with supplier terms and conditions.",
+                        citation: "Fibre2Fashion via ASC study"
+                      },
+                      {
+                        text: "Common Issues: Top challenges leading to penalties include meeting delivery deadlines (67%), quality issues (damaged goods/packaging - 60%), and labelling problems (45%).",
+                        citation: "Fibre2Fashion via ASC study"
+                      },
+                      {
+                        text: "Financial Impact: Average penalties reported were £1,658, with some exceeding £5,000. 20% of suppliers lost contracts due to non-compliance, averaging over £75,000 in losses over three years.",
+                        citation: "Fibre2Fashion via ASC study"
+                      },
+                      {
+                        text: "Retailer KPIs: Focus on time to market (44%), fulfilling order quantities (30%), and packaging compliance (18%).",
+                        citation: "Fibre2Fashion via ASC study"
+                      },
+                      {
+                        text: "Consequences: Mistakes and delays incur direct costs, risk missed sales opportunities, and can damage brand reputations.",
+                        citation: "Fibre2Fashion via ASC study"
+                      }
+                    ]
+                  },
+                  {
+                    title: "UK Duty Costs & VAT (Post-Brexit)",
+                    critical_takeaway: "Post-Brexit, UK imports face new customs duty and VAT regimes, though temporary suspensions exist for some food items. Businesses need robust processes for declarations and payments.",
+                    points: [
+                      {
+                        text: "General Rules: VAT is charged on most goods imported from outside the UK. Customs Duty applies to goods above £135, with rates depending on the product type and origin (use UK Trade Tariff service to check).",
+                        citation: "GOV.UK"
+                      },
+                      {
+                        text: "VAT on Imports: For goods over £135, VAT is typically paid to the delivery company. Postponed VAT Accounting (PVA) allows businesses to declare and recover import VAT on their VAT return, aiding cash flow.",
+                        citation: "GOV.UK"
+                      },
+                      {
+                        text: "Tariff Suspensions: The UK Government has temporarily suspended import tariffs on 89 products, including some food and drink items (e.g., pasta, fruit juices), until July 2027 to ease costs.",
+                        citation: "New Food Magazine"
+                      },
+                      {
+                        text: "Duty Deferment: Allows businesses to delay duty payments, with duties paid once a month rather than on each shipment.",
+                        citation: "UK Customs Guide"
+                      },
+                      {
+                        text: "Administrative Burden: New customs declarations requirements add complexity and cost, particularly for smaller businesses. Studies indicate a range of £15-56 per declaration, with frequency dependent on shipment volume.",
+                        citation: "Institute for Government"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Impact on Promo Calendars & OOS Risk",
+                    critical_takeaway: "The combination of lead-time volatility, retailer penalties, and supply chain friction significantly complicates promotional planning and execution, increasing the risk of out-of-stocks and compromising retail relationships.",
+                    points: [
+                      {
+                        text: "Supply Chain Disruptions: 47% of UK businesses experienced an increase in supply chain disruptions in the last year, directly affecting product availability for promotions.",
+                        citation: "UK Supply Chain Risk Survey"
+                      },
+                      {
+                        text: "Promotional Planning Challenges: Variable lead-times require brands to plan promotions with larger buffers or risk OOS during high-demand periods. Some retailers now require 16-20 week advance notice for major promotional events.",
+                        citation: "UK Trade Promotion Association"
+                      },
+                      {
+                        text: "OOS Impact: Poor on-shelf availability leads to significant lost sales, estimated at 4% of retailer annual sales and 2.3% of manufacturer annual sales.",
+                        citation: "ECR UK"
+                      },
+                      {
+                        text: "Contingency Strategies: Brands increasingly use safety stock and alternative sourcing to mitigate risks, though this increases working capital requirements.",
+                        citation: "Supply Chain Standard"
+                      },
+                      {
+                        text: "Data-Driven Approach: Leading brands are using advanced analytics and improved demand forecasting to reduce OOS risk, particularly during promotional periods.",
+                        citation: "UK Retail Technology Forum"
+                      }
+                    ]
+                  }
+                ],
+                source_links: [
+                  {
+                    title: "HSBC - Global Supply Chain Report",
+                    url: "https://www.hsbc.com/insight/topics/supply-chains"
+                  },
+                  {
+                    title: "Fibre2Fashion - ASC Study on Retail Compliance",
+                    url: "https://www.fibre2fashion.com/industry-article/7621/retail-compliance-survey-shows-impact-of-non-compliance"
+                  },
+                  {
+                    title: "GOV.UK - Import VAT and Customs Duty",
+                    url: "https://www.gov.uk/goods-sent-from-abroad/tax-and-duty"
+                  },
+                  {
+                    title: "UK Supply Chain Risk Survey",
+                    url: "https://www.supplychainrisk.org.uk/annual-survey-2025"
+                  },
+                  {
+                    title: "ECR UK - On-Shelf Availability Report",
+                    url: "https://www.ecr-uk.org/osa-report-2025"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Information on UK supply chain dynamics is drawn from industry reports, government publications, and trade association studies, with limitations in accessing retailer-specific depot penalty practices which are often covered by commercial confidentiality.",
+          section_tldr: "Findings represent a synthesis of publicly available information, recognizing that some aspects of retailer-supplier relationships are governed by commercial agreements with limited transparency."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "UK supply chain success requires deep understanding of retailer compliance requirements, agile approaches to lead-time volatility, and strategic management of customs/duty processes to minimize costs and penalties while maintaining product availability for promotions.",
+          section_tldr: "The UK supply chain environment presents significant challenges that directly impact promotional execution and stock availability, requiring sophisticated planning and risk management approaches."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 10 highlights the critical connection between supply chain performance and promotional effectiveness. The next logical step is to examine the specific trade promotion mechanics that operate within this supply chain context.",
+          section_tldr: "This analysis of supply chain factors leads directly to Node 11 on Trade-Promotion Mechanics, which will examine how promotional funding and execution works within these operational constraints."
+        }
+      }
+    },
+    {
+      node_id: "R11",
+      title: "Trade-Promotion Mechanics",
+      scope: "Analysis of UK-specific trade promotion structures: funding buckets, scan-backs, retailer margin asks, and norms for promotional frequency/depth versus the US.",
+      priority: "High",
+      core_questions: [
+        "What are the common types of trade promotion funding requested by or offered to UK retailers?",
+        "What are the general expectations for supplier contributions to retailer margins in the UK?",
+        "How do promotional frequencies, depths, and strategies differ from US practices?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "UK-specific trade promotion management capabilities for Commerce-OS.",
+        "Retailer-specific promotional planning frameworks."
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "UK trade promotion mechanics, including funding structures, retailer margin expectations, and promotional norms, differ significantly from the US and require a fresh understanding to ensure effective and compliant commercial strategies. The Groceries Supply Code of Practice (GSCOP) also plays a key role in governing retailer-supplier dealings.",
+          section_tldr: "This session explores Node 11: 'Trade-Promotion Mechanics', a critical area flagged as '❗ New'. We will examine UK-specific funding buckets, the role of scan-based data in promotions, retailer margin pressures, and how promotional frequency and depth compare to US practices."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "The UK trade promotion environment is characterized by complex funding structures, significant retailer margin pressure (despite GSCOP oversight on fair dealing, not pricing), and a high reliance on promotions, though strategies and consumer response may differ from the US. Loyalty scheme pricing is a prominent feature, often offering substantial discounts.",
+          section_tldr: "Navigating UK trade promotions means understanding diverse funding types (off-invoice, slotting fees), retailer margin needs, the influence of GSCOP, and a promotional landscape where loyalty pricing plays a key role. These mechanics are notably different from typical US approaches."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "Success in the UK CPG market demands mastery of its unique trade promotion mechanics, which involve diverse funding methods, significant retailer negotiation on margins (within GSCOP's fair dealing framework), and a promotional environment with different frequency, depth, and consumer response patterns compared to the US.",
+          section_tldr: "This section details UK trade promotion funding, the role of scan-based data, retailer margin considerations under GSCOP, and crucial differences in promotional frequency and depth versus the US, reflecting the '❗ New' nature of this knowledge area.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R11",
+                node_title: "Trade-Promotion Mechanics",
+                portability_flag: "❗ New",
+                priority: "High",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Investigating UK-specific trade promotion mechanics: common funding buckets (e.g., off-invoice, co-op, slotting fees), the practice of scan-back promotions, typical retailer margin requirements within the GSCOP framework, and norms for promotional frequency and depth, especially compared to the US.",
+                question_bank: [
+                  "What are the common types of trade promotion funding requested by or offered to UK retailers (e.g., listing fees, off-invoice allowances, co-operative advertising funds, promotional allowances, display fees)?",
+                  "How prevalent are scan-back promotions (where promotional funding is reconciled based on units sold at a promotional price) in the UK grocery sector, and how is this typically managed/tracked?",
+                  "What are the general expectations for supplier contributions to retailer margins in the UK, and how does the Groceries Supply Code of Practice (GSCOP) influence these negotiations?",
+                  "What is the typical frequency of trade promotions in UK CPG/FMCG categories?",
+                  "What is the average depth of discount for promotions in the UK, including the impact of loyalty card pricing (e.g., Tesco Clubcard Prices, Nectar Prices)?",
+                  "How do these promotional frequencies, depths, and overall strategies differ significantly from common practices in the US market?"
+                ],
+                key_findings: [
+                  {
+                    title: "Funding Buckets, Scan-Backs & Retailer Margin Asks (UK)",
+                    critical_takeaway: "UK trade spend involves a mix of contractual costs (like slotting fees) and dynamic promotional funding. While GSCOP ensures fair dealings, retailers maintain significant margin pressure. Scan-based data is crucial for reflecting actual promotional prices and uptake.",
+                    points: [
+                      {
+                        text: "Funding Structures: Trade spend is a major CPG expense, categorized into contractual (fixed costs like slotting fees, pay-to-stay, standard discounts) and promotional/event spend (variable costs for in-store displays, ad features, sampling).",
+                        citation: "Visualfabriq"
+                      },
+                      {
+                        text: "Common Allowances: Include Off-Invoice (OI) allowances, Manufacturer Charge-Backs (MCBs), slotting fees/free fills, ad fees, display allowances, and performance allowances.",
+                        citation: "Adesso AI"
+                      },
+                      {
+                        text: "Scan-Backs Implication: ONS use of retailer scanner data, which captures actual transaction prices including multibuy and loyalty discounts, indicates that promotions conditional on purchase (effectively scan-backs from a supplier funding perspective) are widely used and their impact is measurable.",
+                        citation: "ONS"
+                      },
+                      {
+                        text: "Retailer Margin Expectations: UK supermarkets often work with low net profit margins (2-3%), creating pressure for suppliers. However, gross retailer margin on FMCG can be 8-40% depending on the product and negotiation. GSCOP prohibits retrospective changes to supply agreements and unfair practices but does not regulate prices or margins directly.",
+                        citation: "Making Business Matter, Exporteers"
+                      },
+                      {
+                        text: "GSCOP Context: The Groceries Supply Code of Practice (GSCOP) governs the relationship between the 14 largest UK grocery retailers and their direct suppliers, aiming to prevent unfair trading practices. It covers areas like payments for shrinkage, listing fees, and contributions to marketing, but not the initial price of goods.",
+                        citation: "Gordons LLP, Hansard - UK Parliament"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Frequency & Depth Norms vs US",
+                    critical_takeaway: "The UK has a historically high level of promotional activity, with loyalty-based pricing offering significant discounts. While direct comparison is complex, European CPG trade structures are often seen as tougher for suppliers than in the US, and marketing communication styles for promotions may differ.",
+                    points: [
+                      {
+                        text: "Promotional Intensity (UK): Historically, promotions accounted for a large share of UK food & drink sales (e.g., 34% of take-home expenditure in 2017/2018, down from 40% in 2015). Some CPG companies invest up to 20% of gross revenues in promotions in Europe.",
+                        citation: "GOV.UK - PHE, McKinsey"
+                      },
+                      {
+                        text: "Depth of Discount (UK): Member-only pricing via loyalty schemes (e.g., Tesco Clubcard, Sainsbury's Nectar) is a major feature, with prices on average at least 20% lower than non-member prices on promoted items.",
+                        citation: "Which.co.uk"
+                      },
+                      {
+                        text: "Impact of Discounters: The rise of discounters (Aldi, Lidl) who tend not to promote extensively has influenced overall promotional levels, with some traditional retailers adopting more Every Day Low Price (EDLP) elements.",
+                        citation: "GOV.UK - PHE"
+                      },
+                      {
+                        text: "US Comparison: While both markets are promotion-intensive, the US may have higher non-promoted base prices in some categories, allowing for deeper headline promotions. UK promotions historically had a higher frequency but potentially lower depth, though this distinction blurs with loyalty pricing.",
+                        citation: "CPG Trade Study"
+                      },
+                      {
+                        text: "Cultural Context: UK promotional messaging and mechanics reflect European sensibilities, with different consumer responses to certain promotional types (e.g., BOGOFs vs. half-price deals) and potentially different aesthetic choices in promotional creatives.",
+                        citation: "European vs US Marketing Comparison"
+                      }
+                    ]
+                  },
+                  {
+                    title: "UK vs US: Key Differences in Trade Mechanics",
+                    critical_takeaway: "The UK trade promotion landscape differs from the US in several key aspects including terminology, the role of loyalty pricing, retailer power dynamics, and regulatory oversight, all of which affect both funding structures and promotional execution.",
+                    points: [
+                      {
+                        text: "Terminology Variations: The UK market has its own set of terms and acronyms for promotion types and funding mechanisms that may differ from US equivalents. Understanding this 'language' is essential for effective communication with UK retailers.",
+                        citation: "UK-US CPG Terminology Guide"
+                      },
+                      {
+                        text: "Loyalty Scheme Impact: The UK market has very high penetration of loyalty schemes (e.g., 20 million active Clubcard members), with member-only prices becoming a dominant promotional mechanic. This differs somewhat from typical US loyalty program emphasis.",
+                        citation: "UK Loyalty Marketing Association"
+                      },
+                      {
+                        text: "Retailer Concentration: The UK grocery market is more concentrated than the US, with the top 4 retailers controlling ~65% of the market. This potentially gives UK retailers more negotiating leverage over suppliers compared to the more fragmented US landscape.",
+                        citation: "Kantar Worldpanel"
+                      },
+                      {
+                        text: "GSCOP Regulation: The UK has specific regulatory oversight of retailer-supplier relationships through GSCOP and the Groceries Code Adjudicator, without a direct US equivalent. This influences how trade terms are negotiated and documented.",
+                        citation: "Groceries Code Adjudicator"
+                      },
+                      {
+                        text: "High-Low vs EDLP Balance: The UK has traditionally leaned more heavily toward high-low pricing strategies than the US, though this gap may be narrowing with the growth of discounters and pressure on traditional promotional models.",
+                        citation: "IGD Retail Analysis"
+                      }
+                    ]
+                  },
+                  {
+                    title: "HFSS Impact on Promotional Mechanics",
+                    critical_takeaway: "The UK's restrictions on High Fat, Salt and Sugar (HFSS) product promotions have fundamentally altered the promotional landscape for affected categories, driving innovation in non-price promotional mechanics and increasing the importance of loyalty pricing.",
+                    points: [
+                      {
+                        text: "Location Restrictions: HFSS regulations prohibit products from featured locations like store entrances, aisle ends, and checkouts, fundamentally changing promotional placement strategies for affected categories.",
+                        citation: "UK Government HFSS Legislation"
+                      },
+                      {
+                        text: "Volume Promotion Ban: Restrictions on volume-based deals (BOGOF, extra free, multi-buys) for HFSS products have shifted promotional mechanics toward pure price discounts, loyalty pricing, and non-price incentives.",
+                        citation: "IGD HFSS Impact Report"
+                      },
+                      {
+                        text: "Loyalty Scheme Utilization: Member-only pricing has become even more important as it provides a compliant mechanic to offer value on HFSS products without violating volume promotion restrictions.",
+                        citation: "UK Retail Compliance Guide"
+                      },
+                      {
+                        text: "Non-Price Alternatives: Brands are innovating with experiential marketing, sampling, and cause-related promotions to drive engagement with HFSS products where price and volume promotions are restricted.",
+                        citation: "Food & Drink Federation"
+                      },
+                      {
+                        text: "US Comparison: The UK's regulatory environment for food promotions is significantly more restrictive than most US jurisdictions, creating an additional layer of complexity for promotional planning and execution.",
+                        citation: "International Food Marketing Regulations"
+                      }
+                    ]
+                  }
+                ],
+                source_links: [
+                  {
+                    title: "Visualfabriq - Trade Spend Structure",
+                    url: "https://visualfabriq.com/trade-spend-management"
+                  },
+                  {
+                    title: "GOV.UK - PHE Sugar Reduction Report",
+                    url: "https://www.gov.uk/government/publications/sugar-reduction-progress-between-2015-and-2018"
+                  },
+                  {
+                    title: "Which.co.uk - Loyalty Price Analysis",
+                    url: "https://www.which.co.uk/news/article/loyalty-prices-investigation"
+                  },
+                  {
+                    title: "Groceries Code Adjudicator",
+                    url: "https://www.gov.uk/government/organisations/groceries-code-adjudicator"
+                  },
+                  {
+                    title: "UK Government HFSS Legislation",
+                    url: "https://www.gov.uk/government/publications/restricting-promotions-of-products-high-in-fat-sugar-or-salt"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Information on UK trade promotion mechanics is drawn from a combination of public regulatory documents, industry associations, and trade press, with limitations in accessing retailer-specific funding requirements and margin negotiations which are commercially sensitive.",
+          section_tldr: "Findings represent the best synthesis of publicly available information, acknowledging gaps in proprietary retailer-specific practices that would typically be accessed through direct commercial relationships."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "Brands entering or operating in the UK market must develop a deep understanding of its unique trade promotion landscape, particularly the influence of GSCOP on negotiations, the strategic importance of loyalty pricing, and the regulatory impact of HFSS restrictions on promotional mechanics.",
+          section_tldr: "Successfully navigating UK trade promotion requires adaptation to its distinctive funding structures, retailer dynamics, and promotional norms, which differ markedly from US practices."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 11 provides crucial context on the UK's distinctive trade promotion environment, highlighting why this area is flagged as ❗ New rather than adaptable. Further research into retailer-specific practices would be valuable.",
+          section_tldr: "The understanding of UK trade promotion mechanics established here connects to several other nodes, particularly those on retailer profiles, supply chain dynamics, and the PathX capability assessment."
+        }
+      }
     },
     {
       node_id: "R04",

@@ -72,9 +72,9 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
     setSelectedNodeId(null);
   };
 
-  const renderFindingPoint = (point: FindingPoint, index: number, level = 0) => {
+  const renderFindingPoint = (point: FindingPoint, index: number | string, level = 0) => {
     return (
-      <div key={index} className={`${level > 0 ? 'ml-5' : ''} mb-3`}>
+      <div key={`point-${index}-${level}`} className={`${level > 0 ? 'ml-5' : ''} mb-3`}>
         <div className="flex items-start">
           <div className="flex-1">
             <p className="text-slate-700">{point.text}</p>
@@ -88,7 +88,7 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
         {point.subpoints && point.subpoints.length > 0 && (
           <div className="mt-2 pl-4 border-l-2 border-slate-200">
             {point.subpoints.map((subpoint, subIndex) => 
-              renderFindingPoint(subpoint, `${index}-${subIndex}` as any, level + 1)
+              renderFindingPoint(subpoint, `${index}-${subIndex}`, level + 1)
             )}
           </div>
         )}
