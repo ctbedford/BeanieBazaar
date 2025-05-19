@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { 
   Accordion,
   AccordionContent,
@@ -17,7 +17,13 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ResearchSpineData, FindingPoint } from "@/data/researchSpineData";
+import { 
+  ResearchSpineData, 
+  FindingPoint,
+  DetailedResearchDocument
+} from "@/data/researchSpineData";
+import { Loader2 } from "lucide-react";
+import * as yaml from 'js-yaml';
 
 interface ResearchSpineViewProps {
   data: ResearchSpineData;
@@ -27,6 +33,9 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
   const [expandedNodes, setExpandedNodes] = useState<string[]>([]);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<string>("overview");
+  const [isLoadingDetail, setIsLoadingDetail] = useState(false);
+  const [detailError, setDetailError] = useState<string | null>(null);
+  const [parsedDetailedContent, setParsedDetailedContent] = useState<DetailedResearchDocument | null>(null);
 
   const selectedNode = selectedNodeId 
     ? data.research_nodes.find(node => node.node_id === selectedNodeId)
@@ -46,12 +55,31 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
   };
 
   const getStatusColor = (status: string) => {
-    if (status?.toLowerCase().includes("completed")) {
-      return "bg-green-100 text-green-800";
-    } else if (status?.toLowerCase().includes("progress")) {
-      return "bg-yellow-100 text-yellow-800";
-    } else {
-      return "bg-blue-100 text-blue-800";
+    switch (status?.toLowerCase()) {
+      case "completed":
+        return "bg-green-100 text-green-800";
+      case "in progress":
+        return "bg-yellow-100 text-yellow-800";
+      case "blocked":
+        return "bg-red-100 text-red-800";
+      case "not started":
+      default:
+        return "bg-blue-100 text-blue-800";
+    }
+  };
+  
+  const getPortabilityColor = (flag?: string) => {
+    switch (flag) {
+      case "⚖️ Same": 
+        return "bg-green-100 text-green-800";
+      case "🔀 Adapt": 
+        return "bg-yellow-100 text-yellow-800";
+      case "❗ New": 
+        return "bg-red-100 text-red-800";
+      case "🌟 Consolidated View": 
+        return "bg-indigo-100 text-indigo-800";
+      default: 
+        return "bg-slate-100 text-slate-800";
     }
   };
 
@@ -62,6 +90,38 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
       setExpandedNodes([...expandedNodes, nodeId]);
     }
   };
+
+  // Function to fetch and parse the YAML file
+  const fetchAndParseYaml = async (path: string) => {
+    try {
+      setIsLoadingDetail(true);
+      setDetailError(null);
+      
+      const response = await fetch(path);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch YAML file: ${response.statusText}`);
+      }
+      
+      const yamlText = await response.text();
+      const parsedData = yaml.load(yamlText) as DetailedResearchDocument;
+      setParsedDetailedContent(parsedData);
+    } catch (error) {
+      console.error("Error loading YAML document:", error);
+      setDetailError(error instanceof Error ? error.message : "Failed to load detailed document");
+    } finally {
+      setIsLoadingDetail(false);
+    }
+  };
+
+  // Effect to load YAML when selected node changes
+  useEffect(() => {
+    if (selectedNode && selectedNode.detailed_document_path) {
+      fetchAndParseYaml(selectedNode.detailed_document_path);
+    } else {
+      // Reset when no node is selected or node has no document path
+      setParsedDetailedContent(null);
+    }
+  }, [selectedNode]);
 
   const openDetailView = (nodeId: string) => {
     setSelectedNodeId(nodeId);
@@ -119,9 +179,19 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
                     </Badge>
                     <CardTitle className="text-lg">{node.title}</CardTitle>
                   </div>
-                  <Badge variant="outline" className={getPriorityColor(node.priority)}>
-                    {node.priority} Priority
-                  </Badge>
+                  <div className="flex items-center gap-2">
+                    <Badge variant="outline" className={getStatusColor(node.status)}>
+                      {node.status}
+                    </Badge>
+                    {node.portability_flag && (
+                      <Badge variant="outline" className={getPortabilityColor(node.portability_flag)}>
+                        {node.portability_flag}
+                      </Badge>
+                    )}
+                    <Badge variant="outline" className={getPriorityColor(node.priority)}>
+                      {node.priority} Priority
+                    </Badge>
+                  </div>
                 </div>
                 <CardDescription className="text-slate-600 mt-2">
                   {node.scope}
@@ -150,7 +220,7 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
                       </ul>
                     </div>
 
-                    {node.detailed_document && (
+                    {node.detailed_document_path && (
                       <div className="mt-4 flex justify-end">
                         <Button 
                           variant="outline" 
@@ -187,12 +257,39 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
   }
 
   // Detailed document view
-  if (!selectedNode || !selectedNode.detailed_document) {
+  if (!selectedNode) {
     return <div>Loading...</div>;
   }
 
-  const detailedDoc = selectedNode.detailed_document;
-  const nodeDoc = detailedDoc.detailed_analysis_phase?.content_sections?.[0]?.node_document;
+  if (selectedNode && selectedNode.detailed_document_path && isLoadingDetail) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[300px] space-y-4">
+        <Loader2 className="h-8 w-8 animate-spin text-blue-500" />
+        <p className="text-slate-600">Loading detailed research document...</p>
+      </div>
+    );
+  }
+
+  if (selectedNode && selectedNode.detailed_document_path && detailError) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[300px] space-y-4 text-center">
+        <div className="p-4 bg-red-50 border border-red-200 rounded-md max-w-md">
+          <h3 className="text-lg font-semibold text-red-700 mb-2">Error Loading Document</h3>
+          <p className="text-red-600">{detailError}</p>
+          <Button variant="outline" className="mt-4" onClick={closeDetailView}>
+            Back to Research Spine
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!parsedDetailedContent && selectedNode.detailed_document_path) {
+    return <div>No detailed content available.</div>;
+  }
+
+  const detailedDoc = parsedDetailedContent;
+  const nodeDoc = detailedDoc?.detailed_analysis_phase?.node_document;
 
   return (
     <div className="space-y-6">
@@ -329,7 +426,7 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
               </CardDescription>
             </CardHeader>
             <CardContent className="p-0">
-              {nodeDoc?.key_findings.map((finding, index) => (
+              {nodeDoc?.key_findings.map((finding: any, index: number) => (
                 <Accordion key={index} type="single" collapsible className="border-b last:border-b-0">
                   <AccordionItem value={`finding-${index}`} className="border-0">
                     <AccordionTrigger className="px-6 py-4 hover:bg-slate-50/80">
@@ -344,7 +441,7 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
                         </div>
                       )}
                       <div className="space-y-1">
-                        {finding.points.map((point, pointIndex) => 
+                        {finding.points.map((point: any, pointIndex: number) => 
                           renderFindingPoint(point, pointIndex)
                         )}
                       </div>
@@ -370,7 +467,7 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-3">Source Links</h3>
                   <div className="grid gap-3">
-                    {nodeDoc?.source_links?.map((source, index) => (
+                    {nodeDoc?.source_links?.map((source: any, index: number) => (
                       <div key={index} className="p-3 bg-slate-50 rounded-md">
                         <p className="font-medium text-slate-900">{source.title}</p>
                         <a 
