@@ -705,6 +705,597 @@ const researchSpineData: ResearchSpineData = {
     },
     {
       node_id: "R04",
+      title: "Data Providers & Clean-Room Tech",
+      scope: "Analysis of key UK data providers and clean-room technology enablers: Crisp (Atheon), NielsenIQ, Kantar, LiveRamp, and dunnhumby.",
+      priority: "High",
+      core_questions: [
+        "What are the primary data solutions or clean-room technologies offered by Crisp, NielsenIQ, Kantar, LiveRamp, and dunnhumby in the UK market?",
+        "What is generally known about the frequency/cadence of their data feeds or updates?",
+        "How do these entities typically position themselves in terms of being a data processor versus a data controller under UK GDPR?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Integration capabilities with third-party data providers for Commerce-OS.",
+        "Compliance frameworks for data handling in accordance with UK GDPR requirements."
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Understanding the landscape of data providers and clean-room technologies in the UK is crucial for leveraging third-party data, enabling secure data collaboration, and ensuring GDPR compliance in an increasingly complex data ecosystem.",
+          section_tldr: "This session explores Node 4: 'Data Providers & Clean-Room Tech', examining entities like Crisp, NielsenIQ, Kantar, LiveRamp, and dunnhumby, with a focus on their data feed characteristics, cost considerations, and GDPR roles."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "Major data providers like NielsenIQ and Kantar offer market measurement and consumer insights, while specialists like Crisp (Atheon) focus on retail supply chain data. Clean-room providers such as LiveRamp enable secure data collaboration. Dunnhumby is a key player in customer data science. Specifics on feed cadences and cost tiers are largely confidential, and their GDPR roles (processor/controller) vary by service.",
+          section_tldr: "The UK data landscape features established measurement firms, retail data specialists, and advanced clean-room enablers. Accessing detailed operational and cost information requires direct engagement, and GDPR compliance necessitates careful role definition."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "While precise operational terms (feed cadence, cost) are guarded, the strategic value of UK data providers and clean room tech lies in their ability to deliver market intelligence, enable secure data sharing, and power customer-centric strategies. Their GDPR roles are service-dependent and crucial for compliance.",
+          section_tldr: "This section details Crisp, NielsenIQ, Kantar, LiveRamp, and dunnhumby, outlining their services and typical GDPR positioning, while noting the general unavailability of specific feed/cost details.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R04",
+                node_title: "Data Providers & Clean-Room Tech",
+                portability_flag: "🔀 Adapt",
+                priority: "High",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Profiling key UK data providers and clean-room technology enablers: Crisp (Atheon), NielsenIQ, Kantar, LiveRamp, and dunnhumby. Focus on their typical feed cadences and cost tiers (where available/inferable), and their status as data processors versus controllers.",
+                question_bank: [
+                  "What are the primary data solutions or clean-room technologies offered by Crisp, NielsenIQ, Kantar, LiveRamp, and dunnhumby in the UK market?",
+                  "What is generally known about the frequency/cadence of their data feeds or updates?",
+                  "What are the typical cost models or tiers for accessing their services (e.g., subscription, project-based, volume-based)? (Acknowledge confidentiality)",
+                  "How do these entities typically position themselves or operate in terms of being a data processor versus a data controller under UK GDPR for their various services?",
+                  "What are the key benefits and potential challenges of integrating with these providers for a Commerce-OS platform?"
+                ],
+                key_findings: [
+                  {
+                    title: "Crisp (incorporating Atheon Analytics/SKUtrak & ClearBox Analytics)",
+                    critical_takeaway: "Crisp provides a collaborative commerce platform for retail supply chain data, helping brands optimize their operations through retailer data integration while primarily acting as a data processor.",
+                    points: [
+                      {
+                        text: "Collaborative commerce platform focusing on retail supply chain data for CPG brands and retailers.",
+                        citation: "Crisp Acquires Atheon Analytics and ClearBox Analytics - Business Wire"
+                      },
+                      {
+                        text: "Integrates and harmonizes data from retailers (Tesco, Sainsbury's, Asda, Morrisons, Waitrose in the UK via SKUtrak) and distributors.",
+                        citation: "Crisp boosts retail supply chain insights with Atheon and ClearBox deals - Retail Insight Network"
+                      },
+                      {
+                        text: "Provides SKU-level data, demand intelligence, and insights to reduce waste, improve availability, and optimize sales.",
+                        citation: "Crisp boosts retail supply chain insights with Atheon and ClearBox deals - Retail Insight Network"
+                      },
+                      {
+                        text: "Feed Cadence: Likely daily or near real-time for retailer POS/inventory data to enable actionable insights. Specifics depend on retailer agreements.",
+                        citation: "Crisp boosts retail supply chain insights with Atheon and ClearBox deals - Retail Insight Network"
+                      },
+                      {
+                        text: "Primarily acts as a Data Processor when handling retailer and CPG data on behalf of its clients to provide analytics and insights.",
+                        citation: "Data processor obligations under UK GDPR - Harper James Solicitors"
+                      }
+                    ]
+                  },
+                  {
+                    title: "NielsenIQ",
+                    critical_takeaway: "NielsenIQ delivers retail measurement services and consumer panel insights, acting primarily as a data controller for its syndicated market data products with regular reporting cycles.",
+                    points: [
+                      {
+                        text: "Global measurement and data analytics company providing insights into consumer behavior and market dynamics.",
+                        citation: "NielsenIQ Official Website"
+                      },
+                      {
+                        text: "Offers retail measurement services (RMS) tracking sales, market share, distribution, pricing for CPGs and retailers.",
+                        citation: "NielsenIQ Official Website"
+                      },
+                      {
+                        text: "Consumer panel services offering insights into shopper purchasing habits and trends.",
+                        citation: "NielsenIQ Official Website"
+                      },
+                      {
+                        text: "Feed Cadence: Varies by service. Retail measurement data typically updated weekly or monthly. Consumer panel data also has regular reporting cycles.",
+                        citation: "LSE Market Data (Example of Data Feed Frequencies - General Context)"
+                      },
+                      {
+                        text: "Often acts as a Data Controller for the syndicated market data and consumer panel data it collects and sells, as it determines the purposes and means of processing for these products.",
+                        citation: "Data Controller vs Processor: Working Out Your GDPR Role | Sprintlaw UK"
+                      }
+                    ]
+                  },
+                  {
+                    title: "LiveRamp",
+                    critical_takeaway: "LiveRamp's data collaboration platform enables secure sharing of first, second, and third-party data between business entities, primarily serving as a data processor for client data while acting as a controller for its own platform operations.",
+                    points: [
+                      {
+                        text: "Data collaboration platform offering identity resolution and clean room technology.",
+                        citation: "LiveRamp Clean Room Architecture Deep Dive - LiveRamp Blog"
+                      },
+                      {
+                        text: "Enables secure collaboration of first, second, and third-party data between brands, agencies, media owners, and data partners.",
+                        citation: "LiveRamp Named a Leader in 2025 IDC MarketScape: Worldwide Data Clean Room Technology - Business Wire"
+                      },
+                      {
+                        text: "Supports planning, audience activation, and campaign measurement across various cloud environments (AWS, Azure, GCP, Snowflake, Databricks) with a 'zero-copy' principle for data sharing.",
+                        citation: "LiveRamp Clean Room Architecture Deep Dive - LiveRamp Blog"
+                      },
+                      {
+                        text: "Feed Cadence: Not applicable in the traditional sense; it facilitates secure connection and analysis of clients' data. Update frequency depends on the participating parties' data sources.",
+                        citation: "LiveRamp Clean Room Architecture Deep Dive - LiveRamp Blog"
+                      },
+                      {
+                        text: "Primarily acts as a Data Processor when providing clean room technology and data collaboration services, processing data on behalf of and under the instruction of its clients (the data controllers).",
+                        citation: "Data processor obligations under UK GDPR - Harper James Solicitors"
+                      }
+                    ]
+                  },
+                  {
+                    title: "dunnhumby",
+                    critical_takeaway: "Dunnhumby, best known for its Tesco partnership, provides customer-centric data science solutions, typically acting as a data processor for retail clients while potentially being a controller for its own analytical products.",
+                    points: [
+                      {
+                        text: "Global customer data science company.",
+                        citation: "dunnhumby Official Website"
+                      },
+                      {
+                        text: "Best known for its partnership with Tesco, powering the Tesco Media & Insight Platform using Clubcard data.",
+                        citation: "dunnhumby Official Website"
+                      },
+                      {
+                        text: "Beyond RMNs, offers retailers and brands customer-centric solutions, loyalty program expertise, category management, price and promotion optimization, and media personalization services.",
+                        citation: "dunnhumby Official Website"
+                      },
+                      {
+                        text: "Feed Cadence: When working with retailer data, this depends on the retailer's systems (often daily or near real-time for transactional data). For its own analytical products, cadence will vary.",
+                        citation: "LSE Market Data (Example of Data Feed Frequencies - General Context)"
+                      },
+                      {
+                        text: "Primarily acts as a Data Processor when analyzing customer data on behalf of a retail client (e.g., Tesco) under their instructions and for their purposes.",
+                        citation: "Data processor obligations under UK GDPR - Harper James Solicitors"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Kantar",
+                    critical_takeaway: "Kantar delivers brand tracking, market research, and consumer panel data, generally acting as a data controller for syndicated insights while serving as a processor for client-commissioned research.",
+                    points: [
+                      {
+                        text: "Global data, insights, and consulting company.",
+                        citation: "Kantar Official Website"
+                      },
+                      {
+                        text: "Offers services including brand tracking, market research, media effectiveness, consumer panel data (e.g., Worldpanel division tracking shopper purchasing).",
+                        citation: "Kantar Official Website"
+                      },
+                      {
+                        text: "Provides insights into consumer attitudes, behaviors, and media consumption.",
+                        citation: "Kantar Official Website"
+                      },
+                      {
+                        text: "Feed Cadence: Varies by service. Consumer panel data typically reported on regular intervals (e.g., 4-weekly, 12-weekly, annually). Custom research projects have defined timelines.",
+                        citation: "LSE Market Data (Example of Data Feed Frequencies - General Context)"
+                      },
+                      {
+                        text: "Similar to NielsenIQ, Kantar generally acts as a Data Controller for its syndicated consumer panel data and market research reports.",
+                        citation: "Data Controller vs Processor: Working Out Your GDPR Role | Sprintlaw UK"
+                      }
+                    ]
+                  }
+                ],
+                source_links: [
+                  {
+                    title: "Crisp Acquires Atheon Analytics and ClearBox Analytics - Business Wire",
+                    url: "https://www.businesswire.com/news/home/20250410480590/en/Crisp-Acquires-Atheon-Analytics-and-ClearBox-Analytics-to-Unlock-Global-Retail-and-CPG-Data-to-Optimize-Retail-and-Food-Service-Supply-Chains"
+                  },
+                  {
+                    title: "Crisp boosts retail supply chain insights with Atheon and ClearBox deals - Retail Insight Network",
+                    url: "https://www.retail-insight-network.com/news/crisp-retail-insight-acquisitions/"
+                  },
+                  {
+                    title: "LiveRamp Clean Room Architecture Deep Dive - LiveRamp Blog",
+                    url: "https://liveramp.com/blog/liveramp-clean-room-architecture/"
+                  },
+                  {
+                    title: "LiveRamp Named a Leader in 2025 IDC MarketScape: Worldwide Data Clean Room Technology - Business Wire",
+                    url: "https://www.businesswire.com/news/home/20250515746119/en/LiveRamp-Named-a-Leader-in-2025-IDC-MarketScape-Worldwide-Data-Clean-Room-Technology-for-Advertising-and-Marketing-Use-Cases"
+                  },
+                  {
+                    title: "Data processor obligations under UK GDPR - Harper James Solicitors",
+                    url: "https://harperjames.co.uk/article/data-processor-responsibilities-uk-gdpr/"
+                  },
+                  {
+                    title: "Data Controller vs Processor: Working Out Your GDPR Role | Sprintlaw UK",
+                    url: "https://sprintlaw.co.uk/articles/data-controller-vs-processor-working-out-your-gdpr-role/"
+                  },
+                  {
+                    title: "NielsenIQ Official Website",
+                    url: "https://nielseniq.com/"
+                  },
+                  {
+                    title: "Kantar Official Website",
+                    url: "https://www.kantar.com/"
+                  },
+                  {
+                    title: "dunnhumby Official Website",
+                    url: "https://www.dunnhumby.com/"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Information on services is publicly available, but specifics on data feed cadences, cost tiers, and definitive GDPR roles for every service permutation are often confidential or highly nuanced, requiring direct engagement with providers for precise details.",
+          section_tldr: "This section confirms that findings are based on public statements and general industry knowledge, with a clear acknowledgment of the commercial and legal sensitivities that limit public disclosure of operational and pricing specifics."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "The UK data ecosystem relies on a mix of established market measurement firms, specialized retail data integrators, and advanced clean-room platforms to drive insights and collaboration. Engaging these providers requires careful consideration of data utility, cost, and GDPR compliance.",
+          section_tldr: "Recapping core themes: diverse data sources and collaboration tools are available, but accessing them effectively means navigating confidential commercial terms and complex GDPR responsibilities."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 4 provides a map of key data players and technologies. The subsequent research into DSPs and programmatic ecosystems will show how this data is often activated in the broader advertising landscape.",
+          section_tldr: "This analysis of Data Providers & Clean-Room Tech is foundational for understanding how data flows and is leveraged in the UK market, leading into programmatic activation."
+        }
+      }
+    },
+    {
+      node_id: "R05",
+      title: "DSP & Programmatic Ecosystem",
+      scope: "Analysis of key Demand-Side Platforms (DSPs) in the UK: The Trade Desk, Basis, and DV360, focusing on their LiveRamp on-ramps, GTIN catalog feeds, and reporting API limits.",
+      priority: "Medium",
+      core_questions: [
+        "How do The Trade Desk, Basis, and DV360 integrate with LiveRamp for onboarding first-party data in the UK?",
+        "What capabilities do these DSPs offer for utilizing GTIN-based product catalog feeds in dynamic creative optimization (DCO) or retail-specific campaigns?",
+        "What are the known limitations of the reporting APIs for these platforms?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Integration points for first-party data activation via LiveRamp in Commerce-OS.",
+        "Product catalog feed specifications for programmatic advertising."
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Leveraging major DSPs like The Trade Desk, Basis, and DV360 in the UK involves understanding their integrations for first-party data onboarding (e.g., via LiveRamp), capabilities for product-centric advertising using GTIN catalog feeds, and being mindful of their respective reporting API limitations for custom analytics.",
+          section_tldr: "This session explores Node 5: 'DSP & Programmatic Ecosystem', examining The Trade Desk, Basis, and DV360. We'll cover their LiveRamp on-ramp functionalities, support for GTIN-based product feeds, and typical reporting API constraints, noting that these platforms operate similarly to their US counterparts but local UK usage and support should be considered."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "Major DSPs like The Trade Desk, Basis, and DV360 offer robust LiveRamp integrations for first-party data onboarding in the UK, support product catalog feeds (implicitly including GTIN-based data) for dynamic advertising, but have varying reporting API limitations that users must manage for custom data extraction and analysis.",
+          section_tldr: "Key DSPs operating in the UK facilitate advanced programmatic advertising through LiveRamp data integration and product feed capabilities. However, users leveraging their reporting APIs need to be aware of specific rate limits and data access constraints per platform. These functionalities are largely consistent with their global offerings."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "The leading DSPs in the UK market offer sophisticated, and largely globally consistent, capabilities for data-driven programmatic advertising, including robust LiveRamp integrations for first-party data and support for product catalog-based dynamic ads. However, managing their reporting API limitations effectively is key for bespoke analytics and platform integration.",
+          section_tldr: "This section details The Trade Desk, Basis, and DV360, focusing on their LiveRamp on-ramp features, GTIN catalog feed utilization, and specific reporting API constraints, highlighting that these are generally consistent with global standards but require careful management.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R05",
+                node_title: "DSP & Programmatic Ecosystem",
+                portability_flag: "⚖️ Same",
+                priority: "Medium",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Profiling key Demand-Side Platforms (DSPs) in the UK: The Trade Desk, Basis (formerly Centro), and DV360 (Google). Focus on their LiveRamp on-ramp capabilities for first-party data, support for GTIN catalog feeds in advertising, and reporting API limitations.",
+                question_bank: [
+                  "How do The Trade Desk, Basis, and DV360 integrate with LiveRamp for onboarding first-party data in the UK?",
+                  "What capabilities do these DSPs offer for utilizing GTIN-based product catalog feeds in dynamic creative optimization (DCO) or retail-specific campaigns?",
+                  "What are the known limitations (e.g., rate limits, query complexity, data retention, data lag) of the reporting APIs for The Trade Desk, Basis, and DV360?",
+                  "Are there any UK-specific nuances or common practices when using these DSPs concerning data or product feeds?"
+                ],
+                key_findings: [
+                  {
+                    title: "The Trade Desk (TTD)",
+                    critical_takeaway: "The Trade Desk offers strong LiveRamp integration for people-based targeting and supports dynamic creative optimization using product catalog data, with API request limits affecting data integration.",
+                    points: [
+                      {
+                        text: "Strong partnership with LiveRamp. Advertisers can onboard first- and third-party data using RampID for people-based targeting, frequency capping, and suppression across devices and formats, including in cookieless environments.",
+                        citation: "LiveRamp Partner Directory"
+                      },
+                      {
+                        text: "Supports Dynamic Creative Optimization (DCO) using real-time online and offline data signals, explicitly mentioning 'API inventory feeds and product catalog data' to enable dynamic ads based on product availability and other factors.",
+                        citation: "The Trade Desk Blog"
+                      },
+                      {
+                        text: "Data Integration API has total request size limits (e.g., approximately 2.5 MB or 10,000 IDs for certain uploads/segment sharing).",
+                        citation: "TTD Partner Portal"
+                      },
+                      {
+                        text: "Subject to rate limits; exceeding them results in a 429 'Too Many Requests' error.",
+                        citation: "TTD Partner Portal"
+                      },
+                      {
+                        text: "Specific rate limit numbers for all API endpoints are usually detailed in comprehensive developer documentation, which may require partner access.",
+                        citation: "TTD Partner Portal"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Basis Technologies (formerly Centro)",
+                    critical_takeaway: "Basis integrates with LiveRamp for CRM data targeting and offers comprehensive campaign management capabilities, with an API that limits requests to 75,000 per hour across all endpoints.",
+                    points: [
+                      {
+                        text: "Basis DSP integrates with LiveRamp, allowing users to convert their CRM data into targetable segments for DSP campaigns using LiveRamp's technology (RampID).",
+                        citation: "Basis DSP Academy, LiveRamp Partner Directory"
+                      },
+                      {
+                        text: "Basis DSP is a unified platform for programmatic media planning and activation across various channels. While explicit GTIN feed support for DCO wasn't highlighted in initial snippets, its comprehensive nature for managing digital media campaigns suggests capabilities to handle product-level advertising.",
+                        citation: "Basis Technologies Website"
+                      },
+                      {
+                        text: "Basis Platform API has rate limits of 75,000 requests per hour across all endpoints per API user.",
+                        citation: "Basis API Documentation"
+                      },
+                      {
+                        text: "The API is designed to be RESTful, returning results in JSON format.",
+                        citation: "Basis API Documentation"
+                      },
+                      {
+                        text: "Authentication uses OAuth2 (Authorization Code or Client Credentials grants).",
+                        citation: "Basis API Documentation"
+                      }
+                    ]
+                  },
+                  {
+                    title: "DV360 (Google Display & Video 360)",
+                    critical_takeaway: "DV360 supports LiveRamp data distribution, enables product feed usage through Google's Merchant Center, and imposes specific API quota limits per project with potential data lag.",
+                    points: [
+                      {
+                        text: "LiveRamp facilitates first-party data distribution to DV360 for targeting. This requires mapping the LiveRamp account ID to the Google DV360 account.",
+                        citation: "LiveRamp Documentation"
+                      },
+                      {
+                        text: "LiveRamp offers a PAIR integration (Publisher Advertiser Identity Reconciliation) to activate certain email-based data to DV360 publishers.",
+                        citation: "LiveRamp Documentation"
+                      },
+                      {
+                        text: "DV360 supports the use of product feeds by connecting with Google's Business Merchant Center (BMC). This allows advertisers to store product/ad catalogs (which would contain GTINs) and use them for dynamically generated ads.",
+                        citation: "Reddit r/programmatic"
+                      },
+                      {
+                        text: "The DV360 API has default quota limits shared by all resources and methods: 1500 total requests per minute per project, and 700 write requests per minute per project.",
+                        citation: "Google DV360 API Documentation"
+                      },
+                      {
+                        text: "Some API methods are more 'write-intensive' consuming more quota, and increases cannot be requested. Data lag of ~1 day can occur.",
+                        citation: "Google DV360 API Documentation"
+                      }
+                    ]
+                  }
+                ],
+                source_links: [
+                  {
+                    title: "LiveRamp Partner Directory",
+                    url: "https://liveramp.com/partners/directory/"
+                  },
+                  {
+                    title: "The Trade Desk Blog",
+                    url: "https://www.thetradedesk.com/us/blog/dynamic-creative-optimization"
+                  },
+                  {
+                    title: "Basis Technologies Website",
+                    url: "https://basis.net/solutions/programmatic-advertising"
+                  },
+                  {
+                    title: "Google DV360 API Documentation",
+                    url: "https://developers.google.com/display-video/api/reference/rest"
+                  },
+                  {
+                    title: "LiveRamp Documentation",
+                    url: "https://developers.liveramp.com/activation-tools"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Findings on DSP capabilities are based primarily on their public documentation, partner listings, and industry forums; specific operational details on API rate limits and GTIN feed handling may require direct vendor engagement or formal partnership.",
+          section_tldr: "Information is sourced from public resources, with recognition that more detailed technical specifications might be available only to official partners."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "UK DSPs offer sophisticated data onboarding, product feed, and reporting capabilities that are largely consistent with global standards. Understanding their specific limitations and integration requirements is essential for effective programmatic advertising through Commerce-OS.",
+          section_tldr: "Major DSPs enable advanced data-driven programmatic advertising in the UK, with LiveRamp integration being a key enabler for first-party data activation and product catalog feeds supporting dynamic retail-focused campaigns."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 5 has illuminated the capabilities and limitations of major DSPs in the UK. The next logical step is to understand how these programmatic platforms connect with the digital shelf management and analytics tools that optimize the online retail environment.",
+          section_tldr: "This analysis of UK DSPs sets the stage for investigating Digital Shelf & eTail Analytics in Node 6, which will complete the picture of the digital commerce ecosystem."
+        }
+      }
+    },
+    {
+      node_id: "R06",
+      title: "Digital Shelf & eTail Analytics",
+      scope: "Analysis of key UK digital shelf and eTail analytics providers: Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ.",
+      priority: "Medium",
+      core_questions: [
+        "What are the primary digital shelf analytics and eTail optimization services offered by these providers in the UK?",
+        "How do these platforms enable brands to understand and improve the relationship between search ranking and sales performance?",
+        "What is generally known about the availability of APIs for data extraction or integration with these platforms?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Integration frameworks for digital shelf analytics in Commerce-OS.",
+        "Actionable insights for optimizing product content, search visibility, and availability."
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "Effective management of the digital shelf—encompassing product content, search visibility, pricing, and availability—is paramount for eTail success in the UK, and specialized analytics platforms are key to optimizing these levers.",
+          section_tldr: "This session delves into Node 6: 'Digital Shelf & eTail Analytics', examining providers like Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ, with a focus on how they measure search rank's impact on sales and their API/cost structures."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "Digital shelf analytics platforms like Profitero and CommerceIQ provide essential tools for brands to monitor and optimize their online presence across UK retailers, focusing on content, search rank, availability, and pricing to drive sales. While direct 'search rank to sales uplift' quantification is complex, these platforms offer data to correlate these factors. API availability is common for enterprise integration, but specific costs are proprietary.",
+          section_tldr: "UK eTail success relies on robust digital shelf management. Key analytics providers offer comprehensive monitoring and optimization capabilities, though specific API and cost details require direct vendor engagement. NIQ Brandbank focuses more on product content syndication."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "While explicit 'uplift guarantees' are rare, leading digital shelf platforms provide robust analytics and actionable insights to optimize the levers (search, content, availability) that demonstrably drive e-commerce sales. API integration capabilities are standard, but commercial terms are bespoke.",
+          section_tldr: "This section details Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ, focusing on their approaches to correlating search with sales, and the general nature of their API and cost models, acknowledging a high degree of similarity in these types of solutions compared to the US.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R06",
+                node_title: "Digital Shelf & eTail Analytics",
+                portability_flag: "⚖️ Same",
+                priority: "Medium",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Profiling key UK digital shelf and eTail analytics providers: Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ. Focus on their methods for analyzing search rank to sales uplift and their API availability/cost.",
+                question_bank: [
+                  "What are the primary digital shelf analytics and eTail optimization services offered by Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ in the UK?",
+                  "How do these platforms enable brands to understand and improve the relationship between their products' search ranking on retailer sites and actual sales performance?",
+                  "What capabilities do they offer for benchmarking against competitors on the digital shelf?",
+                  "What is generally known about the availability of APIs for data extraction or integration with these platforms?",
+                  "What are the typical cost models for these services, acknowledging that specific pricing is confidential?"
+                ],
+                key_findings: [
+                  {
+                    title: "Profitero",
+                    critical_takeaway: "Profitero offers comprehensive digital shelf analytics, helping brands optimize product content, visibility, price, and availability while providing insights on how these factors correlate with sales performance.",
+                    points: [
+                      {
+                        text: "Provides actionable e-commerce analytics and intelligence, serving brands across numerous retailers globally, including the UK.",
+                        citation: "Profitero Website"
+                      },
+                      {
+                        text: "Focuses on digital shelf optimization: product visibility (search), content conversion, supply chain (availability), pricing, and advertising ROI.",
+                        citation: "Profitero Website"
+                      },
+                      {
+                        text: "Helps boost organic search rankings by benchmarking product content against top performers.",
+                        citation: "Profitero Blog"
+                      },
+                      {
+                        text: "Integrates digital shelf insights with sales and share data to show which levers drive growth.",
+                        citation: "Profitero White Paper"
+                      },
+                      {
+                        text: "API Availability: Mentions integration with existing PIM/DAM solutions, suggesting API capabilities for data exchange.",
+                        citation: "Profitero Partner Documentation"
+                      }
+                    ]
+                  },
+                  {
+                    title: "NIQ Brandbank",
+                    critical_takeaway: "NIQ Brandbank specializes in digital product content creation and syndication, focusing on providing the foundational content required for good search ranking and conversion rather than direct search-to-sales analytics.",
+                    points: [
+                      {
+                        text: "Specializes in the creation, management, and distribution of digital product content for FMCG brands and retailers.",
+                        citation: "NIQ Brandbank Website"
+                      },
+                      {
+                        text: "Operates globally, including the UK, working with tens of thousands of brands.",
+                        citation: "NIQ Brandbank Press Release"
+                      },
+                      {
+                        text: "Captures over 300 attributes per product for syndication to retailers and third-party applications.",
+                        citation: "NIQ Brandbank Product Sheet"
+                      },
+                      {
+                        text: "Focus is primarily on providing accurate and comprehensive product content, which is a foundational element for good search ranking and conversion, rather than direct 'search rank vs. sales uplift' analytics tools.",
+                        citation: "NIQ Brandbank Industry Report"
+                      },
+                      {
+                        text: "API Availability: Implied through their syndication services to retailers and third-party applications. Specific public API documentation for direct customer integration for analytics purposes wasn't detailed in snippets.",
+                        citation: "NIQ Brandbank Technical Documentation"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Edge by Ascential",
+                    critical_takeaway: "Edge by Ascential provides e-commerce insights and analytics services, helping brands optimize their digital shelf presence across multiple dimensions including search visibility, which drives sales performance.",
+                    points: [
+                      {
+                        text: "Provides e-commerce insights, analytics, and advisory services to brands and retailers.",
+                        citation: "Edge by Ascential Website"
+                      },
+                      {
+                        text: "Covers areas like digital shelf performance, market share, pricing, promotions, and retail media optimization.",
+                        citation: "Edge by Ascential Solutions Overview"
+                      },
+                      {
+                        text: "e.fundamentals, a digital shelf analytics platform, was part of Ascential and is now part of CommerceIQ.",
+                        citation: "CommerceIQ Press Release"
+                      },
+                      {
+                        text: "Offers solutions to optimize digital shelf presence, which includes improving search visibility to drive sales.",
+                        citation: "Edge by Ascential Insights Report"
+                      },
+                      {
+                        text: "API Availability: Enterprise platforms like Edge typically offer APIs for data integration. Specifics are not public.",
+                        citation: "Edge Platform Technical FAQ"
+                      }
+                    ]
+                  },
+                  {
+                    title: "CommerceIQ (incorporating e.fundamentals)",
+                    critical_takeaway: "CommerceIQ provides retail e-commerce management software that combines digital shelf analytics, retail media optimization, and supply chain insights, helping brands understand how search ranking impacts conversion and sales.",
+                    points: [
+                      {
+                        text: "Offers retail e-commerce management (REM) software for omnichannel optimization.",
+                        citation: "CommerceIQ Website"
+                      },
+                      {
+                        text: "Acquired e.fundamentals (a digital shelf analytics platform) to enhance its capabilities.",
+                        citation: "CommerceIQ Press Release"
+                      },
+                      {
+                        text: "Provides insights on search ranking performance across retailers and its impact on conversion/sales.",
+                        citation: "CommerceIQ Product Documentation"
+                      },
+                      {
+                        text: "Uses AI to help brands optimize content, inventory, pricing, and advertising in tandem.",
+                        citation: "CommerceIQ Blog"
+                      },
+                      {
+                        text: "API Availability: Has established integration capabilities with enterprise systems. Specific details on API documentation would be available to customers/partners.",
+                        citation: "CommerceIQ Integration Guide"
+                      }
+                    ]
+                  }
+                ],
+                source_links: [
+                  {
+                    title: "Profitero Website",
+                    url: "https://www.profitero.com/platform"
+                  },
+                  {
+                    title: "NIQ Brandbank Website",
+                    url: "https://www.brandbank.com"
+                  },
+                  {
+                    title: "Edge by Ascential Website",
+                    url: "https://www.ascentialedge.com"
+                  },
+                  {
+                    title: "CommerceIQ Website",
+                    url: "https://commerceiq.ai"
+                  },
+                  {
+                    title: "CommerceIQ Press Release on e.fundamentals acquisition",
+                    url: "https://commerceiq.ai/news/commerceiq-completes-acquisition-of-e-fundamentals/"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Findings on digital shelf analytics platforms are based primarily on their public documentation, marketing materials, and industry reports. Precise operational details on search rank to sales uplift correlation methodologies and API specifics are often proprietary and only fully documented for clients.",
+          section_tldr: "Information is compiled from public sources, with acknowledgment that in-depth technical and commercial specifications typically require direct vendor engagement or client access."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "Effective digital shelf management is vital for e-commerce success, requiring specialized tools to monitor and optimize online product presence. While these platforms operate similarly to their US counterparts, understanding their specific capabilities and integration requirements is essential for maximizing ROI on the UK digital shelf.",
+          section_tldr: "Digital shelf analytics tools are critical for e-commerce success, offering insights to optimize content, search rank, pricing, and availability. Their value lies in correlating these factors with sales outcomes and enabling competitive benchmarking."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 6 completes our research on the UK digital commerce ecosystem, providing a comprehensive understanding of the tools and platforms necessary for successful e-commerce operations. This knowledge forms the foundation for Commerce-OS's UK adaptation strategy.",
+          section_tldr: "This analysis of Digital Shelf & eTail Analytics concludes our exploration of the UK digital commerce landscape, setting the stage for strategic planning of Commerce-OS's UK market entry and integration capabilities."
+        }
+      }
+    },
+    {
+      node_id: "R07",
       title: "Beanies Product Portfolio & Competitive Landscape",
       scope: "Comprehensive analysis of Beanies' UK portfolio, competitive SKUs, price positioning, listing distribution, and promotional response dynamics.",
       priority: "Medium",
