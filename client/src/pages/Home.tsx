@@ -3,8 +3,9 @@ import { useState } from "react";
 import projectPlanData from "@/data/projectPlanData";
 import kpiDashboardData from "@/data/kpiDashboardData";
 import featureTrackerData from "@/data/featureTrackerData";
+import researchSpineData from "@/data/researchSpineData";
 
-export type ViewType = "project-plan" | "kpi-dashboard" | "feature-tracker";
+export type ViewType = "project-plan" | "kpi-dashboard" | "feature-tracker" | "research-spine";
 
 export default function Home() {
   const [activeView, setActiveView] = useState<ViewType>("project-plan");
@@ -16,6 +17,7 @@ export default function Home() {
       projectPlanData={projectPlanData}
       kpiDashboardData={kpiDashboardData}
       featureTrackerData={featureTrackerData}
+      researchSpineData={researchSpineData}
     />
   );
 }

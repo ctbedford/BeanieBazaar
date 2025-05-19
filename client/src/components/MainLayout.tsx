@@ -7,6 +7,7 @@ import { ViewType } from "@/pages/Home";
 import { ProjectPlanData } from "@/data/projectPlanData";
 import { KpiDashboardData } from "@/data/kpiDashboardData";
 import { FeatureTrackerData } from "@/data/featureTrackerData";
+import { ResearchSpineData } from "@/data/researchSpineData";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 interface MainLayoutProps {
@@ -15,6 +16,7 @@ interface MainLayoutProps {
   projectPlanData: ProjectPlanData;
   kpiDashboardData: KpiDashboardData;
   featureTrackerData: FeatureTrackerData;
+  researchSpineData: ResearchSpineData;
 }
 
 export default function MainLayout({
@@ -22,7 +24,8 @@ export default function MainLayout({
   setActiveView,
   projectPlanData,
   kpiDashboardData,
-  featureTrackerData
+  featureTrackerData,
+  researchSpineData
 }: MainLayoutProps) {
   const isMobile = useIsMobile();
   const [open, setOpen] = useState(false);
@@ -38,6 +41,7 @@ export default function MainLayout({
     { name: "Project Plan", path: "project-plan", icon: "list-check" },
     { name: "KPI Dashboard", path: "kpi-dashboard", icon: "chart-line" },
     { name: "Feature Tracker", path: "feature-tracker", icon: "code-branch" },
+    { name: "Research Spine", path: "research-spine", icon: "book" },
   ];
 
   return (
@@ -84,6 +88,7 @@ export default function MainLayout({
           projectPlanData={projectPlanData}
           kpiDashboardData={kpiDashboardData}
           featureTrackerData={featureTrackerData}
+          researchSpineData={researchSpineData}
         />
       </main>
     </div>
