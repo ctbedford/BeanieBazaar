@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { 
   Accordion,
   AccordionContent,
@@ -17,42 +17,20 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ResearchSpineData, FindingPoint, ResearchNode } from "@/data/researchSpineData";
-import ImportResearchDocument from "@/components/ImportResearchDocument";
+import { ResearchSpineData, FindingPoint } from "@/data/researchSpineData";
 
 interface ResearchSpineViewProps {
   data: ResearchSpineData;
-  onUpdateData?: (updatedData: ResearchSpineData) => void;
 }
 
-export default function ResearchSpineView({ data, onUpdateData }: ResearchSpineViewProps) {
+export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
   const [expandedNodes, setExpandedNodes] = useState<string[]>([]);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<string>("overview");
-  const [researchData, setResearchData] = useState<ResearchSpineData>(data);
-
-  // Update local data when props change
-  useEffect(() => {
-    setResearchData(data);
-  }, [data]);
 
   const selectedNode = selectedNodeId 
-    ? researchData.research_nodes.find(node => node.node_id === selectedNodeId)
+    ? data.research_nodes.find(node => node.node_id === selectedNodeId)
     : null;
-    
-  const handleImportDocument = (updatedNodes: ResearchNode[]) => {
-    const newData = {
-      ...researchData,
-      research_nodes: updatedNodes
-    };
-    
-    setResearchData(newData);
-    
-    // Notify parent component if handler provided
-    if (onUpdateData) {
-      onUpdateData(newData);
-    }
-  };
 
   const getPriorityColor = (priority: string) => {
     switch (priority.toLowerCase()) {
