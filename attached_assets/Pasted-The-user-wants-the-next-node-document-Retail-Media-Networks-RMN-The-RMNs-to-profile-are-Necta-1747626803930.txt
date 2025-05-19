@@ -1,0 +1,1166 @@
+The user wants the next node document: "Retail Media Networks (RMN)".
+The RMNs to profile are: Nectar360 (Sainsbury's), LS Eleven (presumably an error, likely referring to a major RMN like Asda's or another significant player, or it could be a specific agency/platform, I will need to check), Tesco Media & Insight Platform, Morrisons Media Group.
+The key questions for this node are:
+
+Booking APIs, spend floors
+Attribution & segment granularity
+I need to:
+
+Update the _generation_metadata to reflect that this is the third node.
+Update the session_kick_off_and_alignment phase to introduce the third node document.
+Update the executive_summary_phase to summarize the key aspects of UK RMNs.
+Focus the detailed_analysis_phase on the "Retail Media Networks (RMN)" node. This node will include:
+NodeTitle: Retail Media Networks (RMN)
+RMNs: Nectar360, (Investigate "LS Eleven"), Tesco Media & Insight Platform, Morrisons Media Group.
+Core Scope & Key Questions (bullet form):
+Booking APIs, spend floors
+Attribution & segment granularity
+Portability: 🔀 (adapt)
+Priority: High
+Instructions for the node document:
+Question Bank
+Key Findings (This will require new searches for each RMN)
+Portability Flag
+Status Box
+Source Links
+Update the evidence_and_transparency_phase.
+Update the key_learnings_and_reinforcement phase.
+Update the concluding_thoughts_and_path_forward phase.
+Update _presenter_notes.
+Regarding "LS Eleven": A quick preliminary search suggests this might be an outdated or incorrect name. I will search for major UK RMNs to see if a prominent one fits or if it's a smaller, specialized entity. Common UK RMNs are associated directly with retailers. Given the context, if "LS Eleven" doesn't yield clear results as a major RMN, I will note that and focus on the explicitly named ones and potentially substitute with another major RMN like Asda's if information is readily available and it seems like a placeholder.
+
+Information on "Booking APIs" and specific "spend floors" is often detailed in direct engagement with the RMNs or their agency partners and might not be fully public. I'll search for what is publicly available or generally described in industry reports. "Attribution" models and "segment granularity" are also areas where RMNs compete, and the level of detail publicly available will vary.
+
+Search queries will be:
+
+"Nectar360 capabilities"
+"Nectar360 booking API"
+"Nectar360 spend floors"
+"Nectar360 attribution model"
+"Nectar360 audience segmentation"
+"Tesco Media and Insight Platform capabilities"
+"Tesco Media and Insight Platform booking API"
+"Tesco Media and Insight Platform spend floors"
+"Tesco Media and Insight Platform attribution"
+"Tesco Media and Insight Platform segmentation"
+"Morrisons Media Group capabilities"
+"Morrisons Media Group booking API"
+"Morrisons Media Group spend floors"
+"Morrisons Media Group attribution"
+"Morrisons Media Group segmentation"
+"Asda retail media network" (to see if there's a prominent RMN that "LS Eleven" might have been a placeholder for)
+"LS Eleven retail media" (to verify its existence/relevance)
+"UK retail media networks overview"
+"Retail media booking APIs UK"
+"Retail media attribution models UK"
+Based on initial checks, "LS Eleven" does not appear to be a major, commonly recognized UK Retail Media Network. It might be an internal name, a specific tech partner, or an error. I will proceed with the explicitly named RMNs (Nectar360, Tesco M&I, Morrisons MG) and will also look for information on Asda's RMN as it's a major grocer. If there's a clear RMN for Asda, I may include it as a likely intended subject or note the gap.
+
+Update: Asda's retail media network is "Asda Media Partnerships" or "AMP." I will include this as it's a significant player. I will make a note about "LS Eleven" being unidentifiable as a major RMN.
+
+I will perform these searches and then populate the YAML structure.
+
+I have performed the searches for the "Retail Media Networks (RMN)" node.
+The search results provided good high-level information on Nectar360 (Sainsbury's), Tesco Media and Insight Platform (powered by dunnhumby), and Asda's retail media offering (Asda Media Partnerships / Asda Access, powered by LS Eleven Media Services, which is a partnership between Asda and SMG, and leveraging LiveRamp). Information on Morrisons Media Group (operated with SMG) was also found, though a bit less detailed on the specific tech aspects compared to the others.
+
+The term "LS Eleven" is now clear: it's LS Eleven Media Services, a partnership between Asda and SMG, powering Asda's RMN. So, the list of RMNs is: Nectar360, Tesco Media & Insight Platform, Morrisons Media Group, and Asda Media Partnerships (LS Eleven).
+
+Regarding the key questions:
+
+Booking APIs and Spend Floors: Specific details on booking APIs (whether they are fully self-serve, managed service, or hybrid) and exact spend floors are generally not publicly disclosed in depth. The findings suggest a mix of managed services and moves towards self-serve capabilities (e.g., Nectar360 mentions self-serve for its Digital Trading Platform; Asda mentions managed, self-serve, and super self-serve models). Spend floors are typically discussed directly with advertisers. I will state this limitation and focus on the available models.
+Attribution & Segment Granularity: All mentioned RMNs heavily emphasize their first-party data (Clubcard for Tesco, Nectar for Sainsbury's, Asda Rewards for Asda) to offer granular audience segmentation and closed-loop attribution (connecting ad exposure to online and in-store sales). The level of granularity is often described as "rich" or "deep," leveraging purchase history. Specific numbers of segments (e.g., Asda's 3,000 predefined segments) were found.
+Now I will structure the YAML for the third node.
+
+Here's the plan:
+
+_generation_metadata: Update to reflect this is the third node.
+session_kick_off_and_alignment: Introduce the third node on RMNs.
+executive_summary_phase: Summarize key aspects of UK RMNs, focusing on their data-driven nature and omnichannel reach.
+detailed_analysis_phase:
+Update _critical_takeaway and _section_tldr.
+The content_sections will feature the "Retail Media Networks (RMN)" node.
+node_title: 3. Retail Media Networks (RMN)
+portability_flag: 🔀 (adapt)
+priority: High
+status_box: ➤ In Progress
+core_scope_and_key_questions_summary for this node.
+question_bank for this node.
+key_findings: This will be structured per RMN.
+For each RMN (Nectar360, Tesco Media & Insight, Morrisons Media Group, Asda Media Partnerships (LS Eleven)):
+rmn_name_and_retailer
+capabilities_overview: Briefly describe their offering (onsite, offsite, in-store, data source).
+booking_apis_and_spend_floors: Describe access models (self-serve, managed) and note that spend floors are usually confidential.
+attribution_and_segment_granularity: Detail their claims on attribution (closed-loop, online/in-store) and the depth of segmentation based on first-party data.
+source_links: List relevant URLs.
+evidence_and_transparency_phase: Note limitations on specifics like API documentation and exact spend floors.
+key_learnings_and_reinforcement: Summarize the strategic importance of RMNs in the UK.
+concluding_thoughts_and_path_forward: Transition to the next node on Data Providers.
+_presenter_notes: Add relevant cues.
+I will now generate the YAML output.
+
+Okay, I will now create the third node document, "Retail Media Networks (RMN)," based on the HAPG YAML structure and the information gathered.
+
+YAML
+
+#------------------------------------------------------------------------------------
+# 📝 Commerce-OS Research Spine - UK Expansion
+# Document Version: 1.0
+# Date: 2025-05-18
+# Purpose: This document is the third node of a comprehensive research binder
+#          to support the shift from US to UK commerce operations.
+#------------------------------------------------------------------------------------
+_generation_metadata:
+  original_prompt_context: "User requested to create the next node document: 'Retail Media Networks (RMN)'."
+  ai_generation_objective_for_user: "To generate the third node document ('Retail Media Networks (RMN)') in ASSERT+ YAML Presentation Mode, populating key findings with researched information for Nectar360, Tesco Media & Insight Platform, Morrisons Media Group, and Asda Media Partnerships (LS Eleven)."
+  generation_mode_flags: ["presentation_mode_active", "human_first_doc_style_v2.0", "third_node_generation"]
+  key_assumptions_for_presentation_mode:
+    - "Audience has shared context from the previous nodes on the UK Macro Environment and Retailer Profiles."
+    - "Focus is on understanding the capabilities and engagement models of key UK RMNs."
+
+#------------------------------------------------------------------------------------
+# 🤝 Phase 1: SESSION KICK-OFF & ALIGNMENT
+# Purpose: To introduce the third research focus area: UK Retail Media Networks (RMNs).
+#------------------------------------------------------------------------------------
+session_kick_off_and_alignment:
+  _critical_takeaway: "UK Retail Media Networks are rapidly maturing, leveraging rich first-party data to offer sophisticated targeting and measurement capabilities, making them critical for brands to understand and integrate into their strategies."
+  _section_tldr: "This session dives into Node 3: 'Retail Media Networks (RMN)', exploring the offerings of Nectar360, Tesco Media & Insight, Morrisons Media Group, and Asda Media Partnerships, focusing on their booking mechanisms, attribution, and segmentation."
+  session_topic_and_purpose: "Exploration of Node 3: Retail Media Networks (RMNs) – Nectar360 (Sainsbury’s), Tesco Media & Insight Platform, Morrisons Media Group, and Asda Media Partnerships (LS Eleven). The purpose is to understand their operational capabilities and how brands can effectively leverage them."
+  key_objectives_for_this_discussion:
+    - "Review the key RMNs in the UK grocery sector and their strategic importance."
+    - "Discuss their approaches to booking campaigns, including API availability and typical spend considerations."
+    - "Analyze their attribution models and the granularity of audience segmentation they offer."
+    - "Identify how these RMN capabilities might differ from US counterparts and implications for Commerce-OS."
+  agenda_overview_and_scope:
+    - "Overview of the growing RMN landscape in the UK."
+    - "Detailed profile for each target RMN:"
+      - "Key capabilities (onsite, offsite, in-store)."
+      - "Booking processes and platform access (self-serve vs. managed)."
+      - "Attribution methodologies and depth of customer segmentation."
+    - "Discussion of portability and strategic implications for Commerce-OS integration and campaign management."
+
+#------------------------------------------------------------------------------------
+# 💡 Phase 2: EXECUTIVE SUMMARY & CORE INSIGHTS
+# Purpose: To provide a high-level overview of the capabilities and strategic role of major UK RMNs.
+#------------------------------------------------------------------------------------
+executive_summary_phase:
+  _critical_takeaway: "UK RMNs, powered by extensive loyalty card data (Nectar, Clubcard, Asda Rewards), offer brands potent omnichannel advertising opportunities with increasingly sophisticated self-serve options, granular audience segmentation, and closed-loop attribution connecting media spend to both online and in-store sales."
+  _section_tldr: "Key UK grocers have developed powerful RMNs that provide deep customer insights and targeted advertising channels, crucial for brands aiming to influence shoppers at multiple touchpoints. Exact API details and spend floors remain largely direct-engagement topics."
+  summary_of_uk_rmn_landscape:
+    - "Dominant RMNs are extensions of major retailers: Nectar360 (Sainsbury's), Tesco Media & Insight Platform (with dunnhumby), Asda Media Partnerships (via LS Eleven, a partnership with SMG, leveraging LiveRamp), and Morrisons Media Group (with SMG)."
+    - "Core Strength: Leverages rich first-party transactional data from millions of loyalty card holders, enabling detailed audience segmentation and targeting."
+    - "Omnichannel Reach: Offerings typically span onsite (retailer website/app), offsite (programmatic, social), and in-store (digital screens, POS) advertising."
+    - "Attribution: Focus on closed-loop measurement, linking ad exposure to actual sales, both online and in-store. Incrementality analysis is also a growing feature."
+    - "Booking & Access: Moving towards a mix of managed services and self-serve platforms. Specific API details for direct booking and spend floors are usually part of direct commercial discussions."
+  key_implications_for_commerce_os:
+    - "Commerce-OS needs to facilitate campaign planning, execution, and results aggregation across these diverse RMN platforms."
+    - "Integration or connectors for data ingestion from RMN reporting tools will be important for holistic performance views."
+    - "The platform should support managing campaigns with varying levels of self-serve vs. managed service interaction."
+
+#------------------------------------------------------------------------------------
+# 🏗️ Phase 3: DETAILED STRUCTURE & ANALYSIS
+# Purpose: To present the detailed findings for the "Retail Media Networks (RMN)" node.
+#------------------------------------------------------------------------------------
+detailed_analysis_phase:
+  _critical_takeaway: "While specific operational details like API endpoints and minimum spends are often proprietary, the strategic capabilities of UK RMNs—their data depth, targeting precision, and measurement sophistication—are clear and demand tailored approaches from brands using Commerce-OS."
+  _section_tldr: "This section breaks down Nectar360, Tesco Media & Insight, Morrisons Media Group, and Asda Media Partnerships, focusing on their known capabilities in booking, attribution, and segmentation, highlighting the common theme of first-party data power."
+  content_sections:
+    - node_document:
+        node_title: "3. Retail Media Networks (RMN)"
+        portability_flag: "🔀 Adapt"
+        priority: "High"
+        status_box: "➤ In Progress"
+        core_scope_and_key_questions_summary: "Profiling key UK Retail Media Networks: Nectar360, Tesco Media & Insight Platform, Morrisons Media Group, and Asda Media Partnerships (LS Eleven). Focus on their booking APIs & spend floors, and attribution & segment granularity."
+        question_bank:
+          - "What are the primary advertising solutions (onsite, offsite, in-store) offered by Nectar360, Tesco Media & Insight, Morrisons Media Group, and Asda Media Partnerships?"
+          - "What is known about their booking mechanisms, availability of APIs for programmatic buying, and typical minimum spend requirements?"
+          - "How do these RMNs approach campaign attribution, particularly connecting online advertising to in-store sales?"
+          - "What is the level of audience segmentation granularity offered, and what first-party data sources are leveraged?"
+          - "Are there self-service platforms available for campaign management?"
+        key_findings:
+          - rmn_profile:
+              rmn_name_and_retailer: "Nectar360 (Sainsbury’s)"
+              capabilities_overview:
+                - "Leverages Nectar loyalty data from Sainsbury's, Argos, and other partners."
+                - "Offers onsite (Sainsbury's.co.uk) and offsite digital advertising (paid social, display, video, YouTube) via its Digital Trading Platform (DTP)."
+                - "Focuses on brand awareness, customer acquisition, increased sales, and new product launches."
+                - "Utilises Google Marketing Platform for its DTP."
+              booking_apis_and_spend_floors:
+                - "Digital Trading Platform (DTP) allows self-serve campaign setup and management, as well as managed services."
+                - "Specific API details for broader programmatic access or spend floors are not detailed publicly; likely discussed in direct engagement."
+                - "Recommends minimum 6-week campaign duration for effectiveness."
+              attribution_and_segment_granularity:
+                - "Closed-loop attribution: Connects digital ad exposure to in-store and online sales by Nectar customers."
+                - "DTP Insights for campaign success measurement (sales, conversion rate, new customers)."
+                - "Offers sales uplift reports and brand uplift reports via N360 Analytics."
+                - "Audience Builder allows creation of custom audiences based on purchase history (brand buyers, lapsed customers, competitor buyers, basket modelling lookalikes)."
+          - rmn_profile:
+              rmn_name_and_retailer: "Tesco Media & Insight Platform (Powered by dunnhumby)"
+              capabilities_overview:
+                - "Utilises Tesco Clubcard data from over 23 million households."
+                - "Offers a full-funnel retail media proposition: onsite (Targeted Display, Sponsored Products), offsite (targeting key audiences away from Tesco's storefront), in-store (Connected Store - POS, digital screens, radio), CRM, and experiential events."
+                - "Aims to provide a more relevant and personalized shopping experience."
+              booking_apis_and_spend_floors:
+                - "Offers a self-serve platform ('dunnhumby Sphere') for planning, executing, and measuring omnichannel campaigns."
+                - "Specific API details for external booking systems or spend floors are not publicly detailed."
+                - "Launched Tesco Retail Media Certification, UK's first multi-channel retail media accreditation."
+              attribution_and_segment_granularity:
+                - "Closed-loop measurement: Connects advertising exposure to customer behavior across online and offline touchpoints."
+                - "Comprehensive evaluation of 3rd party media campaigns through data matching, including Walled Garden Platforms."
+                - "Empowers brands with granular insights to identify important customers and understand their behavior through self-serve insight solutions."
+          - rmn_profile:
+              rmn_name_and_retailer: "Asda Media Partnerships / Asda Access (LS Eleven Media Services - Asda & SMG partnership, leveraging LiveRamp)"
+              capabilities_overview:
+                - "Leverages Asda Rewards customer data (over 7 million active users, 10 million+ shoppers)."
+                - "Offers onsite, offsite (e.g., Meta), and in-store media opportunities."
+                - "'Asda Access' is their retail media proposition, aiming for a privacy-centric approach to audience targeting."
+                - "Partners with LiveRamp for data collaboration, enabling planning, audience activation, and campaign measurement."
+              booking_apis_and_spend_floors:
+                - "Three collaboration models: managed service, self-serve for agencies, and 'super self-serve' for brands wanting direct access to Asda data in a LiveRamp clean room."
+                - "Plan-Apps software (via SMG) used for planning and evaluation."
+                - "Specific API details and spend floors are not publicly detailed."
+              attribution_and_segment_granularity:
+                - "Closed-loop attribution and incrementality analysis across online and in-store shopping."
+                - "Offers approximately 3,000 predefined first-party audience segments, with capabilities to build custom audiences."
+                - "In-flight measurement and reporting. Plans to include exclusive second-party partnership data and third-party banking/social demographic data."
+          - rmn_profile:
+              rmn_name_and_retailer: "Morrisons Media Group (MMG) (Operated in partnership with SMG - Summit Media Group)"
+              capabilities_overview:
+                - "Acts as a 'one front door' for brands and agencies to reach Morrisons customers."
+                - "Offers owned media (in-store digital screens at Market Street counters, trolley media) and external media platforms (e.g., personalised ads on Facebook and Instagram using first-party data)."
+                - "Launched in September 2022, aiming to enhance connections between customers and brands."
+              booking_apis_and_spend_floors:
+                - "Likely a mix of managed services through SMG. Specifics on self-serve platforms, APIs, or spend floors are not as publicly detailed as other RMNs."
+              attribution_and_segment_granularity:
+                - "Leverages Morrisons' first-party data asset for personalised ads."
+                - "Focuses on connecting with customers and showcasing value (e.g., 'My Points Boosters' trial for personalisation)."
+                - "Detailed attribution models and segmentation capabilities are less publicly specified compared to Tesco or Nectar360 but SMG's involvement suggests robust underlying capabilities."
+        note_on_ls_eleven: "LS Eleven Media Services is the operational arm/partnership behind Asda's retail media offering (Asda Access), formed by Asda and SMG. It is not a standalone RMN separate from Asda."
+        source_links:
+          - title: "Nectar360's data-driven omnichannel success - Think with Google"
+            url: "https://www.thinkwithgoogle.com/intl/en-emea/future-of-marketing/digital-transformation/nectar360-data-omnichannel-success/"
+          - title: "Top Tips For Offsite Retail Media Campaigns - Nectar360"
+            url: "https://www.nectar360.co.uk/media-advertising/top-tips-for-offsite-retail-media-campaigns/"
+          - title: "Tesco Media and Insight Platform - Dunnhumby"
+            url: "https://www.dunnhumby.com/tesco-media-insight-platform/"
+          - title: "Unlocking success: why agency planning teams should get Tesco retail media certified - Dunnhumby"
+            url: "https://www.dunnhumby.com/resources/blog/retail-media/en/unlocking-success-why-agency-planning-teams-should-get-tesco-retail-media-certified/"
+          - title: "Morrisons Media Group (MMG) launches innovative channels - Morrisons Corporate"
+            url: "https://www.morrisons-corporate.com/media-centre/corporate-news/morrisons-media-group-mmg-launches-innovative-channels-for-brands-to-connect-with-customers/"
+          - title: "Morrisons Media Group ramps up retail media offering - Retail Technology Innovation Hub"
+            url: "https://retailtechinnovationhub.com/home/2024/4/16/morrisons-media-group-ramps-up-retail-media-offering-including-digital-screens-on-market-street-food-counters"
+          - title: "Asda taps LiveRamp data collaboration platform - Retail Technology Innovation Hub"
+            url: "https://retailtechinnovationhub.com/home/2025/5/7/asda-taps-liveramp-data-collaboration-platform-as-grocery-giant-expands-retail-media-proposition"
+          - title: "Asda expands retail media to offsite and D2C - InternetRetailing"
+            url: "https://internetretailing.net/asda-expands-retail-media-to-offsite-and-d2c-bringing-first-party-data-from-10-million-shoppers-to-brands/"
+          - title: "LS Eleven media group - SMG"
+            url: "https://smg.team/retailers/ls-eleven-media-group/"
+          - title: "Tesco Media and LS Eleven amongst winners at the Retail MediaX Awards - InternetRetailing"
+            url: "https://internetretailing.net/tesco-media-and-ls-eleven-amongst-winners-at-the-retail-mediax-awards/"
+          - title: "UK Retail Media Networks Market Size & Outlook, 2024-2030 - Grand View Research"
+            url: "https://www.grandviewresearch.com/horizon/outlook/retail-media-networks-market/uk"
+          - title: "Retail Media Networks: The Future of Advertising in UK Retail - Pioneer Group"
+            url: "https://pioneergroup.co.uk/retail-media-networks-the-future-of-advertising-in-uk-retail/"
+          - title: "How to maximise your media investment with Retail Media - Dentsu"
+            url: "https://www.dentsu.com/uk/en/blog/retail-media-for-advertising-brands"
+          - title: "[Guest Member Blog] Retail Media's Audience Fragmentation - IAB Europe"
+            url: "https://iabeurope.eu/guest-member-blog-retail-medias-audience-fragmentation-between-online-and-in-store-and-how-ai-can-solve-it/"
+          - title: "Boots Media Group - Boots UK (for general RMN context)"
+            url: "https://www.boots-uk.com/about-boots-uk/company-information/boots-media-group/"
+          - title: "Boots boosts retail media offering with closed-loop attribution - InternetRetailing (for general RMN context)"
+            url: "https://internetretailing.net/boots-boosts-retail-media-offering-with-closed-loop-attribution-in-data-partnership-with-criteo-and-liveramp/"
+
+#------------------------------------------------------------------------------------
+# 🔬 Phase 4: EVIDENCE, ELUCIDATION & TRANSPARENCY
+# Purpose: To clarify the sources and acknowledge limitations in the data for RMNs.
+#------------------------------------------------------------------------------------
+evidence_and_transparency_phase:
+  _critical_takeaway: "Findings on RMN capabilities are based on their public announcements, corporate websites, and industry reports; however, granular details on API specifications, spend floors, and the full extent of self-serve functionalities are typically gated behind direct commercial engagement."
+  _section_tldr: "Information is collated from public sources, with an understanding that specific operational details of RMNs are often confidential or accessible only to direct partners."
+  data_sourcing_and_methodology:
+    primary_sources: "RMN websites (Nectar360, dunnhumby for Tesco), retailer corporate news (Morrisons, Asda), partner announcements (LiveRamp, SMG)."
+    secondary_sources: "Retail technology news sites (Retail Technology Innovation Hub, InternetRetailing), marketing industry publications (Think with Google, Econsultancy, The Drum), market research summaries (Grand View Research)."
+    information_nature: "Capabilities are generally well-described; specific technical details for APIs and commercial terms like spend floors are less public."
+  confidence_level_and_limitations:
+    confidence:
+      - "High for general capabilities, partnerships, and stated data sources (e.g., loyalty programs)."
+      - "Medium for the specifics of self-serve vs. managed service models, as these can evolve and have varying tiers."
+      - "Low for precise, universally applicable spend floors and detailed API documentation, as these are typically part of direct negotiation and partner onboarding."
+    limitations:
+      - "Detailed technical specifications for booking APIs are not publicly available."
+      - "Minimum spend requirements can vary by advertiser, campaign type, and over time."
+      - "The RMN space is rapidly evolving, so capabilities and platform details can change frequently."
+
+#------------------------------------------------------------------------------------
+# 🔄 Phase 5: KEY LEARNINGS & REINFORCEMENT
+# Purpose: To summarize the essential takeaways regarding UK Retail Media Networks.
+#------------------------------------------------------------------------------------
+key_learnings_and_reinforcement:
+  _critical_takeaway: "UK RMNs are indispensable for brands seeking to influence purchase decisions, offering unparalleled access to first-party shopper data for targeted, measurable campaigns across the digital and physical retail landscape. Mastering these platforms is key to competitive advantage."
+  _section_tldr: "Recapping core themes: UK RMNs provide deep audience insights and omnichannel reach, driven by loyalty data. Navigating their unique offerings and data capabilities is vital for effective marketing."
+  recap_of_key_insights:
+    - "The leading UK grocery RMNs (Nectar360, Tesco Media & Insight, Asda Media Partnerships/LS Eleven, Morrisons Media Group) are central to modern CPG advertising strategies."
+    - "First-party data from loyalty programs is the cornerstone of their value proposition, enabling granular audience segmentation and robust closed-loop attribution."
+    - "Offerings are increasingly omnichannel, blending onsite, offsite, and in-store activations."
+    - "There's a clear trend towards providing more self-service capabilities, though managed services remain important, especially for complex campaigns or newer advertisers."
+  strategic_considerations_for_commerce_os:
+    - "Commerce-OS should aim to streamline campaign management across these key RMNs, considering their different interfaces and reporting formats."
+    - "Developing capabilities to help users leverage the rich segmentation options within each RMN will be crucial."
+    - "The platform must be able to ingest and normalize performance data from these RMNs to provide a consolidated view of ROI and attribution."
+
+#------------------------------------------------------------------------------------
+# 🏁 Phase 6: CONCLUDING THOUGHTS & PATH FORWARD
+# Purpose: To conclude the review of the third node and outline next steps.
+#------------------------------------------------------------------------------------
+concluding_thoughts_and_path_forward:
+  _critical_takeaway: "Node 3 has illuminated the powerful capabilities of UK RMNs. The next logical step is to understand the data providers and clean room technologies that often underpin or complement these networks."
+  _section_tldr: "This analysis of UK RMNs sets the stage for investigating the broader data ecosystem in Node 4, which is critical for advanced targeting and measurement."
+  summary_of_node_completion: "The 'Retail Media Networks (RMN)' node provides a solid overview of the key players and their capabilities, highlighting the strategic importance of first-party data and omnichannel reach in the UK market."
+  next_steps_in_research_spine:
+    - "Proceed to Node 4: 'Data Providers & Clean-Room Tech' to explore entities like Crisp (Atheon), NielsenIQ, Kantar, LiveRamp, and dunnhumby in more detail regarding their broader data offerings and clean room solutions."
+    - "Investigate how these data providers interact with or support the RMNs already profiled."
+    - "Begin to map out the data flow and integration points relevant for Commerce-OS."
+  call_to_action_or_discussion_points:
+    - "Which RMN capabilities present the biggest opportunity or challenge for our current Commerce-OS roadmap?"
+    - "How can we best prepare our teams to leverage the self-serve aspects of these platforms where available?"
+    - "Are there other emerging RMNs in the UK market that warrant monitoring?"
+
+#------------------------------------------------------------------------------------
+# 🎤 _presenter_notes:
+# Purpose: To provide cues and additional context for the presenter.
+#------------------------------------------------------------------------------------
+_presenter_notes:
+  - _presenter_cue: "Emphasize that RMNs are not just an add-on but a fundamental part of the retail landscape now."
+  - _presenter_cue: "Highlight the 'closed-loop attribution' as a key benefit repeatedly mentioned by these RMNs."
+  - _presenter_cue: "Clarify the relationship between Asda, LS Eleven, and SMG, as it's a partnership model."
+  - _presenter_cue: "When discussing APIs and spend floors, reiterate that direct engagement with the RMNs will be necessary for specific commercial and technical details."
+  - _presenter_cue: "Transition: 'With a clearer picture of how retailers are monetizing their first-party data through RMNs, let's now turn our attention to the broader ecosystem of data providers and the clean room technologies that enable even more sophisticated data collaboration and insights. This brings us to Node 4.'"
+
+Sources
+
+
+
+
+proceed to next node
+
+
+
+Show thinking
+Okay, I will now create the fourth node document, "Data Providers & Clean-Room Tech," based on the HAPG YAML structure and the information gathered.
+
+YAML
+
+#------------------------------------------------------------------------------------
+# 📝 Commerce-OS Research Spine - UK Expansion
+# Document Version: 1.0
+# Date: 2025-05-18
+# Purpose: This document is the fourth node of a comprehensive research binder
+#          to support the shift from US to UK commerce operations.
+#------------------------------------------------------------------------------------
+_generation_metadata:
+  original_prompt_context: "User requested to create the next node document: 'Data Providers & Clean-Room Tech'."
+  ai_generation_objective_for_user: "To generate the fourth node document ('Data Providers & Clean-Room Tech') in ASSERT+ YAML Presentation Mode, populating key findings with researched information for Crisp (Atheon), NielsenIQ, Kantar, LiveRamp, and dunnhumby."
+  generation_mode_flags: ["presentation_mode_active", "human_first_doc_style_v2.0", "fourth_node_generation"]
+  key_assumptions_for_presentation_mode:
+    - "Audience has shared context from previous nodes on Macro Environment, Retailer Profiles, and RMNs."
+    - "Focus is on understanding the roles, data handling, and GDPR positioning of these key data entities in the UK."
+
+#------------------------------------------------------------------------------------
+# 🤝 Phase 1: SESSION KICK-OFF & ALIGNMENT
+# Purpose: To introduce the fourth research focus area: UK Data Providers and Clean-Room Technologies.
+#------------------------------------------------------------------------------------
+session_kick_off_and_alignment:
+  _critical_takeaway: "Understanding the landscape of data providers and clean-room technologies in the UK is crucial for leveraging third-party data, enabling secure data collaboration, and ensuring GDPR compliance in an increasingly complex data ecosystem."
+  _section_tldr: "This session explores Node 4: 'Data Providers & Clean-Room Tech', examining entities like Crisp, NielsenIQ, Kantar, LiveRamp, and dunnhumby, with a focus on their data feed characteristics, cost considerations, and GDPR roles."
+  session_topic_and_purpose: "Exploration of Node 4: Data Providers & Clean-Room Tech – Crisp (Atheon), NielsenIQ, Kantar, LiveRamp, and dunnhumby. The purpose is to understand their offerings, data handling practices, and how they fit into the UK commerce data strategy."
+  key_objectives_for_this_discussion:
+    - "Review the key data providers and clean-room technology enablers relevant to the UK retail and CPG sector."
+    - "Discuss general aspects of their data feed cadences and cost structures, acknowledging limitations on proprietary details."
+    - "Analyze their typical roles as data processors versus controllers under UK GDPR."
+    - "Identify implications for Commerce-OS in terms of data integration, partner strategy, and compliance."
+  agenda_overview_and_scope:
+    - "Overview of the UK data ecosystem and the role of third-party data and collaboration technologies."
+    - "Detailed profile for each target entity:"
+      - "Key services and data types offered."
+      - "General understanding of data delivery/feed cadence (specifics often confidential)."
+      - "Typical cost models (specifics often confidential)."
+      - "Likely GDPR positioning (processor/controller) based on their services."
+    - "Discussion of portability and strategic implications for Commerce-OS."
+
+#------------------------------------------------------------------------------------
+# 💡 Phase 2: EXECUTIVE SUMMARY & CORE INSIGHTS
+# Purpose: To provide a high-level overview of the key data providers and clean-room technologies in the UK.
+#------------------------------------------------------------------------------------
+executive_summary_phase:
+  _critical_takeaway: "Major data providers like NielsenIQ and Kantar offer market measurement and consumer insights, while specialists like Crisp (Atheon) focus on retail supply chain data. Clean-room providers such as LiveRamp enable secure data collaboration. Dunnhumby is a key player in customer data science. Specifics on feed cadences and cost tiers are largely confidential, and their GDPR roles (processor/controller) vary by service."
+  _section_tldr: "The UK data landscape features established measurement firms, retail data specialists, and advanced clean-room enablers. Accessing detailed operational and cost information requires direct engagement, and GDPR compliance necessitates careful role definition."
+  summary_of_data_providers_and_clean_rooms:
+    - "Market Measurement & Consumer Insights: NielsenIQ and Kantar are established leaders providing syndicated market data, consumer panel insights, and custom research. They generally act as controllers for their syndicated data products."
+    - "Retail & Supply Chain Data: Crisp (Atheon Analytics) specializes in integrating retailer and CPG data (e.g., SKU-level sales, inventory) to optimize supply chains, primarily acting as a processor for client data."
+    - "Data Collaboration & Clean Rooms: LiveRamp is a prominent provider of data clean room technology, enabling secure collaboration and analysis of first, second, and third-party data across various cloud environments. They typically act as a processor when facilitating collaboration on behalf of clients but are controllers for their own platform data."
+    - "Customer Data Science: Dunnhumby is renowned for its work with retailer loyalty data (especially Tesco) to drive customer insights and personalization, often acting as a data processor for its retail clients."
+    - "Operational Details: Specific data feed cadences (though can range from daily to real-time for some services) and cost tiers are proprietary and subject to commercial agreements. Processor versus controller status depends heavily on the specific data and service provided."
+  key_implications_for_commerce_os:
+    - "Commerce-OS may need to integrate with APIs or data feeds from these providers for enriched analytics and insights."
+    - "Understanding the cost implications and data usage rights associated with each provider is crucial for budgeting and compliance."
+    - "The platform must respect the GDPR roles of these entities and ensure its own data handling practices are compliant when interacting with them."
+
+#------------------------------------------------------------------------------------
+# 🏗️ Phase 3: DETAILED STRUCTURE & ANALYSIS
+# Purpose: To present the detailed findings for the "Data Providers & Clean-Room Tech" node.
+#------------------------------------------------------------------------------------
+detailed_analysis_phase:
+  _critical_takeaway: "While precise operational terms (feed cadence, cost) are guarded, the strategic value of UK data providers and clean room tech lies in their ability to deliver market intelligence, enable secure data sharing, and power customer-centric strategies. Their GDPR roles are service-dependent and crucial for compliance."
+  _section_tldr: "This section details Crisp, NielsenIQ, Kantar, LiveRamp, and dunnhumby, outlining their services and typical GDPR positioning, while noting the general unavailability of specific feed/cost details."
+  content_sections:
+    - node_document:
+        node_title: "4. Data Providers & Clean-Room Tech"
+        portability_flag: "🔀 Adapt"
+        priority: "High"
+        status_box: "➤ In Progress"
+        core_scope_and_key_questions_summary: "Profiling key UK data providers and clean-room technology enablers: Crisp (Atheon), NielsenIQ, Kantar, LiveRamp, and dunnhumby. Focus on their typical feed cadences and cost tiers (where available/inferable), and their status as data processors versus controllers."
+        question_bank:
+          - "What are the primary data solutions or clean-room technologies offered by Crisp, NielsenIQ, Kantar, LiveRamp, and dunnhumby in the UK market?"
+          - "What is generally known about the frequency/cadence of their data feeds or updates?"
+          - "What are the typical cost models or tiers for accessing their services (e.g., subscription, project-based, volume-based)? (Acknowledge confidentiality)"
+          - "How do these entities typically position themselves or operate in terms of being a data processor versus a data controller under UK GDPR for their various services?"
+          - "What are the key benefits and potential challenges of integrating with these providers for a Commerce-OS platform?"
+        key_findings:
+          - data_provider_profile:
+              provider_name: "Crisp (incorporating Atheon Analytics/SKUtrak & ClearBox Analytics)"
+              services_overview:
+                - "Collaborative commerce platform focusing on retail supply chain data for CPG brands and retailers."
+                - "Integrates and harmonizes data from retailers (Tesco, Sainsbury's, Asda, Morrisons, Waitrose in the UK via SKUtrak) and distributors."
+                - "Provides SKU-level data, demand intelligence, and insights to reduce waste, improve availability, and optimize sales."
+                - "Expanded into commercial food service sector and offers broader supply chain and C-suite reporting dashboards."
+              feed_cadence_and_cost_tiers:
+                - "Feed Cadence: Likely daily or near real-time for retailer POS/inventory data to enable actionable insights. Specifics depend on retailer agreements."
+                - "Cost Tiers: Not publicly available. Likely subscription-based, potentially tiered by data volume, number of retail connections, or feature sets."
+              processor_vs_controller_status:
+                - "Primarily acts as a Data Processor when handling retailer and CPG data on behalf of its clients to provide analytics and insights."
+                - "Could be a Data Controller for any aggregated, anonymized benchmark data or insights it develops independently from processed data."
+          - data_provider_profile:
+              provider_name: "NielsenIQ"
+              services_overview:
+                - "Global measurement and data analytics company providing insights into consumer behavior and market dynamics."
+                - "Offers retail measurement services (RMS) tracking sales, market share, distribution, pricing for CPGs and retailers."
+                - "Consumer panel services offering insights into shopper purchasing habits and trends."
+                - "Advanced analytics, forecasting, and consulting services."
+              feed_cadence_and_cost_tiers:
+                - "Feed Cadence: Varies by service. Retail measurement data typically updated weekly or monthly. Consumer panel data also has regular reporting cycles."
+                - "Cost Tiers: Not publicly available. Typically subscription-based, with costs varying based on data granularity, market coverage, number of categories, and analytical tools included."
+              processor_vs_controller_status:
+                - "Often acts as a Data Controller for the syndicated market data and consumer panel data it collects and sells, as it determines the purposes and means of processing for these products."
+                - "May act as a Data Processor when conducting custom research or specific analytics projects based on a client's first-party data and instructions."
+          - data_provider_profile:
+              provider_name: "Kantar"
+              services_overview:
+                - "Global data, insights, and consulting company."
+                - "Offers services including brand tracking, market research, media effectiveness, consumer panel data (e.g., Worldpanel division tracking shopper purchasing)."
+                - "Provides insights into consumer attitudes, behaviors, and media consumption."
+                - "Specialist expertise in areas like retail, CPG, and advertising."
+              feed_cadence_and_cost_tiers:
+                - "Feed Cadence: Varies by service. Consumer panel data typically reported on regular intervals (e.g., 4-weekly, 12-weekly, annually). Custom research projects have defined timelines."
+                - "Cost Tiers: Not publicly available. Costs are typically based on the scope of research, data access levels, syndicated report subscriptions, or consulting engagement terms."
+              processor_vs_controller_status:
+                - "Similar to NielsenIQ, Kantar generally acts as a Data Controller for its syndicated consumer panel data and market research reports."
+                - "Acts as a Data Processor when commissioned by a client to process data on their behalf for a specific research purpose under their instructions."
+          - data_provider_profile:
+              provider_name: "LiveRamp"
+              services_overview:
+                - "Data collaboration platform offering identity resolution and clean room technology."
+                - "Enables secure collaboration of first, second, and third-party data between brands, agencies, media owners, and data partners."
+                - "Supports planning, audience activation, and campaign measurement across various cloud environments (AWS, Azure, GCP, Snowflake, Databricks) with a 'zero-copy' principle for data sharing."
+                - "Extensive partner network for data connectivity and activation."
+              feed_cadence_and_cost_tiers:
+                - "Feed Cadence: Not applicable in the traditional sense of data feeds from LiveRamp itself; it facilitates the secure connection and analysis of clients' data. Data update frequency within the clean room depends on the participating parties' data sources."
+                - "Cost Tiers: Not publicly available. Likely based on platform usage, data volume processed/connected, number of users/partners, and feature sets. SaaS-based subscription models are common for such platforms."
+              processor_vs_controller_status:
+                - "Primarily acts as a Data Processor when providing clean room technology and data collaboration services, processing data on behalf of and under the instruction of its clients (the data controllers)."
+                - "Acts as a Data Controller for personal data it collects directly from its own clients for account management, billing, and platform administration."
+          - data_provider_profile:
+              provider_name: "dunnhumby"
+              services_overview:
+                - "Global customer data science company."
+                - "Best known for its partnership with Tesco, powering the Tesco Media & Insight Platform using Clubcard data (covered in Node 3)."
+                - "Beyond RMNs, offers retailers and brands customer-centric solutions, loyalty program expertise, category management, price and promotion optimization, and media personalization services."
+                - "Leverages data science and AI to understand customer behavior and drive engagement."
+              feed_cadence_and_cost_tiers:
+                - "Feed Cadence: When working with retailer data, this depends on the retailer's systems (often daily or near real-time for transactional data). For its own analytical products, cadence will vary."
+                - "Cost Tiers: Not publicly available. Costs for bespoke solutions and services are project-based or on a retainer model. Access to their analytical tools or platforms would likely be subscription-based."
+              processor_vs_controller_status:
+                - "Primarily acts as a Data Processor when analyzing customer data on behalf of a retail client (e.g., Tesco) under their instructions and for their purposes."
+                - "May act as a Data Controller for any syndicated insights or anonymized/aggregated data products it develops and sells independently, or for data related to its own business operations and direct client relationships."
+        source_links:
+          - title: "Crisp Acquires Atheon Analytics and ClearBox Analytics - Business Wire"
+            url: "https://www.businesswire.com/news/home/20250410480590/en/Crisp-Acquires-Atheon-Analytics-and-ClearBox-Analytics-to-Unlock-Global-Retail-and-CPG-Data-to-Optimize-Retail-and-Food-Service-Supply-Chains"
+          - title: "Crisp boosts retail supply chain insights with Atheon and ClearBox deals - Retail Insight Network"
+            url: "https://www.retail-insight-network.com/news/crisp-retail-insight-acquisitions/"
+          - title: "LiveRamp Clean Room Architecture Deep Dive - LiveRamp Blog"
+            url: "https://liveramp.com/blog/liveramp-clean-room-architecture/"
+          - title: "LiveRamp Named a Leader in 2025 IDC MarketScape: Worldwide Data Clean Room Technology - Business Wire"
+            url: "https://www.businesswire.com/news/home/20250515746119/en/LiveRamp-Named-a-Leader-in-2025-IDC-MarketScape-Worldwide-Data-Clean-Room-Technology-for-Advertising-and-Marketing-Use-Cases"
+          - title: "Data processor obligations under UK GDPR - Harper James Solicitors"
+            url: "https://harperjames.co.uk/article/data-processor-responsibilities-uk-gdpr/"
+          - title: "Data Controller vs Processor: Working Out Your GDPR Role | Sprintlaw UK"
+            url: "https://sprintlaw.co.uk/articles/data-controller-vs-processor-working-out-your-gdpr-role/"
+          - title: "NielsenIQ Official Website (General Info)"
+            url: "https://nielseniq.com/"
+          - title: "Kantar Official Website (General Info)"
+            url: "https://www.kantar.com/"
+          - title: "dunnhumby Official Website (General Info)"
+            url: "https://www.dunnhumby.com/"
+          - title: "LSE Market Data (Example of Data Feed Frequencies - General Context)"
+            url: "https://www.lseg.com/en/data-analytics/financial-data/pricing-and-market-data/equities-market-data/lse-market-data"
+
+#------------------------------------------------------------------------------------
+# 🔬 Phase 4: EVIDENCE, ELUCIDATION & TRANSPARENCY
+# Purpose: To clarify the sources and acknowledge limitations in the data for Data Providers & Clean-Room Tech.
+#------------------------------------------------------------------------------------
+evidence_and_transparency_phase:
+  _critical_takeaway: "Information on services is publicly available, but specifics on data feed cadences, cost tiers, and definitive GDPR roles for every service permutation are often confidential or highly nuanced, requiring direct engagement with providers for precise details."
+  _section_tldr: "This section confirms that findings are based on public statements and general industry knowledge, with a clear acknowledgment of the commercial and legal sensitivities that limit public disclosure of operational and pricing specifics."
+  data_sourcing_and_methodology:
+    primary_sources: "Provider websites (Crisp, LiveRamp, NielsenIQ, Kantar, dunnhumby), press releases, official blogs."
+    secondary_sources: "Industry news articles (Business Wire, Retail Insight Network), legal advisory sites (for GDPR context)."
+    information_nature: "Service descriptions are generally public. Feed cadence and cost details are rarely public. GDPR roles are inferred based on typical service models and legal definitions."
+  confidence_level_and_limitations:
+    confidence:
+      - "High for general service offerings and company focus areas."
+      - "Medium to Low for specific, universal feed cadences and cost tiers, as these are highly variable and confidential."
+      - "Medium for inferred GDPR processor/controller status, as this can be complex and service-dependent; definitive status requires review of specific Data Processing Agreements (DPAs)."
+    limitations:
+      - "Exact data feed frequencies for all services are not publicly detailed."
+      - "Cost structures are bespoke and not disclosed publicly."
+      - "Processor/controller status can be nuanced and depend on the specific contract and data processing activities involved in each client engagement."
+      - "Detailed information on NielsenIQ and Kantar's specific UK retail data solutions' operational aspects was limited in the direct search snippets."
+
+#------------------------------------------------------------------------------------
+# 🔄 Phase 5: KEY LEARNINGS & REINFORCEMENT
+# Purpose: To summarize the essential takeaways regarding UK Data Providers and Clean-Room Tech.
+#------------------------------------------------------------------------------------
+key_learnings_and_reinforcement:
+  _critical_takeaway: "The UK data ecosystem relies on a mix of established market measurement firms, specialized retail data integrators, and advanced clean-room platforms to drive insights and collaboration. Engaging these providers requires careful consideration of data utility, cost, and GDPR compliance."
+  _section_tldr: "Recapping core themes: diverse data sources and collaboration tools are available, but accessing them effectively means navigating confidential commercial terms and complex GDPR responsibilities."
+  recap_of_key_insights:
+    - "A variety of data providers serve the UK market, offering everything from broad market trends (NielsenIQ, Kantar) to granular supply chain data (Crisp) and customer-level insights (dunnhumby)."
+    - "Clean-room technology (LiveRamp) is becoming increasingly important for enabling secure data collaboration and measurement in a privacy-conscious environment."
+    - "Key operational details like data feed cadence and cost are typically not public and require direct vendor engagement."
+    - "Determining whether a provider acts as a data processor or controller is crucial for GDPR compliance and depends on the specific services and data involved."
+  strategic_considerations_for_commerce_os:
+    - "Identify which data providers are most critical for enriching Commerce-OS capabilities in the UK."
+    - "Develop a strategy for potential data integrations, considering API availability, data formats, and refresh rates."
+    - "Factor in the likely costs and contractual complexities of engaging with these providers."
+    - "Ensure Commerce-OS architecture and data handling policies align with GDPR requirements when interacting with these third-party data sources and platforms."
+
+#------------------------------------------------------------------------------------
+# 🏁 Phase 6: CONCLUDING THOUGHTS & PATH FORWARD
+# Purpose: To conclude the review of the fourth node and outline next steps.
+#------------------------------------------------------------------------------------
+concluding_thoughts_and_path_forward:
+  _critical_takeaway: "Node 4 provides a map of key data players and technologies. The subsequent research into DSPs and programmatic ecosystems will show how this data is often activated in the broader advertising landscape."
+  _section_tldr: "This analysis of Data Providers & Clean-Room Tech is foundational for understanding how data flows and is leveraged in the UK market, leading into programmatic activation."
+  summary_of_node_completion: "The 'Data Providers & Clean-Room Tech' node outlines the major entities and their roles, highlighting the importance of data in the UK commerce ecosystem and the need for careful commercial and legal due diligence."
+  next_steps_in_research_spine:
+    - "Proceed to Node 5: 'DSP & Programmatic Ecosystem' to understand platforms like The Trade Desk, Basis, and DV360 and how they utilize or interact with data from these providers and RMNs."
+    - "Investigate LiveRamp's role as an on-ramp to these DSPs for first-party data."
+    - "Explore the typical GTIN catalog feed requirements for programmatic advertising."
+  call_to_action_or_discussion_points:
+    - "Which of these data providers or technologies are of highest immediate priority for potential Commerce-OS integration or partnership?"
+    - "What are the anticipated challenges in navigating the commercial terms and GDPR aspects with these entities?"
+    - "How can Commerce-OS best position itself to leverage clean room technologies for its users?"
+
+#------------------------------------------------------------------------------------
+# 🎤 _presenter_notes:
+# Purpose: To provide cues and additional context for the presenter.
+#------------------------------------------------------------------------------------
+_presenter_notes:
+  - _presenter_cue: "Emphasize that while 'feed cadence' and 'cost tiers' are key questions, the answers are almost always 'it depends' and 'confidential'. Set expectations accordingly."
+  - _presenter_cue: "Clearly explain the difference between data controller and data processor, as it's a critical GDPR concept and impacts responsibilities."
+  - _presenter_cue: "Highlight LiveRamp's role as an enabler of collaboration across different cloud environments, which is a significant trend."
+  - _presenter_cue: "Connect the discussion back to RMNs, as data providers like dunnhumby are integral to some RMN offerings, and clean rooms are used by RMNs (e.g., Asda with LiveRamp)."
+  - _presenter_cue: "Transition: 'Now that we've explored the sources of data and the technologies for collaboration, let's look at how this data is often put into action in the wider advertising world through Demand-Side Platforms and the programmatic ecosystem. This takes us to Node 5.'"
+
+Sources
+
+
+
+
+continue to node 6
+
+
+
+Show thinking
+Okay, I will now create the sixth node document, "Digital Shelf & eTail Analytics," based on the HAPG YAML structure and the information gathered.
+
+YAML
+
+#------------------------------------------------------------------------------------
+# 📝 Commerce-OS Research Spine - UK Expansion
+# Document Version: 1.0
+# Date: 2025-05-18
+# Purpose: This document is the sixth node of a comprehensive research binder
+#          to support the shift from US to UK commerce operations.
+#------------------------------------------------------------------------------------
+_generation_metadata:
+  original_prompt_context: "User requested to create the next node document: 'Digital Shelf & eTail Analytics' (Node 6)."
+  ai_generation_objective_for_user: "To generate the sixth node document ('Digital Shelf & eTail Analytics') in ASSERT+ YAML Presentation Mode, populating key findings with researched information for Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ."
+  generation_mode_flags: ["presentation_mode_active", "human_first_doc_style_v2.0", "sixth_node_generation"]
+  key_assumptions_for_presentation_mode:
+    - "Audience has shared context from previous nodes, understanding the UK retail landscape."
+    - "Focus is on the tools and analytics used to manage and optimize online retail presence and performance."
+
+#------------------------------------------------------------------------------------
+# 🤝 Phase 1: SESSION KICK-OFF & ALIGNMENT
+# Purpose: To introduce the sixth research focus area: UK Digital Shelf & eTail Analytics.
+#------------------------------------------------------------------------------------
+session_kick_off_and_alignment:
+  _critical_takeaway: "Effective management of the digital shelf—encompassing product content, search visibility, pricing, and availability—is paramount for eTail success in the UK, and specialized analytics platforms are key to optimizing these levers."
+  _section_tldr: "This session delves into Node 6: 'Digital Shelf & eTail Analytics', examining providers like Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ, with a focus on how they measure search rank's impact on sales and their API/cost structures."
+  session_topic_and_purpose: "Exploration of Node 6: Digital Shelf & eTail Analytics – Profiling Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ. The purpose is to understand their capabilities in optimizing online retail performance and how they can integrate with a Commerce-OS."
+  key_objectives_for_this_discussion:
+    - "Review the key providers of digital shelf and eTail analytics solutions in the UK market."
+    - "Discuss their methodologies for analyzing the relationship between search rank and sales uplift."
+    - "Explore the availability and general nature of their APIs, and typical cost considerations (acknowledging confidentiality)."
+    - "Identify implications for Commerce-OS in terms of data integration for a holistic view of eTail performance."
+  agenda_overview_and_scope:
+    - "Overview of the importance of digital shelf analytics in the UK e-commerce landscape."
+    - "Detailed profile for each target provider:"
+      - "Key services for digital shelf optimization and eTail analytics."
+      - "Approach to measuring/correlating search performance with sales outcomes."
+      - "General information on API availability and cost structures."
+    - "Discussion of portability (noting it's ⚖️ 'same' conceptually as US) and strategic implications for Commerce-OS."
+
+#------------------------------------------------------------------------------------
+# 💡 Phase 2: EXECUTIVE SUMMARY & CORE INSIGHTS
+# Purpose: To provide a high-level overview of the capabilities and role of Digital Shelf & eTail Analytics platforms in the UK.
+#------------------------------------------------------------------------------------
+executive_summary_phase:
+  _critical_takeaway: "Digital shelf analytics platforms like Profitero and CommerceIQ provide essential tools for brands to monitor and optimize their online presence across UK retailers, focusing on content, search rank, availability, and pricing to drive sales. While direct 'search rank to sales uplift' quantification is complex, these platforms offer data to correlate these factors. API availability is common for enterprise integration, but specific costs are proprietary."
+  _section_tldr: "UK eTail success relies on robust digital shelf management. Key analytics providers offer comprehensive monitoring and optimization capabilities, though specific API and cost details require direct vendor engagement. NIQ Brandbank focuses more on product content syndication."
+  summary_of_digital_shelf_and_etail_analytics:
+    - "Key Providers: Profitero, CommerceIQ (which acquired e.fundamentals), and Edge by Ascential offer comprehensive digital shelf analytics. NIQ Brandbank is a major player in creating and syndicating digital product content, which is foundational to the digital shelf."
+    - "Core Capabilities: These platforms typically monitor product visibility (search rank, share of voice), content accuracy and completeness, pricing, promotions, stock availability, and customer ratings/reviews across multiple retailers."
+    - "Search Rank ↔ Sales Uplift: Platforms provide analytics to track search performance and its correlation with sales by identifying drivers like content quality, keyword optimization, and retail media performance. They enable benchmarking against competitors to improve organic visibility and, consequently, sales."
+    - "API Availability & Cost: API access for data integration is generally expected from enterprise-grade SaaS platforms to connect with PIM/DAM or internal BI tools. Specific API documentation and, particularly, cost structures (often subscription-based and tiered) are confidential and require direct vendor discussion."
+  key_implications_for_commerce_os:
+    - "Commerce-OS could benefit from integrating data from these platforms to provide a unified view of e-commerce performance, linking digital shelf metrics with sales and advertising data."
+    - "Understanding the types of data and insights these platforms offer can inform the development of complementary analytics within Commerce-OS."
+    - "Connectors or APIs to these platforms would enhance the value proposition of Commerce-OS for UK users."
+
+#------------------------------------------------------------------------------------
+# 🏗️ Phase 3: DETAILED STRUCTURE & ANALYSIS
+# Purpose: To present the detailed findings for the "Digital Shelf & eTail Analytics" node.
+#------------------------------------------------------------------------------------
+detailed_analysis_phase:
+  _critical_takeaway: "While explicit 'uplift guarantees' are rare, leading digital shelf platforms provide robust analytics and actionable insights to optimize the levers (search, content, availability) that demonstrably drive e-commerce sales. API integration capabilities are standard, but commercial terms are bespoke."
+  _section_tldr: "This section details Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ, focusing on their approaches to correlating search with sales, and the general nature of their API and cost models, acknowledging a high degree of similarity (portability ⚖️) in these types of solutions compared to the US."
+  content_sections:
+    - node_document:
+        node_title: "6. Digital Shelf & eTail Analytics"
+        portability_flag: "⚖️ Same"
+        priority: "Med"
+        status_box: "➤ In Progress"
+        core_scope_and_key_questions_summary: "Profiling key UK digital shelf and eTail analytics providers: Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ. Focus on their methods for analyzing search rank ↔ sales uplift and their API availability/cost."
+        question_bank:
+          - "What are the primary digital shelf analytics and eTail optimization services offered by Profitero, NIQ Brandbank, Edge by Ascential, and CommerceIQ in the UK?"
+          - "How do these platforms enable brands to understand and improve the relationship between their products' search ranking on retailer sites and actual sales performance?"
+          - "What capabilities do they offer for benchmarking against competitors on the digital shelf?"
+          - "What is generally known about the availability of APIs for data extraction or integration with these platforms?"
+          - "What are the typical cost models for these services, acknowledging that specific pricing is confidential?"
+        key_findings:
+          - dsa_provider_profile:
+              provider_name: "Profitero"
+              services_overview:
+                - "Provides actionable e-commerce analytics and intelligence, serving brands across numerous retailers globally, including the UK."
+                - "Focuses on digital shelf optimization: product visibility (search), content conversion, supply chain (availability), pricing, and advertising ROI."
+                - "Offers daily data, diagnostic tools, and competitive insights."
+              search_rank_sales_uplift_analytics:
+                - "Helps boost organic search rankings by benchmarking product content against top performers."
+                - "Integrates digital shelf insights with sales and share data to show which levers drive growth."
+                - "Tracks factors contributing to Amazon's Best Sellers Rank (current/historic sales, price changes, promotions, competitive products)."
+                - "Enables optimization of ad campaigns by identifying trending keywords and competitors."
+              api_availability_and_cost:
+                - "API Availability: Mentions integration with existing PIM/DAM solutions, suggesting API capabilities for data exchange."
+                - "Cost: Specific pricing is not publicly available. A figure of '$1500' was seen on Slashdot, but this likely refers to a very limited offering and not their full enterprise suite. Enterprise solutions are typically custom quoted."
+          - dsa_provider_profile:
+              provider_name: "NIQ Brandbank"
+              services_overview:
+                - "Specializes in the creation, management, and distribution of digital product content for FMCG brands and retailers."
+                - "Operates globally, including the UK, working with tens of thousands of brands."
+                - "Captures over 300 attributes per product for syndication to retailers and third-party applications."
+                - "Offers a Self-Service platform for brands to share digital product content."
+              search_rank_sales_uplift_analytics:
+                - "Focus is primarily on providing accurate and comprehensive product content, which is a foundational element for good search ranking and conversion, rather than direct 'search rank vs. sales uplift' analytics tools within the snippets found."
+                - "Their service aims to improve product content coverage, which in turn can increase traffic and conversion."
+              api_availability_and_cost:
+                - "API Availability: Implied through their syndication services to retailers and third-party applications. Specific public API documentation for direct customer integration for analytics purposes wasn't detailed in snippets."
+                - "Cost: "Affordable Value" and "No hidden fees" mentioned for US content creation, suggesting transparent but bespoke pricing. General cost structures for UK analytics or full syndication services not public."
+          - dsa_provider_profile:
+              provider_name: "Edge by Ascential"
+              services_overview:
+                - "Provides e-commerce insights, analytics, and advisory services to brands and retailers."
+                - "Covers areas like digital shelf performance, market share, pricing, promotions, and retail media optimization."
+                - "(Note: e.fundamentals, a digital shelf analytics platform, was part of Ascential and is now part of CommerceIQ)."
+              search_rank_sales_uplift_analytics:
+                - "Offers solutions to optimize digital shelf presence, which includes improving search visibility to drive sales."
+                - "Specific methodologies for directly quantifying search rank to sales uplift are proprietary but align with industry practices of tracking KPIs that influence both."
+              api_availability_and_cost:
+                - "API Availability: Enterprise platforms like Edge typically offer APIs for data integration. Specifics are not public."
+                - "Cost: Not publicly available. Subscription-based, varying with service scope. A price of '$43,000/year' was listed for 'e.fundamentals' on Slashdot prior to its full integration with CommerceIQ, indicating enterprise-level investment."
+          - dsa_provider_profile:
+              provider_name: "CommerceIQ (incorporating e.fundamentals)"
+              services_overview:
+                - "Retail Ecommerce Management platform offering digital shelf optimization, retail media management, and supply chain automation."
+                - "Monitors and optimizes digital shelf presence across 850+ retailers in 45+ countries, including the UK."
+                - "Key areas: Content, brand & compliance, share of search, pricing & promotion, ratings & reviews, availability."
+                - "e.fundamentals, now part of CommerceIQ, provides real-time digital shelf analytics."
+              search_rank_sales_uplift_analytics:
+                - "Aims to amplify organic and paid search rankings through integrated digital shelf optimization."
+                - "Allows measurement of performance against top performers to boost online visibility and win share of search."
+                - "Provides actionable insights from 'Digital Shelf Scorecards' to improve performance impacting sales."
+                - "Tracks retail media performance, a key driver of search visibility and sales."
+              api_availability_and_cost:
+                - "API Availability: Offers "Exportable Data" and ability to integrate with any data lake, implying robust data access and API capabilities."
+                - "Cost: Not publicly available. Enterprise solutions with tiered offerings ("Growth & Enterprise Solutions"). Costs are bespoke based on SKU volume, retailer coverage, and modules."
+        source_links:
+          - title: "Profitero - Digital Shelf Insights & Solutions"
+            url: "https://www.profitero.com/digital-shelf"
+          - title: "Profitero - eCommerce Glossary"
+            url: "https://www.profitero.com/resources/ecommerce-glossary"
+          - title: "Compare Profitero vs. XPLN Suite in 2025 - Slashdot (mentions a Profitero price)"
+            url: "https://slashdot.org/software/comparison/Profitero-vs-XPLN/"
+          - title: "NIQ Brandbank - Self-Service Portal for Product Content Management"
+            url: "https://nielseniq.com/global/en/solutions/brandbank-self-service-portal/"
+          - title: "NIQ Brandbank - Content Licensing"
+            url: "https://nielseniq.com/global/en/products/content-licensing/"
+          - title: "NIQ Brandbank - Content Creation (US pricing context)"
+            url: "https://nielseniq.com/global/en/landing-page/brandbank-content-creation/"
+          - title: "Edge by Ascential - Final Results (Historical - for context on company structure)"
+            url: "https://www.investegate.co.uk/index.php/announcement/rns/ascential--ascl/final-results/6964613"
+          - title: "Best Digital Shelf Analytics Software for Freelancers - Slashdot (mentions e.fundamentals price)"
+            url: "https://slashdot.org/software/digital-shelf-analytics/f-freelance/"
+          - title: "CommerceIQ - Digital Shelf Optimization Platform"
+            url: "https://commerceiq.ai/digital-shelf-analytics/"
+          - title: "CommerceIQ - Digital Shelf Scorecard Solutions"
+            url: "https://commerceiq.ai/digital-shelf-scorecard/"
+          - title: "e.fundamentals: Home (now part of CommerceIQ)"
+            url: "https://www.efundamentals.com/"
+          - title: "Automating Digital Shelf Monitoring with Retail APIs - Nimbleway (General API context)"
+            url: "https://www.nimbleway.com/blog/automating-digital-shelf-monitoring-with-api"
+          - title: "eStoreCheck | eStoreBrands (General Digital Shelf and API context)"
+            url: "https://estorebrands.com/solutions/estorecheck"
+          - title: "Ecommerce Analytics Tools for Online Store Owners (2024) - Shopify (General eTail analytics context)"
+            url: "https://www.shopify.com/blog/ecommerce-analytics-tools"
+          - title: "Bridging the Gap: How Digital Shelf Analytics Empowers Marketing Mix Modelling - DataWeave"
+            url: "https://dataweave.com/blog/bridging-the-gap-how-digital-shelf-analytics-empowers-marketing-mix-modelling-for-smarter-brand-decisions"
+
+#------------------------------------------------------------------------------------
+# 🔬 Phase 4: EVIDENCE, ELUCIDATION & TRANSPARENCY
+# Purpose: To clarify the sources and acknowledge limitations in the data for Digital Shelf & eTail Analytics.
+#------------------------------------------------------------------------------------
+evidence_and_transparency_phase:
+  _critical_takeaway: "Information on platform capabilities is generally available from vendor websites and industry reports; however, specifics on direct quantitative linkages between search rank and sales uplift are nuanced, and detailed API specifications and cost structures are confidential."
+  _section_tldr: "This section confirms findings are based on public sources, with an explicit acknowledgment of the commercial sensitivity surrounding API details and pricing, and the complexity of directly attributing sales uplift solely to search rank changes."
+  data_sourcing_and_methodology:
+    primary_sources: "Vendor websites (Profitero, NIQ Brandbank, CommerceIQ, e.fundamentals), industry comparison sites (Slashdot for indicative pricing points)."
+    secondary_sources: "E-commerce and retail technology blogs and articles (Shopify, Nimbleway, DataWeave)."
+    information_nature: "Service features are well-documented. Analysis of 'search rank to sales uplift' is based on platform claims of optimizing factors that influence this. API and cost information is largely general due to proprietary nature."
+  confidence_level_and_limitations:
+    confidence:
+      - "High for general platform capabilities and features."
+      - "Medium for the specific methodologies used to correlate search rank with sales uplift (platforms provide tools to track and influence, but direct causation formulas are complex and not public)."
+      - "Low for precise, universal API specifications and cost tiers, as these are bespoke and confidential."
+    limitations:
+      - "Direct, universally applicable metrics quantifying 'search rank to sales uplift' are not provided by vendors; platforms offer tools to improve correlated KPIs."
+      - "Detailed API documentation is typically available only to customers/partners."
+      - "Pricing is highly variable and depends on the scope of service, SKUs tracked, retailers covered, etc."
+      - "Information on Edge by Ascential's current specific digital shelf tools was less direct due to acquisitions and branding shifts (e.g., e.fundamentals to CommerceIQ)."
+
+#------------------------------------------------------------------------------------
+# 🔄 Phase 5: KEY LEARNINGS & REINFORCEMENT
+# Purpose: To summarize the essential takeaways regarding UK Digital Shelf & eTail Analytics.
+#------------------------------------------------------------------------------------
+key_learnings_and_reinforcement:
+  _critical_takeaway: "Success in UK e-commerce necessitates robust digital shelf analytics to optimize content, search visibility, availability, and pricing. Leading platforms provide comprehensive tools to manage these factors and correlate them with sales performance, with API integration being a key feature for holistic data views."
+  _section_tldr: "Recapping core themes: Mastering the digital shelf is crucial. Analytics platforms offer vital tools for optimization and performance tracking, though integrating their data and managing costs require careful planning."
+  recap_of_key_insights:
+    - "Digital shelf analytics are critical for CPG brands to compete effectively online in the UK, focusing on areas like search performance, content quality, product availability, and pricing intelligence."
+    - "Platforms like Profitero and CommerceIQ offer extensive capabilities to monitor these elements across multiple retailers and provide actionable insights to improve sales."
+    - "NIQ Brandbank plays a vital role in ensuring high-quality, accurate product content is syndicated to retailers, which is foundational for digital shelf success."
+    - "While directly proving 'X search rank = Y sales' is nuanced, these tools help optimize all contributing factors. API availability allows for data to be fed into broader e-commerce intelligence systems."
+  strategic_considerations_for_commerce_os:
+    - "Identify opportunities for Commerce-OS to integrate with or consume data from these digital shelf analytics platforms to provide users with a more comprehensive e-commerce performance picture."
+    - "Consider how Commerce-OS can help users action the insights generated by these platforms, particularly in areas like content updates or advertising adjustments."
+    - "Evaluate the 'build vs. buy/partner' decision for certain digital shelf monitoring capabilities within Commerce-OS."
+
+#------------------------------------------------------------------------------------
+# 🏁 Phase 6: CONCLUDING THOUGHTS & PATH FORWARD
+# Purpose: To conclude the review of the sixth node and outline next steps.
+#------------------------------------------------------------------------------------
+concluding_thoughts_and_path_forward:
+  _critical_takeaway: "Node 6 highlights the importance of granular digital shelf management. The subsequent exploration of competitive Commerce-OS platforms will reveal how others are addressing these eTail analytics needs, among other functionalities."
+  _section_tldr: "This analysis of Digital Shelf & eTail Analytics sets the stage for comparing how comprehensive Commerce-OS solutions aim to integrate or offer such capabilities as part of a broader feature set."
+  summary_of_node_completion: "The 'Digital Shelf & eTail Analytics' node outlines key providers and their approaches to optimizing online retail performance, emphasizing the data-driven nature of modern e-commerce and the commonality of these tools with the US market."
+  next_steps_in_research_spine:
+    - "Proceed to Node 7: 'Competitive Commerce-OS Platforms' to analyze solutions like Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS."
+    - "Identify feature gaps and strengths of these platforms relative to the Commerce-OS roadmap, particularly concerning their digital shelf and eTail analytics capabilities in the UK."
+    - "Research UK customer logos and pricing models for these competitive platforms."
+  call_to_action_or_discussion_points:
+    - "Which digital shelf KPIs are most critical for our UK target users?"
+    - "What level of integration with these third-party analytics platforms should Commerce-OS aim for?"
+    - "How does the 'sameness' (portability ⚖️) of these tools compared to the US market impact our strategy for providing or integrating these capabilities?"
+
+#------------------------------------------------------------------------------------
+# 🎤 _presenter_notes:
+# Purpose: To provide cues and additional context for the presenter.
+#------------------------------------------------------------------------------------
+_presenter_notes:
+  - _presenter_cue: "Emphasize that 'digital shelf' is a critical battleground. Use an analogy like physical store shelf placement and presentation."
+  - _presenter_cue: "When discussing 'search rank to sales uplift', frame it as optimizing a series of influencing factors rather than a simple one-to-one formula."
+  - _presenter_cue: "Highlight that while the tools and concepts are similar to the US (hence ⚖️), the specific retailer environments and competitor sets in the UK will require localized strategies."
+  - _presenter_cue: "Acknowledge the confidential nature of pricing for these enterprise tools; the value is in understanding their capabilities and potential for integration."
+  - _presenter_cue: "Transition: 'Having explored the tools that help brands win on the digital shelf, let's now look at broader platforms that aim to provide a more holistic Commerce Operating System, and see how they stack up. This brings us to Node 7: Competitive Commerce-OS Platforms.'"
+
+Sources
+
+
+
+
+procced to node 7
+
+
+
+Show thinking
+The user wants to proceed to Node 7: "Competitive Commerce-OS Platforms".
+The platforms to profile are: Stackline, Flywheel, Pacvue, Intentwise, CitrusAd SaaS.
+The key questions for this node are:
+
+Feature gaps vs COS roadmap
+UK customer logos & pricing
+I need to:
+
+Update the _generation_metadata to reflect that this is the seventh node.
+Update the session_kick_off_and_alignment phase to introduce the seventh node document.
+Update the executive_summary_phase to summarize the key aspects of competitive Commerce-OS platforms in the UK.
+Focus the detailed_analysis_phase on the "Competitive Commerce-OS Platforms" node. This node will include:
+NodeTitle: Competitive Commerce-OS Platforms
+Platforms: Stackline, Flywheel (now part of Ascential, with a focus on digital commerce services, including Flywheel Digital), Pacvue, Intentwise, CitrusAd SaaS (now part of Epsilon, and its ad serving capabilities are relevant).
+Core Scope & Key Questions (bullet form):
+Feature gaps vs COS roadmap
+UK customer logos & pricing
+Portability: 🔀 (adapt) - The platforms are global, but their UK presence, customer base, and pricing might be adapted.
+Priority: Med
+Instructions for the node document:
+Question Bank
+Key Findings (This will require new searches for each platform)
+Portability Flag
+Status Box
+Source Links
+Update the evidence_and_transparency_phase.
+Update the key_learnings_and_reinforcement phase.
+Update the concluding_thoughts_and_path_forward phase.
+Update _presenter_notes.
+Information on "Feature gaps vs COS roadmap" will require understanding the typical features of these competitive platforms and then (implicitly, as the COS roadmap isn't provided to me) highlighting areas where these platforms are strong or have specific functionalities. I will focus on describing their core offerings.
+"UK customer logos" might be found in case studies or regional marketing materials. "Pricing" for these enterprise SaaS platforms is almost always confidential and bespoke. I will state this and look for any general pricing model information (e.g., % of ad spend, subscription tiers).
+
+A note on the platforms:
+
+Flywheel was acquired by Ascential and then Ascential's digital commerce assets (including Flywheel) were acquired by Omnicom. I need to reflect its current context.
+CitrusAd was acquired by Epsilon (Publicis Groupe). Its core is retail media ad serving.
+Search queries will be:
+
+"Stackline platform features UK"
+"Stackline UK customers pricing"
+"Flywheel Digital (Omnicom) services UK" (reflecting acquisition)
+"Flywheel Digital UK customers pricing"
+"Pacvue platform features UK"
+"Pacvue UK customers pricing"
+"Intentwise platform features UK"
+"Intentwise UK customers pricing"
+"CitrusAd Epsilon platform features UK" (reflecting acquisition)
+"CitrusAd UK customers pricing retail media"
+"Commerce OS platform features comparison"
+"UK retail CPG software competitive landscape"
+"Pricing models for e-commerce SaaS platforms UK"
+I will perform these searches and then populate the YAML structure, focusing on describing the core features of each platform and noting the confidentiality of specific UK customer lists and pricing details.
+
+I have performed the searches for the "Competitive Commerce-OS Platforms" node.
+The search results provided overviews of Stackline, Flywheel Digital (now Omnicom), Pacvue, Intentwise, and CitrusAd (Epsilon).
+
+Regarding the key questions:
+
+Feature gaps vs COS roadmap: Since I don't have the "COS roadmap," I cannot identify specific "gaps." Instead, I will focus on describing the core features and strengths of each competitive platform. This will allow the user (who presumably has the COS roadmap) to infer gaps. The platforms generally offer a suite of tools for e-commerce advertising optimization, market intelligence, digital shelf analytics, and some level of retail operations support.
+Stackline: Emphasizes unified sales, marketing, and operational analytics, forecasting, advertising analytics, digital shelf monitoring, and profitability metrics.
+Flywheel Digital (Omnicom): Offers retail media optimization, retail operations (content, fee recovery, digital shelf), market intelligence, and managed services. Strong Amazon focus highlighted in one case study.
+Pacvue: Commerce acceleration platform unifying retail media, commerce management, and measurement across many marketplaces. Focuses on ad optimization, automation, reporting, and intelligence.
+Intentwise: Focuses on Amazon and Walmart advertising and analytics, with an "Ad Optimizer," "Analytics Cloud," and "Explore" (AMC integration) product suite.
+CitrusAd (Epsilon): Strong in retail media technology, enabling retailers to monetize their digital spaces and brands to run targeted campaigns (on-site, off-site, in-store). Known for its white-label platform for retailers.
+UK customer logos & pricing:
+UK Customer Logos: Specific lists of UK customers are generally not provided in high-level search results. Some platforms mention global brands or a number of clients worldwide, and CitrusAd mentioned UK retailers like Tesco, Sainsbury's/Argos/Nectar360, and Ocado as users of their technology. I will note where UK presence or European focus is mentioned.
+Pricing: This is consistently confidential for enterprise SaaS platforms. Pricing is typically bespoke, based on usage, ad spend managed, number of users, marketplaces, modules, etc. Pacvue had an "average contract value of approximately $26,455" mentioned by Vendr, and Intentwise had a starting price of "$499 per month" on Slashdot for what seems like a lower tier. CitrusAd mentioned not being a revenue share model but "pay per use" for retailers. I will state that costs are generally not public and require direct vendor engagement.
+I will now structure the YAML for the seventh node.
+
+Here's the plan:
+
+_generation_metadata: Update for the seventh node.
+session_kick_off_and_alignment: Introduce the seventh node on Competitive Commerce-OS Platforms.
+executive_summary_phase: Summarize the landscape of these platforms, their common feature areas (ad optimization, analytics, retail media focus), and the general opacity of UK-specific client lists and pricing.
+detailed_analysis_phase:
+Update _critical_takeaway and _section_tldr.
+The content_sections will feature the "Competitive Commerce-OS Platforms" node.
+node_title: 7. Competitive Commerce-OS Platforms
+portability_flag: 🔀 (adapt)
+priority: Med
+status_box: ➤ In Progress
+core_scope_and_key_questions_summary for this node.
+question_bank for this node.
+key_findings: Structured per platform.
+For each (Stackline, Flywheel, Pacvue, Intentwise, CitrusAd SaaS):
+platform_name (noting current ownership where relevant)
+core_features_and_focus: Describe their main offerings, target users (brands/agencies/retailers), and areas of strength. This will serve as the basis for the user to compare against their "COS roadmap."
+uk_customer_logos_and_pricing_overview: Note any specific UK presence or clients mentioned. State that detailed client lists and pricing are typically confidential and require direct engagement. Mention any indicative pricing found.
+source_links: List relevant URLs.
+evidence_and_transparency_phase: Emphasize the confidentiality of detailed UK customer lists and pricing. Note that feature sets are broad and comparisons to a specific "COS roadmap" are for the user to make.
+key_learnings_and_reinforcement: Summarize the competitive landscape and the key differentiators.
+concluding_thoughts_and_path_forward: Transition to the next node.
+_presenter_notes: Add relevant cues.
+I will now generate the YAML output.
+
+Okay, I will now create the seventh node document, "Competitive Commerce-OS Platforms," based on the HAPG YAML structure and the information gathered.
+
+YAML
+
+#------------------------------------------------------------------------------------
+# 📝 Commerce-OS Research Spine - UK Expansion
+# Document Version: 1.0
+# Date: 2025-05-18
+# Purpose: This document is the seventh node of a comprehensive research binder
+#          to support the shift from US to UK commerce operations.
+#------------------------------------------------------------------------------------
+_generation_metadata:
+  original_prompt_context: "User requested to create the next node document: 'Competitive Commerce-OS Platforms' (Node 7)."
+  ai_generation_objective_for_user: "To generate the seventh node document ('Competitive Commerce-OS Platforms') in ASSERT+ YAML Presentation Mode, populating key findings with researched information for Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS, focusing on their features (for user to compare with COS roadmap) and UK presence/pricing (where available)."
+  generation_mode_flags: ["presentation_mode_active", "human_first_doc_style_v2.0", "seventh_node_generation"]
+  key_assumptions_for_presentation_mode:
+    - "Audience has shared context from previous nodes and possesses knowledge of their internal 'COS roadmap' for comparison."
+    - "Focus is on understanding the capabilities and market positioning of competitive platforms in the UK."
+
+#------------------------------------------------------------------------------------
+# 🤝 Phase 1: SESSION KICK-OFF & ALIGNMENT
+# Purpose: To introduce the seventh research focus area: Competitive Commerce-OS Platforms in the UK.
+#------------------------------------------------------------------------------------
+session_kick_off_and_alignment:
+  _critical_takeaway: "The UK e-commerce landscape is served by several sophisticated Commerce-OS type platforms offering varying focuses on advertising, analytics, and retail media capabilities; understanding their feature sets and UK penetration is key to positioning our own Commerce-OS."
+  _section_tldr: "This session explores Node 7: 'Competitive Commerce-OS Platforms', examining Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS to understand their core offerings and UK market presence, allowing for an implicit comparison against our COS roadmap."
+  session_topic_and_purpose: "Exploration of Node 7: Competitive Commerce-OS Platforms – Profiling Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS. The purpose is to understand their key features (for internal comparison to the COS roadmap) and assess their UK customer base and pricing models where public information exists."
+  key_objectives_for_this_discussion:
+    - "Review the major competitive Commerce-OS platforms operating in or serving the UK market."
+    - "Detail their core feature sets, strengths, and target audiences (brands, agencies, retailers)."
+    - "Discuss any known UK customer logos or market penetration."
+    - "Outline typical pricing models, acknowledging general confidentiality of specific rates."
+    - "Facilitate an internal assessment of feature gaps and opportunities relative to the Commerce-OS roadmap."
+  agenda_overview_and_scope:
+    - "Overview of the competitive landscape for e-commerce and retail media management platforms in the UK."
+    - "Detailed profile for each target platform:"
+      - "Key features and functionalities (e.g., retail analytics, ad optimization, digital shelf, market intelligence)."
+      - "Information on UK presence, notable clients (if public)."
+      - "General insights into pricing approaches (specifics are typically confidential)."
+    - "Discussion of portability (🔀 adapt – global platforms with local nuances) and strategic implications for Commerce-OS."
+
+#------------------------------------------------------------------------------------
+# 💡 Phase 2: EXECUTIVE SUMMARY & CORE INSIGHTS
+# Purpose: To provide a high-level overview of the competitive Commerce-OS platform landscape in the UK.
+#------------------------------------------------------------------------------------
+executive_summary_phase:
+  _critical_takeaway: "Competitive Commerce-OS platforms like Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd offer robust solutions primarily focused on e-commerce advertising optimization, retail analytics, and retail media enablement. While they have a global presence including the UK, specific UK customer lists and detailed pricing are typically not public. Their feature sets provide a benchmark for assessing the COS roadmap."
+  _section_tldr: "The UK market sees strong competition from established e-commerce platform providers specializing in areas like ad tech, market intelligence, and retail media. Understanding their core strengths helps identify differentiation opportunities for COS, though UK-specific commercial details are sparse publicly."
+  summary_of_competitive_commerce_os_platforms:
+    - "Key Players & Focus: Stackline (unified commerce analytics), Flywheel Digital (Omnicom) (digital commerce services & retail media), Pacvue (e-commerce advertising & intelligence), Intentwise (Amazon/Walmart ad optimization & analytics), and CitrusAd (Epsilon) (retail media network technology for retailers)."
+    - "Common Feature Areas: Most platforms offer tools for retail media campaign management (especially Amazon, Walmart), digital shelf monitoring, sales and market share analytics, and workflow automation. Some extend into broader operational insights and forecasting."
+    - "UK Presence: These are generally global platforms with operations or clients in the UK and Europe. CitrusAd explicitly mentioned UK retailers like Tesco and Sainsbury's using its technology."
+    - "Feature Gaps (vs. Generic COS): The specific gaps depend on the COS roadmap, but areas of differentiation could include depth of integration across all commerce functions beyond advertising, unique data partnerships, or specific UK retailer integrations not covered by global platforms."
+    - "UK Customer Logos & Pricing: Detailed UK-specific client lists are rarely publicized. Pricing models are typically SaaS (subscription, percentage of ad spend) and bespoke for enterprise clients, making direct comparisons difficult without vendor engagement."
+  key_implications_for_commerce_os:
+    - "The existing competitive landscape highlights the need for clear differentiation in the COS offering for the UK market."
+    - "Understanding the feature depth of these competitors in areas like ad optimization, analytics, and retail media support is crucial for product development and positioning."
+    - "Building a strong UK-specific value proposition, potentially including local support and tailored integrations, will be important."
+
+#------------------------------------------------------------------------------------
+# 🏗️ Phase 3: DETAILED STRUCTURE & ANALYSIS
+# Purpose: To present the detailed findings for the "Competitive Commerce-OS Platforms" node.
+#------------------------------------------------------------------------------------
+detailed_analysis_phase:
+  _critical_takeaway: "Each competitive platform offers a distinct blend of e-commerce advertising, analytics, and retail media capabilities, often with a strong emphasis on major marketplaces like Amazon. While specific UK client penetration and pricing are elusive publicly, their feature sets define the current benchmarks against which any new Commerce-OS must be evaluated."
+  _section_tldr: "This section details Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd, outlining their core functionalities and known UK context, allowing users to map these against their internal COS roadmap to identify potential gaps or areas of competitive strength."
+  content_sections:
+    - node_document:
+        node_title: "7. Competitive Commerce-OS Platforms"
+        portability_flag: "🔀 Adapt"
+        priority: "Med"
+        status_box: "➤ In Progress"
+        core_scope_and_key_questions_summary: "Profiling competitive platforms: Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS. Focus on their core features (for comparison against COS roadmap) and available information on UK customer logos and pricing models."
+        question_bank:
+          - "What are the core features and primary focus areas of Stackline, Flywheel, Pacvue, Intentwise, and CitrusAd SaaS?"
+          - "How do these platforms help brands/retailers manage e-commerce advertising, particularly on major marketplaces?"
+          - "What analytics capabilities (digital shelf, market share, profitability, forecasting) do they offer?"
+          - "Are there any publicly cited UK-specific customer logos or case studies for these platforms?"
+          - "What is generally known or inferable about their pricing models or tiers, acknowledging that specifics are usually confidential?"
+          - "How might these platforms' offerings compare to, or highlight potential gaps in, a typical Commerce-OS roadmap aiming for comprehensive UK market coverage?"
+        key_findings:
+          - competitive_platform_profile:
+              platform_name: "Stackline"
+              core_features_and_focus:
+                - "Offers a suite of tools (Beacon, Atlas, Shopper OS) for e-commerce sales, marketing, and operational analytics."
+                - "Key features: Product-level sales and advertising forecasting (AI-driven), advertising analytics (incrementality, recommendations), digital shelf monitoring (traffic sources, content, compliance), marketing analytics (reviews, promotions), sales & profitability tracking."
+                - "Focuses on unifying cross-functional team data and projects with scenario planning."
+              uk_customer_logos_and_pricing_overview:
+                - "UK Presence: Global platform, implies UK availability. No specific UK customer logos readily found in snippets."
+                - "Pricing: Not publicly detailed. Likely enterprise SaaS model. Company revenue stated as $50-100 million, suggesting significant enterprise client base."
+          - competitive_platform_profile:
+              platform_name: "Flywheel Digital (now part of Omnicom)"
+              core_features_and_focus:
+                - "Digital commerce agency/platform offering services to help brands sell on digital marketplaces (Amazon, Walmart, Alibaba mentioned globally)."
+                - "Solutions suite: Retail media (AI-powered ad optimization), retail operations (content optimization, fee recovery, digital shelf monitoring, retail analytics), market intelligence (market share, competitive intelligence)."
+                - "Offers managed media services, retail operations services, and content/creative strategy."
+                - "Leverages Amazon Marketing Stream for intraday bid optimizations for some clients."
+              uk_customer_logos_and_pricing_overview:
+                - "UK Presence: Global presence with local expertise claimed ("20 Countries with +2000 employees globally"). No specific UK customer logos readily found in snippets, but works with "50+ of the top 100 publicly listed global CPG brands"."
+                - "Pricing: Not publicly detailed. Enterprise services and SaaS solutions, likely custom quoted."
+          - competitive_platform_profile:
+              platform_name: "Pacvue (part of Assembly)"
+              core_features_and_focus:
+                - "Commerce acceleration platform unifying retail media, commerce management, and measurement tools across 90+ marketplaces."
+                - "Key features: Ad optimization (rule-based automation, AI optimization), campaign automation (keyword harvesting, dayparting), reporting and dashboards (customizable, multi-retailer), intelligence (keyword recommendations, share of voice)."
+                - "Supports Amazon, Asda, Boots, and other marketplaces. Recently launched Pacvue Commerce for Target for omnichannel operations management."
+              uk_customer_logos_and_pricing_overview:
+                - "UK Presence: Mentions Asda and Boots as supported marketplaces, indicating UK focus. Global platform available in 30+ countries."
+                - "UK Customer Logos: Works with major brands and agencies (e.g., L'Oreal via Publicis Media, Reckitt, Sabra, Hisense globally – UK specifics not detailed)."
+                - "Pricing: Not publicly detailed. Vendr mentions an "average contract value of approximately $26,455" and suggests negotiation tactics, indicating bespoke enterprise pricing. Payment terms: Net 30, annual upfront."
+          - competitive_platform_profile:
+              platform_name: "Intentwise"
+              core_features_and_focus:
+                - "E-commerce advertising and analytics platform, primarily for Amazon and Walmart."
+                - "Product suite: 'Analytics Cloud' (data automation and organization, customizable dashboards), 'Ad Optimizer' (ads management, AI assistant 'Wizi', automated recommendations, AI bidding algorithms), 'Explore' (Amazon Marketing Cloud integration for shopper path insights, no SQL needed)."
+                - "Targets brands and agencies, offering tools for ad management, measurement, and deep insights (New-To-Brand, LTV)."
+              uk_customer_logos_and_pricing_overview:
+                - "UK Presence: Used by advertisers and agencies in over 11 countries, implying UK availability. No specific UK customer logos readily found."
+                - "Pricing: Slashdot mentions a starting price of "$499 per month." Their website has a form indicating pricing tiers based on monthly ad spend (e.g., $0-$50k, $50k-$100k, etc.), suggesting a tiered SaaS model."
+          - competitive_platform_profile:
+              platform_name: "CitrusAd (an Epsilon company, Publicis Groupe)"
+              core_features_and_focus:
+                - "Retail media platform enabling retailers to monetize their digital (on-site, off-site) and in-store advertising spaces."
+                - "Provides a white-label solution for retailers to control ad serving and manage campaigns."
+                - "Offers brands a self-serve platform for targeted campaigns at the point of purchase, with real-time reporting and ROI measurement."
+                - "Unified on-site and off-site capabilities leveraging Epsilon's CORE ID for identity resolution."
+                - "Supports auction-based CPC or CPI models."
+              uk_customer_logos_and_pricing_overview:
+                - "UK Presence: Strong UK presence. Mentioned retailers using their platform include John Lewis, Ocado, Sainsbury's/Argos/Nectar360, and Tesco."
+                - "Pricing: For retailers, it's described as "not a revenue share model, but pay per use." For advertisers, it's an auction-based model (CPC/CPI). Specific platform SaaS fees for retailers are not public."
+        source_links:
+          - title: "Stackline Beacon - Ecommerce sales, marketing, and operational analytics"
+            url: "https://www.stackline.com/beacon"
+          - title: "Stackline Company Overview - LeadIQ"
+            url: "https://leadiq.com/c/stackline/5a1d9d772300005b008d4f90"
+          - title: "Flywheel | Driving growth in digital commerce"
+            url: "https://www.flywheeldigital.com/"
+          - title: "Omnicom Acquires Flywheel Digital for $835M - RMW Commerce Consulting"
+            url: "https://www.rmwcommerce.com/fundraising/omnicom-acquires-flywheel-digital-for-835m"
+          - title: "Flywheel Digital helps clients drive performance (Amazon Ads case study)"
+            url: "https://advertising.amazon.com/library/case-studies/flywheel-digital-performance-improvements"
+          - title: "Pacvue: Unified Commerce Platform"
+            url: "https://pacvue.com/"
+          - title: "Pacvue Retail Media Ad Management EU"
+            url: "https://pacvue.com/pacvue-retail-media-ad-management-uk/"
+          - title: "Pacvue Software Pricing & Plans 2025 - Vendr"
+            url: "https://www.vendr.com/marketplace/pacvue"
+          - title: "Intentwise: Amazon/Ecommerce Advertising and Analytics"
+            url: "https://www.intentwise.com/"
+          - title: "Intentwise Amazon Advertising Platform for Agencies"
+            url: "https://www.intentwise.com/agency"
+          - title: "Top eCommerce Tools for Freelancers in 2025 - Slashdot (mentions Intentwise pricing)"
+            url: "https://slashdot.org/software/ecommerce-tools/f-freelance/?page=7"
+          - title: "Intentwise - Supercharge Your Agency's Reporting"
+            url: "https://www.intentwise.com/agency/analytics-cloud"
+          - title: "CitrusAd (Epsilon Retail Media) Networks List (2025) - mimbi"
+            url: "https://www.mimbi.io/retail-media-networks-list/citrusad-retail-media-networks"
+          - title: "Exclusive: CitrusAd highlights the importance of retail media - IT Brief UK"
+            url: "https://itbrief.co.uk/story/exclusive-citrusad-highlights-the-importance-of-retail-media"
+          - title: "CitrusAd - Data Sheet - Mi9 Retail (older, but gives model context)"
+            url: "https://mi9retail.com/wp-content/uploads/2019/11/CitrusAd-Data-Sheet.pdf"
+          - title: "CitrusAd Advertiser Agreement (details on fees and models)"
+            url: "https://www.citrusad.com/advertiser-agreement"
+
+#------------------------------------------------------------------------------------
+# 🔬 Phase 4: EVIDENCE, ELUCIDATION & TRANSPARENCY
+# Purpose: To clarify the sources and acknowledge limitations in the data for Competitive Commerce-OS Platforms.
+#------------------------------------------------------------------------------------
+evidence_and_transparency_phase:
+  _critical_takeaway: "Platform features are generally well-documented on vendor websites; however, specific UK customer lists are rarely public, and detailed pricing information is almost always confidential, requiring direct sales engagement."
+  _section_tldr: "This section confirms findings are based on public sources, with an explicit acknowledgment of the commercial sensitivity surrounding detailed UK client rosters and pricing structures. Feature comparisons are high-level due to the absence of the specific COS roadmap."
+  data_sourcing_and_methodology:
+    primary_sources: "Vendor websites (Stackline, Flywheel, Pacvue, Intentwise, CitrusAd/Epsilon), company blogs, press releases, and official partner materials (e.g., Amazon Ads case studies)."
+    secondary_sources: "Industry news sites (e.g., RMW Commerce Consulting, IT Brief UK), software review/pricing aggregators (e.g., Vendr, Slashdot for indicative pricing points only)."
+    information_nature: "Core platform features are widely advertised. UK client examples are sparse. Pricing models are generally described (SaaS, % of spend), but specific rates are confidential."
+  confidence_level_and_limitations:
+    confidence:
+      - "High for general platform capabilities and target markets."
+      - "Medium for inferring UK applicability and general pricing models."
+      - "Low for obtaining comprehensive lists of UK-specific customer logos and detailed, comparable pricing information without direct vendor contact."
+    limitations:
+      - "Detailed 'feature gap analysis' is not possible without the specific COS roadmap for comparison; findings describe general features."
+      - "UK customer logos are not systematically published by these global companies."
+      - "Pricing information is highly proprietary and subject to negotiation; any figures found are indicative at best or for specific, possibly limited, offerings."
+      - "The competitive landscape is dynamic, with frequent acquisitions and feature updates (e.g., Flywheel's journey from Ascential to Omnicom, CitrusAd's acquisition by Epsilon)."
+
+#------------------------------------------------------------------------------------
+# 🔄 Phase 5: KEY LEARNINGS & REINFORCEMENT
+# Purpose: To summarize the essential takeaways regarding UK Competitive Commerce-OS Platforms.
+#------------------------------------------------------------------------------------
+key_learnings_and_reinforcement:
+  _critical_takeaway: "The UK Commerce-OS competitive landscape is characterized by platforms offering deep expertise in e-commerce advertising (especially on Amazon), retail analytics, and increasingly, retail media network enablement. Differentiation for a new COS will likely hinge on breadth of retailer integration, unique data/AI capabilities, or a more holistic approach beyond ad-tech."
+  _section_tldr: "Recapping core themes: Competitors offer specialized and often powerful tools for specific e-commerce functions. A successful COS needs to define its unique value proposition against these established players in the UK market."
+  recap_of_key_insights:
+    - "Leading competitive platforms provide sophisticated tools for managing retail media, optimizing digital shelf presence, and gaining market intelligence."
+    - "Many platforms have a strong heritage in supporting brands on major marketplaces like Amazon and are expanding to other retailers."
+    - "CitrusAd stands out for its focus on providing technology to retailers to build their own media networks, with significant UK retailer adoption."
+    - "Accessing detailed UK client information and specific pricing requires direct engagement; public information is limited."
+    - "The 'ideal' feature set for a Commerce-OS will depend on the target user (brand, agency, retailer) and their specific needs within the UK context."
+  strategic_considerations_for_commerce_os:
+    - "Clearly define the target audience and unique selling propositions for Commerce-OS in the UK market relative to these competitors."
+    - "Identify areas where Commerce-OS can offer superior integration, broader functionality, or better UK-specific insights."
+    - "Develop a go-to-market strategy that acknowledges the strengths of these incumbents and highlights COS's differentiators."
+    - "Consider partnership opportunities where complementary, rather than competitive, relationships might be beneficial."
+
+#------------------------------------------------------------------------------------
+# 🏁 Phase 6: CONCLUDING THOUGHTS & PATH FORWARD
+# Purpose: To conclude the review of the seventh node and outline next steps.
+#------------------------------------------------------------------------------------
+concluding_thoughts_and_path_forward:
+  _critical_takeaway: "Node 7 provides a snapshot of the competitive pressures and feature benchmarks in the Commerce-OS space. Understanding these alternatives is vital for refining the COS roadmap and ensuring its relevance and appeal in the sophisticated UK market."
+  _section_tldr: "This analysis of competitive platforms is crucial for strategic planning. The next node on Consumer Segments & Coffee Trends will shift focus to understanding the end consumer in a key category."
+  summary_of_node_completion: "The 'Competitive Commerce-OS Platforms' node outlines the main competitors and their general offerings, highlighting the dynamic nature of the market and the importance of differentiation for any new entrant."
+  next_steps_in_research_spine:
+    - "Proceed to Node 8: 'Consumer Segments & Coffee Trends' to understand Millennial/Gen-Z flavor adoption, occasion mapping, social sentiment, and geographic clusters for a specific category focus."
+    - "Following that, Node 9 'Internal Capability FitMap' will be critical for assessing how existing PathX modules meet UK needs identified through these external analyses."
+    - "The insights from this competitive review should be fed directly into the COS roadmap planning and feature prioritization process."
+  call_to_action_or_discussion_points:
+    - "Based on these competitor profiles, what are the most apparent strengths and weaknesses of our current COS concept for the UK?"
+    - "Which competitive features seem most critical for UK CPG brands or retailers?"
+    - "How should our pricing strategy for Commerce-OS compare or contrast with the general models observed?"
+
+#------------------------------------------------------------------------------------
+# 🎤 _presenter_notes:
+# Purpose: To provide cues and additional context for the presenter.
+#------------------------------------------------------------------------------------
+_presenter_notes:
+  - _presenter_cue: "When presenting, visually represent the core focus of each competitor (e.g., ad tech, retail media enabling, broad analytics)."
+  - _presenter_cue: "Emphasize that the 'feature gap analysis' is an internal exercise for the audience, using the presented information as a baseline."
+  - _presenter_cue: "Acknowledge the dynamic nature of this market – acquisitions and new feature releases are common."
+  - _presenter_cue: "Reinforce that pricing and specific UK client lists are hard to come by publicly, so the focus is on capabilities and strategic approach."
+  - _presenter_cue: "Transition: 'Understanding the competitive landscape for Commerce Operating Systems gives us valuable context. Now, let's pivot to a crucial driver of commerce success: the end consumer. Node 8 will take us into Consumer Segments and specifically, Coffee Trends in the UK.'"
+
+Sources
+
+
+
+
+
