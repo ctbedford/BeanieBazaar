@@ -1,0 +1,80 @@
+#------------------------------------------------------------------------------------
+# 🤝 Phase 1: SESSION KICK-OFF & ALIGNMENT
+# Purpose: To instruct the AI agent on the necessary modifications to
+#          `ResearchSpineView.tsx` to align with the newly updated data structures
+#          in `researchSpineData.ts` and to implement dynamic YAML loading for
+#          detailed node content.
+#------------------------------------------------------------------------------------
+session_kick_off_and_alignment:
+  _critical_takeaway: "Now that `researchSpineData.ts` uses the new HAPG-aligned interfaces and `detailed_document_path` for research nodes, `ResearchSpineView.tsx` must be updated to: 1) correctly display summary data (including new status/portability flags) from the updated `ResearchNode` objects, and 2) implement the fetching, parsing, and rendering of detailed HAPG YAML content from these external file paths."
+  _section_tldr: "The AI agent needs to refactor `ResearchSpineView.tsx` to work with the new `ResearchNode` structure (especially `detailed_document_path`), add UI elements for `status` and `portability_flag`, and build the logic to dynamically load and display full HAPG YAML content for detailed views."
+  session_topic_and_purpose: "Synchronizing `ResearchSpineView.tsx` with the Updated `researchSpineData.ts` and Implementing Dynamic YAML Loading."
+  key_objectives_for_this_discussion:
+    - "Ensure `ResearchSpineView.tsx` correctly consumes the modified `ResearchNode` interface from the updated `researchSpineData.ts` for its list view."
+    - "Implement the client-side logic within `ResearchSpineView.tsx` to fetch (using `Workspace` API) and parse (using `js-yaml`) individual YAML files based on `detailed_document_path`."
+    - "Adapt the detail view tabs in `ResearchSpineView.tsx` to render content from the parsed HAPG YAML data, utilizing the newly defined detailed HAPG phase interfaces (e.g., `SessionKickOffPhase`, `DetailedResearchDocument`)."
+  agenda_overview_and_scope:
+    - "Task 1: Update the main list view in `ResearchSpineView.tsx` to display new node attributes (`status`, `portability_flag`)."
+    - "Task 2: Implement YAML fetching and parsing logic in `ResearchSpineView.tsx`."
+    - "Task 3: Refactor the detail view tabs in `ResearchSpineView.tsx` to use the parsed HAPG YAML data."
+    - "Task 4: Incorporate loading and error states for dynamic content."
+
+#------------------------------------------------------------------------------------
+# 💡 Phase 2: EXECUTIVE SUMMARY & CORE INSIGHTS
+# Purpose: To summarize the required changes for `ResearchSpineView.tsx`.
+#------------------------------------------------------------------------------------
+executive_summary_phase:
+  _critical_takeaway: "`ResearchSpineView.tsx` requires a two-pronged update: first, refresh its list display to show the new `status` and `portability_flag` fields now available in `ResearchNode`. Second, and more significantly, implement the dynamic loading and rendering pipeline for detailed HAPG YAML content using `detailed_document_path`, `Workspace`, and `js-yaml`."
+  _section_tldr: "The AI agent's next steps are to update `ResearchSpineView.tsx` to reflect the new summary fields and build the core functionality to load, parse, and display detailed content from external YAML files, making the Research Spine page truly dynamic."
+  summary_of_required_changes_to_researchspineview:
+    - "List View Updates: Modify the accordion list to display the new `status` and `portability_flag` for each `ResearchNode`."
+    - "Dynamic Loading Implementation: Add logic to fetch content from the URL specified in `detailed_document_path`, parse the fetched YAML string using `js-yaml`, and store the resulting object in component state."
+    - "Detail View Refactor: Update the existing tabbed detail view to consume the parsed HAPG YAML object (typed as `DetailedResearchDocument` with its constituent HAPG phase interfaces)."
+    - "State Management: Implement states for `isLoadingDetail`, `detailError`, and `parsedDetailedContent`."
+    - "User Feedback: Provide clear loading indicators and error messages to the user during the dynamic content loading process."
+
+#------------------------------------------------------------------------------------
+# 🏗️ Phase 3: DETAILED STRUCTURE & ANALYSIS (Instructions for AI Agent)
+# Purpose: To provide specific, sequential instructions to the AI agent for modifying `ResearchSpineView.tsx`.
+#------------------------------------------------------------------------------------
+detailed_analysis_phase:
+  _critical_takeaway: "Successfully refactoring `ResearchSpineView.tsx` as per these instructions will enable the Info Hub to present a comprehensive and up-to-date view of the research spine, leveraging the full richness of the HAPG YAML documents."
+  _section_tldr: "This section provides a step-by-step guide for the AI agent to modify `ResearchSpineView.tsx`, focusing on adapting to the new data model and implementing dynamic content features."
+  content_sections:
+    - modification_task:
+        title: "Task 1: Update List View in `ResearchSpineView.tsx` for New `ResearchNode` Fields"
+        _critical_takeaway: "The accordion list items must now display the `status` and `portability_flag` from the updated `ResearchNode` structure in `researchSpineData.ts`."
+        instructions_for_ai_agent:
+          - "Ensure `ResearchSpineView.tsx` correctly imports the updated `ResearchNode` interface from `client/src/data/researchSpineData.ts` (which now includes `status` and `portability_flag`)."
+          - "Locate the `data.research_nodes.map(...)` section that renders the accordion list."
+          - "Within the `CardHeader` (or `AccordionTrigger`) for each `node`:"
+          - "Add a `<Badge>` component to display `node.status`. Utilize the existing `getStatusColor` helper function. Ensure this function is robust enough to handle all defined status values: `\"Not Started\" | \"In Progress\" | \"Completed\" | \"Blocked\"`."
+          - "Add another `<Badge>` component to display `node.portability_flag` *only if it is defined*. Create a new helper function `getPortabilityColor(flag?: string)` that returns appropriate Tailwind CSS classes for styling (e.g., green for '⚖️ Same', yellow for '🔀 Adapt', red for '❗ New', purple for '🌟 Consolidated View'). Example:"
+            ```typescript
+            // Helper function inside ResearchSpineView.tsx or in utils.ts
+            const getPortabilityColor = (flag?: string) => {
+              switch (flag) {
+                case "⚖️ Same": return "bg-green-100 text-green-800";
+                case "🔀 Adapt": return "bg-yellow-100 text-yellow-800";
+                case "❗ New": return "bg-red-100 text-red-800";
+                case "🌟 Consolidated View": return "bg-indigo-100 text-indigo-800";
+                default: return "bg-slate-100 text-slate-800";
+              }
+            };
+            ```
+            ```jsx
+            // Inside the map for AccordionTrigger/CardHeader
+            {node.portability_flag && (
+              <Badge variant="outline" className={getPortabilityColor(node.portability_flag)}>
+                {node.portability_flag}
+              </Badge>
+            )}
+            ```
+          - "Ensure these new badges are well-positioned within the existing layout of the accordion trigger, maintaining readability."
+        self_correction_checklist:
+          - "Does the component compile without type errors with the updated `ResearchNode` structure?"
+          - "Are `status` badges displayed for all nodes, using correct colors?"
+          - "Are `portability_flag` badges displayed *only when the flag is present*, using correct colors?"
+          - "Is the accordion trigger layout still visually appealing?"
+
+    - modification_
