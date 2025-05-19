@@ -904,9 +904,10 @@ const researchSpineData: ResearchSpineData = {
                       }
                     ]
                   }
-                  },
+                ],
+                key_findings: [
                   {
-                    rc_platform_profile: {
+                    title: "Uber Eats Platform Profile",
                       platform_name: "Uber Eats",
                       sponsored_listings_and_advertising: [
                         "'Sponsored Listings': Allows restaurant partners to improve visibility at the top of Uber Eats listings. Managed via self-serve Uber Eats Manager platform, with performance tracking (clicks, orders).",
