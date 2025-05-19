@@ -236,11 +236,25 @@ const researchSpineData: ResearchSpineData = {
         },
         evidence_and_transparency_phase: {
           critical_takeaway: "Information on UK VAT rules, FX management practices, and promotion-related VAT impacts is drawn from government sources, accounting guidance, and industry resources, though specific implementation may vary by business.",
-          section_tldr: "Findings represent a synthesis of authoritative sources while recognizing the need for case-by-case application to specific business scenarios and product categories."
+          section_tldr: "Findings represent a synthesis of authoritative sources while recognizing the need for case-by-case application to specific business scenarios and product categories.",
+          content: [
+            "Government sources (HMRC VAT Notice 701/14 - Food) provide the foundation for VAT classifications",
+            "Accounting firm publications (Blog.Shorts.UK, GBAC, Lera Accountancy) offer practical interpretations of VAT rules",
+            "Financial service providers (MTFX Group, Silicon Valley Bank) provide FX management guidance",
+            "UK trade associations and forums contribute insights on promotion practices",
+            "Commercial confidentiality limits some specific pricing and margin details"
+          ]
         },
         key_learnings_and_reinforcement: {
           critical_takeaway: "Success in the UK market requires attention to the VAT status of products (particularly distinguishing home preparation vs. prepared beverages), proactive FX risk management, and meticulous VAT treatment in promotional pricing to protect margins and ensure compliance.",
-          section_tldr: "The interplay between UK VAT rules, currency management, and promotional pricing creates a complex financial landscape that directly impacts product margins and requires adaptations from US approaches."
+          section_tldr: "The interplay between UK VAT rules, currency management, and promotional pricing creates a complex financial landscape that directly impacts product margins and requires adaptations from US approaches.",
+          content: [
+            "VAT rules significantly impact product categorization and pricing strategies for retail coffee products",
+            "Effective FX risk management is essential for importers to maintain stable margins",
+            "VAT calculations on promotions need careful consideration to maintain true profitability",
+            "Businesses must adapt systems and processes to handle UK-specific VAT and currency requirements",
+            "Regular review of VAT status is important as HMRC interpretations can evolve over time"
+          ]
         },
         concluding_thoughts_and_path_forward: {
           critical_takeaway: "Node 12 highlights how UK-specific tax and currency factors influence pricing and profitability. The next logical step is to examine the organizational ecosystem needed to navigate these complexities effectively.",
