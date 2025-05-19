@@ -513,6 +513,198 @@ const researchSpineData: ResearchSpineData = {
     },
     {
       node_id: "R03",
+      title: "Retail Media Networks (RMN)",
+      scope: "Analysis of UK Retail Media Networks, including Nectar360, Tesco Media & Insight Platform, Morrisons Media Group, and Asda Media Partnerships (LS Eleven).",
+      priority: "High",
+      core_questions: [
+        "What are the primary advertising solutions (onsite, offsite, in-store) offered by Nectar360, Tesco Media & Insight, Morrisons Media Group, and Asda Media Partnerships?",
+        "What is known about their booking mechanisms, availability of APIs for programmatic buying, and typical minimum spend requirements?",
+        "How do these RMNs approach campaign attribution, particularly connecting online advertising to in-store sales?"
+      ],
+      key_outputs_or_impact_on_cos: [
+        "Integration points and connectors for RMN platforms in Commerce-OS.",
+        "Data structures for campaign planning, execution, and results aggregation across diverse RMNs."
+      ],
+      detailed_document: {
+        metadata: {
+          version: "1.0",
+          date: "2025-05-18"
+        },
+        session_kick_off_and_alignment: {
+          critical_takeaway: "UK Retail Media Networks are rapidly maturing, leveraging rich first-party data to offer sophisticated targeting and measurement capabilities, making them critical for brands to understand and integrate into their strategies.",
+          section_tldr: "This session dives into Node 3: 'Retail Media Networks (RMN)', exploring the offerings of Nectar360, Tesco Media & Insight, Morrisons Media Group, and Asda Media Partnerships, focusing on their booking mechanisms, attribution, and segmentation."
+        },
+        executive_summary_phase: {
+          critical_takeaway: "UK RMNs, powered by extensive loyalty card data (Nectar, Clubcard, Asda Rewards), offer brands potent omnichannel advertising opportunities with increasingly sophisticated self-serve options, granular audience segmentation, and closed-loop attribution connecting media spend to both online and in-store sales.",
+          section_tldr: "Key UK grocers have developed powerful RMNs that provide deep customer insights and targeted advertising channels, crucial for brands aiming to influence shoppers at multiple touchpoints. Exact API details and spend floors remain largely direct-engagement topics."
+        },
+        detailed_analysis_phase: {
+          critical_takeaway: "While specific operational details like API endpoints and minimum spends are often proprietary, the strategic capabilities of UK RMNs—their data depth, targeting precision, and measurement sophistication—are clear and demand tailored approaches from brands using Commerce-OS.",
+          section_tldr: "This section breaks down Nectar360, Tesco Media & Insight, Morrisons Media Group, and Asda Media Partnerships, focusing on their known capabilities in booking, attribution, and segmentation, highlighting the common theme of first-party data power.",
+          content_sections: [
+            {
+              node_document: {
+                node_id: "R03",
+                node_title: "Retail Media Networks (RMN)",
+                portability_flag: "🔀 Adapt",
+                priority: "High",
+                status_box: "➤ In Progress",
+                core_scope_and_key_questions_summary: "Profiling key UK Retail Media Networks: Nectar360, Tesco Media & Insight Platform, Morrisons Media Group, and Asda Media Partnerships (LS Eleven). Focus on their booking APIs & spend floors, and attribution & segment granularity.",
+                question_bank: [
+                  "What are the primary advertising solutions (onsite, offsite, in-store) offered by Nectar360, Tesco Media & Insight, Morrisons Media Group, and Asda Media Partnerships?",
+                  "What is known about their booking mechanisms, availability of APIs for programmatic buying, and typical minimum spend requirements?",
+                  "How do these RMNs approach campaign attribution, particularly connecting online advertising to in-store sales?",
+                  "What is the level of audience segmentation granularity offered, and what first-party data sources are leveraged?",
+                  "Are there self-service platforms available for campaign management?"
+                ],
+                key_findings: [
+                  {
+                    title: "Nectar360 (Sainsbury's)",
+                    critical_takeaway: "Nectar360 leverages Sainsbury's extensive loyalty data to provide robust digital advertising solutions both onsite and offsite, with emerging self-serve capabilities and sophisticated closed-loop attribution.",
+                    points: [
+                      {
+                        text: "Leverages Nectar loyalty data from Sainsbury's, Argos, and other partners.",
+                        citation: "Nectar360's data-driven omnichannel success - Think with Google"
+                      },
+                      {
+                        text: "Offers onsite (Sainsbury's.co.uk) and offsite digital advertising (paid social, display, video, YouTube) via its Digital Trading Platform (DTP).",
+                        citation: "Nectar360's data-driven omnichannel success - Think with Google"
+                      },
+                      {
+                        text: "Digital Trading Platform (DTP) allows self-serve campaign setup and management, as well as managed services.",
+                        citation: "Top Tips For Offsite Retail Media Campaigns - Nectar360"
+                      },
+                      {
+                        text: "Closed-loop attribution: Connects digital ad exposure to in-store and online sales by Nectar customers.",
+                        citation: "Nectar360's data-driven omnichannel success - Think with Google"
+                      },
+                      {
+                        text: "Audience Builder allows creation of custom audiences based on purchase history (brand buyers, lapsed customers, competitor buyers, basket modelling lookalikes).",
+                        citation: "Nectar360's data-driven omnichannel success - Think with Google"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Tesco Media & Insight Platform",
+                    critical_takeaway: "Powered by dunnhumby, Tesco's platform leverages Clubcard data from 23 million households to offer a full-funnel retail media solution with robust self-serve capabilities and closed-loop measurement across channels.",
+                    points: [
+                      {
+                        text: "Utilises Tesco Clubcard data from over 23 million households.",
+                        citation: "Tesco Media and Insight Platform - Dunnhumby"
+                      },
+                      {
+                        text: "Offers a full-funnel retail media proposition: onsite (Targeted Display, Sponsored Products), offsite (targeting key audiences away from Tesco's storefront), in-store (Connected Store - POS, digital screens, radio), CRM, and experiential events.",
+                        citation: "Tesco Media and Insight Platform - Dunnhumby"
+                      },
+                      {
+                        text: "Offers a self-serve platform ('dunnhumby Sphere') for planning, executing, and measuring omnichannel campaigns.",
+                        citation: "Unlocking success: why agency planning teams should get Tesco retail media certified - Dunnhumby"
+                      },
+                      {
+                        text: "Closed-loop measurement: Connects advertising exposure to customer behavior across online and offline touchpoints.",
+                        citation: "Tesco Media and Insight Platform - Dunnhumby"
+                      },
+                      {
+                        text: "Empowers brands with granular insights to identify important customers and understand their behavior through self-serve insight solutions.",
+                        citation: "Tesco Media and Insight Platform - Dunnhumby"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Asda Media Partnerships",
+                    critical_takeaway: "Asda's retail media offering, operated through LS Eleven in partnership with SMG and LiveRamp, provides a privacy-centric solution with tiered access models and advanced audience segmentation capabilities.",
+                    points: [
+                      {
+                        text: "Leverages Asda Rewards customer data (over 7 million active users, 10 million+ shoppers).",
+                        citation: "Asda expands retail media to offsite and D2C - InternetRetailing"
+                      },
+                      {
+                        text: "Offers onsite, offsite (e.g., Meta), and in-store media opportunities.",
+                        citation: "Asda expands retail media to offsite and D2C - InternetRetailing"
+                      },
+                      {
+                        text: "'Asda Access' is their retail media proposition, aiming for a privacy-centric approach to audience targeting.",
+                        citation: "Asda taps LiveRamp data collaboration platform - Retail Technology Innovation Hub"
+                      },
+                      {
+                        text: "Three collaboration models: managed service, self-serve for agencies, and 'super self-serve' for brands wanting direct access to Asda data in a LiveRamp clean room.",
+                        citation: "Asda taps LiveRamp data collaboration platform - Retail Technology Innovation Hub"
+                      },
+                      {
+                        text: "Offers approximately 3,000 predefined first-party audience segments, with capabilities to build custom audiences.",
+                        citation: "Asda expands retail media to offsite and D2C - InternetRetailing"
+                      }
+                    ]
+                  },
+                  {
+                    title: "Morrisons Media Group",
+                    critical_takeaway: "Morrisons Media Group operates in partnership with SMG to provide a unified access point for brands, focusing on owned media channels and leveraging first-party data for personalized advertising.",
+                    points: [
+                      {
+                        text: "Acts as a 'one front door' for brands and agencies to reach Morrisons customers.",
+                        citation: "Morrisons Media Group (MMG) launches innovative channels - Morrisons Corporate"
+                      },
+                      {
+                        text: "Offers owned media (in-store digital screens at Market Street counters, trolley media) and external media platforms (e.g., personalised ads on Facebook and Instagram using first-party data).",
+                        citation: "Morrisons Media Group ramps up retail media offering - Retail Technology Innovation Hub"
+                      },
+                      {
+                        text: "Launched in September 2022, aiming to enhance connections between customers and brands.",
+                        citation: "Morrisons Media Group (MMG) launches innovative channels - Morrisons Corporate"
+                      },
+                      {
+                        text: "Likely a mix of managed services through SMG. Specifics on self-serve platforms, APIs, or spend floors are not as publicly detailed as other RMNs.",
+                        citation: "Morrisons Media Group ramps up retail media offering - Retail Technology Innovation Hub"
+                      },
+                      {
+                        text: "Leverages Morrisons' first-party data asset for personalised ads.",
+                        citation: "Morrisons Media Group (MMG) launches innovative channels - Morrisons Corporate"
+                      }
+                    ]
+                  }
+                ],
+                source_links: [
+                  {
+                    title: "Nectar360's data-driven omnichannel success - Think with Google",
+                    url: "https://www.thinkwithgoogle.com/intl/en-emea/future-of-marketing/digital-transformation/nectar360-data-omnichannel-success/"
+                  },
+                  {
+                    title: "Tesco Media and Insight Platform - Dunnhumby",
+                    url: "https://www.dunnhumby.com/tesco-media-insight-platform/"
+                  },
+                  {
+                    title: "Morrisons Media Group (MMG) launches innovative channels - Morrisons Corporate",
+                    url: "https://www.morrisons-corporate.com/media-centre/corporate-news/morrisons-media-group-mmg-launches-innovative-channels-for-brands-to-connect-with-customers/"
+                  },
+                  {
+                    title: "Asda taps LiveRamp data collaboration platform - Retail Technology Innovation Hub",
+                    url: "https://retailtechinnovationhub.com/home/2025/5/7/asda-taps-liveramp-data-collaboration-platform-as-grocery-giant-expands-retail-media-proposition"
+                  },
+                  {
+                    title: "Asda expands retail media to offsite and D2C - InternetRetailing",
+                    url: "https://internetretailing.net/asda-expands-retail-media-to-offsite-and-d2c-bringing-first-party-data-from-10-million-shoppers-to-brands/"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        evidence_and_transparency_phase: {
+          critical_takeaway: "Findings on RMN capabilities are based on their public announcements, corporate websites, and industry reports; however, granular details on API specifications, spend floors, and the full extent of self-serve functionalities are typically gated behind direct commercial engagement.",
+          section_tldr: "Information is collated from public sources, with an understanding that specific operational details of RMNs are often confidential or accessible only to direct partners."
+        },
+        key_learnings_and_reinforcement: {
+          critical_takeaway: "UK RMNs are indispensable for brands seeking to influence purchase decisions, offering unparalleled access to first-party shopper data for targeted, measurable campaigns across the digital and physical retail landscape. Mastering these platforms is key to competitive advantage.",
+          section_tldr: "Recapping core themes: UK RMNs provide deep audience insights and omnichannel reach, driven by loyalty data. Navigating their unique offerings and data capabilities is vital for effective marketing."
+        },
+        concluding_thoughts_and_path_forward: {
+          critical_takeaway: "Node 3 has illuminated the powerful capabilities of UK RMNs. The next logical step is to understand the data providers and clean room technologies that often underpin or complement these networks.",
+          section_tldr: "This analysis of UK RMNs sets the stage for investigating the broader data ecosystem in Node 4, which is critical for advanced targeting and measurement."
+        }
+      }
+    },
+    {
+      node_id: "R04",
       title: "Beanies Product Portfolio & Competitive Landscape",
       scope: "Comprehensive analysis of Beanies' UK portfolio, competitive SKUs, price positioning, listing distribution, and promotional response dynamics.",
       priority: "Medium",
