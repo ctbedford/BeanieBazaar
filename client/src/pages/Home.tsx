@@ -4,7 +4,7 @@ import projectPlanData from "@/data/projectPlanData";
 import kpiDashboardData from "@/data/kpiDashboardData";
 import featureTrackerData from "@/data/featureTrackerData";
 import researchSpineData, { ResearchSpineData, ResearchNode } from "@/data/researchSpineData";
-import YamlImporter from "@/components/YamlImporter";
+import ResearchDocumentImporter from "@/components/ResearchDocumentImporter";
 
 export type ViewType = "project-plan" | "kpi-dashboard" | "feature-tracker" | "research-spine";
 
@@ -41,7 +41,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-slate-50">
       {activeView === "research-spine" && (
         <div className="px-4 pt-4">
-          <YamlImporter onImport={handleImportResearchNode} />
+          <ResearchDocumentImporter onImport={handleImportResearchNode} />
         </div>
       )}
       
