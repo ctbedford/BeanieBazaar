@@ -335,7 +335,7 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
                 </div>
               </div>
               <CardDescription className="mt-2">
-                {detailedDoc.session_kick_off_and_alignment?.critical_takeaway}
+                {detailedDoc?.session_kick_off_and_alignment?._critical_takeaway}
               </CardDescription>
             </CardHeader>
             <CardContent className="p-6">
@@ -378,10 +378,10 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
             <CardContent className="pt-0">
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div>
-                  <span className="font-medium text-slate-700">Version:</span> {detailedDoc.metadata?.version || "1.0"}
+                  <span className="font-medium text-slate-700">Version:</span> {detailedDoc?._generation_metadata?.version || "1.0"}
                 </div>
                 <div>
-                  <span className="font-medium text-slate-700">Date:</span> {detailedDoc.metadata?.date || "Not specified"}
+                  <span className="font-medium text-slate-700">Date:</span> {detailedDoc?._generation_metadata?.date || "Not specified"}
                 </div>
               </div>
             </CardContent>
@@ -394,13 +394,13 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
             <CardHeader className="bg-blue-50">
               <CardTitle>Executive Summary</CardTitle>
               <CardDescription className="mt-2 text-blue-800 font-medium">
-                {detailedDoc.executive_summary_phase?.critical_takeaway}
+                {detailedDoc?.executive_summary_phase?._critical_takeaway}
               </CardDescription>
             </CardHeader>
             <CardContent className="p-6">
               <div className="space-y-4">
                 <p className="text-slate-700">
-                  {detailedDoc.executive_summary_phase?.section_tldr}
+                  {detailedDoc?.executive_summary_phase?._section_tldr}
                 </p>
                 
                 <div className="p-4 bg-blue-50/50 border border-blue-100 rounded-md">
@@ -422,7 +422,7 @@ export default function ResearchSpineView({ data }: ResearchSpineViewProps) {
             <CardHeader className="bg-slate-50">
               <CardTitle>Detailed Research Findings</CardTitle>
               <CardDescription>
-                {detailedDoc.detailed_analysis_phase?.critical_takeaway}
+                {detailedDoc?.detailed_analysis_phase?._critical_takeaway}
               </CardDescription>
             </CardHeader>
             <CardContent className="p-0">
