@@ -1,0 +1,445 @@
+# Replit AI Prompt: Beanies Commerce OS Info Hub MVP
+
+project_overview:
+  name: "Beanies Commerce OS Info Hub" # Updated name slightly
+  purpose: "A minimal viable web application to display key information, plans, and research related to the Beanies Commerce Operating System (COS) initiative. The app should be expository, easy to navigate, and serve as a dynamic documentation portal. Content should be modular and driven by JSON data."
+  target_users: "Internal stakeholders (COO, SVP Data Science & Product, project team)."
+
+tech_stack:
+  frontend_framework: "React (with TypeScript if possible, otherwise JavaScript)"
+  ui_library: "Shadcn UI (ensure components are initialized and Tailwind CSS is configured)"
+  styling: "Tailwind CSS (as per Shadcn UI setup)"
+  markdown_renderer: "react-markdown (with remark-gfm for GitHub Flavored Markdown support)"
+  state_management: "React Context API or Zustand for simple navigation state (if needed beyond basic prop drilling for MVP)."
+  deployment_target: "Replit (implied)"
+
+mvp_scope_initial_sheets:
+  - "Project & Sprint Master Plan"
+  - "KPI & Metrics Dashboard Framework"
+  - "COS Feature Development & Gap Analysis Tracker"
+  - "Refined Commerce OS Research Spine" # New sheet added
+
+data_structures_and_loading:
+  source_type: "Local JSON files/objects (for MVP)"
+  future_consideration: "Design should allow for fetching from a backend API later."
+  notes: "For each sheet in the MVP scope, define a clear JSON structure. The app will load and parse these JSON objects to render the views. Ensure graceful handling of optional or missing fields in the JSON (e.g., display 'N/A' or omit the element)."
+  sample_json_structures:
+    project_plan_json_example: |
+      # ... (content from previous YAML, no changes here) ...
+      {
+        "phases": [
+          {
+            "id": "P0",
+            "name": "Phase 0: Charter & Data Access",
+            "duration": "Week 0-1",
+            "objective": "Establish project charter, define vision & problem, secure initial data access credentials.",
+            "eos_milestone": "EOS Vision/Traction mtg (COO + SVP)",
+            "key_success_metrics": "Charter signed; data credentials unblocked.",
+            "sprints_or_tasks": [
+              { "id": "S0.1", "name": "Define Problem statement", "status": "Completed", "owner": "Project Lead", "deliverable": "Problem Statement Document" },
+              { "id": "S0.2", "name": "Create KPI north-star sheet", "status": "Completed", "owner": "Project Lead", "deliverable": "KPI North-Star Sheet v1" }
+            ]
+          },
+          {
+            "id": "P1",
+            "name": "Phase 1: Analyze",
+            "duration": "Weeks 1-3 (Sprints 1-2)",
+            "objective": "Consolidate datasets, establish baseline KPIs, draft opportunity map, create glossary.",
+            "eos_milestone": "Weekly L10 (15 min IDS)",
+            "key_success_metrics": "Baseline KPIs published; glossary accepted.",
+            "sprints_or_tasks": [
+              { "id": "S1.1.1", "name": "Develop Unified data lake stub", "status": "In Progress", "owner": "Data Engineering", "deliverable": "Data Lake Stub Accessible" },
+              { "id": "S1.2.2", "name": "Develop Glossary v1", "status": "To Do", "owner": "Product Manager", "deliverable": "Glossary v1 Document" }
+            ]
+          }
+        ]
+      }
+    kpi_dashboard_json_example: |
+      # ... (content from previous YAML, no changes here) ...
+      {
+        "kpis": [
+          {
+            "id": "KPI001",
+            "name": "Rate of Sale (ROS)",
+            "description": "Measures the rate at which products are sold in specific stores over a defined period.",
+            "current_value": "£6.31 (52 wks JS)",
+            "target_value": "≥ 20% uplift on pilot SKUs",
+            "trend": "Stable",
+            "notes": "Critical velocity metric for Beanies SKUs. Baseline to be established in Phase 1.",
+            "data_source_summary": "Crisp POS, NielsenIQ"
+          },
+          {
+            "id": "KPI002",
+            "name": "ACV Distribution",
+            "description": "Percentage of total category sales volume in stores where a specific SKU is listed.",
+            "current_value": "45% (Hazelnut example)",
+            "target_value": "+10% distribution points",
+            "trend": "Needs Improvement",
+            "notes": "Key for identifying distribution gaps. Asda 'significantly under-ranged'.",
+            "data_source_summary": "Crisp, NielsenIQ"
+          }
+        ]
+      }
+    feature_tracker_json_example: |
+      # ... (content from previous YAML, no changes here) ...
+      {
+        "features": [
+          {
+            "id": "COS-F01",
+            "name": "Multi-Retailer Data Ingestion (UK Focus)",
+            "description": "Ingest, normalize, and store POS, panel, media logs, and other relevant data from UK retailers (Asda, Sainsbury's, etc.) and data providers (Crisp, NielsenIQ) into a unified data lakehouse.",
+            "target_for_beanies": "Real-time/near real-time ingestion of Crisp feeds for Asda & Sainsbury's, NielsenIQ UK panel data, and RMN data.",
+            "current_pathx_status": { "coverage": "Full (for US/North America)", "notes": "Connectors US-centric. Existing ETL micro-services and DuckDB lake-house." },
+            "gap_for_uk": "Specific connectors for UK retailers (Asda, Sainsbury's via Crisp/Atheon) and UK data formats/store IDs. Mapping UK store IDs to Nielsen TD-Linx geography.",
+            "dev_effort_sprints": 2,
+            "status": "To Do",
+            "key_dependencies": "Crisp feed trial, NielsenIQ UK access, Store-code mapping."
+          },
+          {
+            "id": "COS-F03",
+            "name": "Automated JBP Deck Builder",
+            "description": "Service to auto-generate retailer-specific (Asda, Sainsbury's) JBP PowerPoint/Google Slides decks, pre-filled with live data.",
+            "target_for_beanies": "Generates Asda & Sainsbury's JBP templates. Reduces JBP build time from ~30 hrs to minutes.",
+            "current_pathx_status": { "coverage": "None", "notes": "Manual PPT export. Has Next.js/React UI framework." },
+            "gap_for_uk": "Templating engine (e.g., python-pptx or Google Slides API). Retailer-specific style guides and slide layouts. Data integration from semantic layer.",
+            "dev_effort_sprints": 2,
+            "status": "To Do",
+            "key_dependencies": "Semantic Layer API, Retailer JBP templates, Templating engine decision."
+          }
+        ]
+      }
+    research_spine_json_example: | # New JSON structure for research spine
+      {
+        "title": "Refined Commerce OS Research Spine for Beanies UK Pilot",
+        "purpose": "A living index of research-node documents to be compiled before and during the COS build. Each node outlines its scope, detailed core questions, priority, and how insights plug into the platform roadmap.",
+        "research_nodes": [
+          {
+            "node_id": "R01",
+            "title": "Macro UK Commerce Environment & Regulatory Landscape",
+            "scope": "Economic trends (inflation, consumer spending), grocery channel share shifts (online, convenience, discounters), prevalent promotional mechanics and norms, key regulatory timelines (HFSS, EPR, Digital Services Act, VAT implications).",
+            "priority": "High",
+            "core_questions": [
+              "How have UK grocery market shares (Tesco, Sainsbury's, Asda, Morrisons, Aldi, Lidl, Ocado) evolved from 2019-2025, and what are the primary drivers for these shifts (e.g., price, convenience, range, online adoption)?",
+              "What are the current and upcoming key regulatory milestones (HFSS implementation details, Extended Producer Responsibility for packaging, Digital Services Act impact on RMNs, VAT rules for CPGs) that will directly intersect with coffee promotion, packaging, pricing, and online advertising in the next 12-24 months?"
+            ],
+            "key_outputs_or_impact_on_cos": [
+              "Market sizing and trend data to inform Beanies' JBP narratives and COS opportunity mapping.",
+              "Compliance requirements list for TPO engine (HFSS, pricing rules) and JBP content (packaging claims)."
+            ]
+          },
+          {
+            "node_id": "R02",
+            "title": "Retailer Profiles, JBP Processes & Incentive Models (UK Focus)",
+            "scope": "In-depth analysis of key UK grocery retailers: Tesco, Sainsbury’s, Asda, Morrisons. Secondary focus: Aldi, Lidl, Ocado, Boots, Costco.",
+            "priority": "High",
+            "core_questions": [
+              "For Asda & Sainsbury's (initial pilot): What is their precise fiscal calendar (Period P1-P13 start/end dates) and JBP submission/review cadence for 2025-2026?",
+              "What are the explicit and implicit rules/criteria for shelf-space allocation and range reviews for the coffee category at Asda & Sainsbury's?"
+            ],
+            "key_outputs_or_impact_on_cos": [
+              "Detailed templates and data requirements for COS Auto-JBP Deck Builder (COS-F03).",
+              "Input for retailer-specific fiscal calendar logic in COS (COS-F07 component)."
+            ]
+          }
+        ],
+        "how_to_use_this_spine": "1. Create one dedicated research document/repository... \n2. Within each node's document, start with a \"Question Bank\"...\n3. Actively link all discovered data sources...\n4. Maintain a status for each research question...\n5. Maintain an overall status for each research_spine node...\n6. Review the entire research spine and individual node statuses weekly...\n7. Use the \"Key Outputs or Impact on COS\" to directly inform the backlog..."
+      }
+
+app_structure_and_layout:
+  main_layout_component: "MainLayout.tsx"
+  navigation_component: "SidebarNav.tsx"
+  content_area_component: "ContentDisplay.tsx"
+  overall_structure: |
+    - A fixed sidebar for navigation (can be collapsible or a sheet on mobile).
+    - A main content area to the right of the sidebar that renders the selected sheet/view.
+    - Use a container with `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8` for the main content area for consistent padding and max width.
+    - App header: Display the `project_overview.name` as a main title, perhaps using `<h1>` or a large Shadcn `Heading`.
+
+navigation_config:
+  - name: "Project Plan"
+    path: "/project-plan"
+    json_source_key: "project_plan_json_example"
+    view_component_name: "ProjectPlanView"
+  - name: "KPI Dashboard"
+    path: "/kpi-dashboard"
+    json_source_key: "kpi_dashboard_json_example"
+    view_component_name: "KpiDashboardView"
+  - name: "Feature Tracker"
+    path: "/feature-tracker"
+    json_source_key: "feature_tracker_json_example"
+    view_component_name: "FeatureTrackerView"
+  - name: "Research Spine" # New navigation item
+    path: "/research-spine"
+    json_source_key: "research_spine_json_example"
+    view_component_name: "ResearchSpineView"
+
+component_definitions:
+  - component_name: "App.tsx"
+    # ... (content from previous YAML, no changes here) ...
+    purpose: "Main application entry point. Manages the currently selected view state and renders the MainLayout, passing the active view and JSON data."
+    props: []
+    shadcn_components_to_use: []
+    behavior_notes: |
+      - Initializes state for `activeViewPath` (e.g., default to '/project-plan').
+      - Initializes state for `allJsonData` by loading/importing the sample JSON structures.
+      - Provides a function to update `activeViewPath` which will be passed to `SidebarNav`.
+      - Renders `MainLayout`, passing `activeViewPath` and `allJsonData` (or individual slices) to `ContentDisplay` via children.
+
+  - component_name: "MainLayout.tsx"
+    # ... (content from previous YAML, no changes here) ...
+    purpose: "Provides the overall page structure including a header, the sidebar, and the content area."
+    props:
+      - name: "activeViewPath"
+        type: "string"
+        description: "The path of the currently active view, passed to SidebarNav."
+      - name: "onNavigate"
+        type: "(path: string) => void"
+        description: "Callback function to change the active view, passed to SidebarNav."
+      - name: "children" # This will be the ContentDisplay component
+        type: "React.ReactNode"
+        description: "The main content to display."
+    shadcn_components_to_use:
+      - "Sheet (for mobile navigation drawer, triggered by a Menu icon Button)"
+      - "Button (for mobile menu trigger)"
+      - "Resizable (optional for MVP, for sidebar/content split)"
+    behavior_notes: |
+      - Renders a header section with the application title (from `project_overview.name`).
+      - Renders `SidebarNav` component.
+      - Renders the `children` (which will be `ContentDisplay`) in the main content area.
+      - Implements responsive behavior for the sidebar (e.g., using Shadcn `Sheet` for mobile).
+
+  - component_name: "SidebarNav.tsx"
+    # ... (content from previous YAML, no changes here) ...
+    purpose: "Displays navigation links for different information sheets. Updates the active view in App.tsx on link click."
+    props:
+      - name: "navItems"
+        type: "Array<{ name: string; path: string; icon?: React.ReactNode }>"
+        description: "Array of navigation items, derived from `navigation_config`."
+      - name: "currentViewPath"
+        type: "string"
+        description: "The path of the currently active view."
+      - name: "onNavigate"
+        type: "(path: string) => void"
+        description: "Callback function to change the active view."
+    shadcn_components_to_use:
+      - "Button (variant='ghost' or 'link' for nav items, full width)"
+      - "ScrollArea (if nav items exceed sidebar height)"
+      - "Icons (e.g., from lucide-react, if adding icons like LayoutDashboard, ListChecks, Package, BookOpen)" # Added BookOpen for Research
+      - "Separator (between groups of nav items, if any)"
+    behavior_notes: |
+      - Iterates over `navItems` to render navigation links.
+      - Each link should call `onNavigate(item.path)` when clicked.
+      - Apply active styling (e.g., different background or text color) to the `Button` corresponding to `currentViewPath`.
+
+  - component_name: "ContentDisplay.tsx"
+    # ... (content from previous YAML, no changes here) ...
+    purpose: "A wrapper component that dynamically renders the selected view component based on the current navigation state and passes the correct JSON data."
+    props:
+      - name: "activeViewPath"
+        type: "string"
+        description: "Identifier for the currently selected view's path."
+      - name: "jsonData"
+        type: "object"
+        description: "An object containing all loaded JSON data, keyed by `json_source_key` from `navigation_config`."
+      - name: "navConfig"
+        type: "Array<object>" # from navigation_config
+        description: "The navigation configuration to map path to component and data."
+    shadcn_components_to_use: [] # Acts as a router/switcher
+    behavior_notes: |
+      - Finds the `navItem` from `navConfig` that matches `activeViewPath`.
+      - Based on `navItem.view_component_name`, dynamically renders the corresponding view component (e.g., `ProjectPlanView`, `KpiDashboardView`, `ResearchSpineView`).
+      - Passes the correct slice of `jsonData` to the rendered view component (e.g., `jsonData[navItem.json_source_key]`).
+      - If no view matches, display a 'View not found' message.
+
+  - component_name: "ProjectPlanView.tsx"
+    # ... (content from previous YAML, no changes here) ...
+    purpose: "Displays the Project & Sprint Master Plan information from its JSON data."
+    props:
+      - name: "data"
+        type: "object" # Corresponds to project_plan_json_example structure
+        description: "The project plan data."
+    shadcn_components_to_use:
+      - "Card, CardHeader, CardTitle, CardContent, CardDescription"
+      - "Accordion, AccordionItem, AccordionTrigger, AccordionContent"
+      - "Table, TableHeader, TableRow, TableHead, TableBody, TableCell"
+      - "Badge"
+      - "Separator"
+      - "Heading (h2, h3 for sections)"
+    behavior_notes: |
+      - Display a main `Heading` for "Project & Sprint Master Plan".
+      - Iterate through `data.phases`:
+        - For each phase, render an `AccordionItem`.
+        - The `AccordionTrigger` should display `phase.name` and `phase.duration` (e.g., using a `flex justify-between`).
+        - The `AccordionContent` should contain:
+          - A `Card` or distinct section for phase details.
+          - `CardHeader` with `CardTitle` for `phase.name`.
+          - `CardContent` displaying:
+            - `Objective: ${phase.objective}`
+            - `EOS Milestone: ${phase.eos_milestone}`
+            - `Key Success Metrics: ${phase.key_success_metrics}`
+          - A `Separator` before the tasks table.
+          - An optional `Heading` (e.g., h3) for "Tasks/Sprints".
+          - A `Table` to display `phase.sprints_or_tasks` with columns for:
+            - `ID` (from `task.id`)
+            - `Task/Sprint Name` (from `task.name`)
+            - `Status` (render `task.status` using a `Badge` with appropriate color variant based on status: e.g., green for 'Completed', blue for 'In Progress', gray for 'To Do').
+            - `Owner` (from `task.owner`)
+            - `Deliverable` (from `task.deliverable`)
+
+  - component_name: "KpiDashboardView.tsx"
+    # ... (content from previous YAML, no changes here) ...
+    purpose: "Displays the KPI & Metrics Dashboard Framework information."
+    props:
+      - name: "data"
+        type: "object" # Corresponds to kpi_dashboard_json_example structure
+        description: "The KPI data."
+    shadcn_components_to_use:
+      - "Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter"
+      - "Grid (Tailwind CSS for layout of cards e.g., `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4`)"
+      - "Badge (for trend - green for 'Up'/'Stable' positive, red for 'Down'/'Needs Improvement', yellow for 'Stable' neutral)"
+      - "Tooltip, TooltipTrigger, TooltipContent, TooltipProvider (for KPI notes)"
+      - "Heading (h2 for 'KPI Dashboard')"
+      - "Separator"
+    behavior_notes: |
+      - Display a main `Heading` for "KPI Dashboard".
+      - Use a Tailwind CSS `grid` to arrange KPI cards.
+      - Iterate through `data.kpis`:
+        - For each KPI, render a `Card`.
+        - `CardHeader`:
+          - `CardTitle`: `kpi.name`. Wrap with `TooltipTrigger` to show `kpi.notes` in a `TooltipContent` on hover.
+          - `CardDescription`: `kpi.description`.
+        - `CardContent`:
+          - Display `Current Value: ${kpi.current_value}`.
+          - Display `Target Value: ${kpi.target_value}`.
+          - Display `Trend:` followed by `kpi.trend` rendered as a `Badge` with color logic.
+        - `CardFooter` (optional): Display `Data Source: ${kpi.data_source_summary}`.
+
+  - component_name: "FeatureTrackerView.tsx"
+    # ... (content from previous YAML, no changes here) ...
+    purpose: "Displays the COS Feature Development & Gap Analysis Tracker information."
+    props:
+      - name: "data"
+        type: "object" # Corresponds to feature_tracker_json_example structure
+        description: "The feature tracker data."
+    shadcn_components_to_use:
+      - "Card, CardHeader, CardTitle, CardContent, CardDescription"
+      - "Table, TableHeader, TableRow, TableHead, TableBody, TableCell"
+      - "Badge (for status, coverage)"
+      - "Accordion, AccordionItem, AccordionTrigger, AccordionContent (to show more details like description, gap, dependencies for each feature)"
+      - "Heading (h2 for 'Feature Tracker')"
+    behavior_notes: |
+      - Display a main `Heading` for "COS Feature Development & Gap Analysis Tracker".
+      - Iterate through `data.features`:
+        - For each feature, render an `AccordionItem` (or a `Card` if preferred for a non-collapsible list).
+        - The `AccordionTrigger` (or `CardHeader`/`CardTitle`) should display `feature.id` and `feature.name`.
+        - The `AccordionContent` (or `CardContent`) should display:
+          - `Description: ${feature.description}`
+          - `Target for Beanies: ${feature.target_for_beanies}`
+          - `Current PathX Status: Coverage - ` render `feature.current_pathx_status.coverage` using a `Badge` (e.g. green for 'Full', orange for 'Partial', red for 'None'). Then display `Notes: ${feature.current_pathx_status.notes}`.
+          - `Gap for UK: ${feature.gap_for_uk}`
+          - `Dev Effort (Sprints): ${feature.dev_effort_sprints}`
+          - `Status:` render `feature.status` using a `Badge`.
+          - `Key Dependencies: ${feature.key_dependencies}`.
+
+  - component_name: "ResearchSpineView.tsx" # New View Component
+    purpose: "Displays the Refined Commerce OS Research Spine information, utilizing Markdown for descriptive content."
+    props:
+      - name: "data"
+        type: "object" # Corresponds to research_spine_json_example structure
+        description: "The research spine data."
+    shadcn_components_to_use:
+      - "Heading (h1, h2, h3, h4)"
+      - "Accordion, AccordionItem, AccordionTrigger, AccordionContent"
+      - "Card, CardHeader, CardTitle, CardContent, CardDescription"
+      - "Badge (for priority)"
+      - "Separator"
+      - "Alert, AlertDescription (for the 'How to Use' section or important notes)"
+    behavior_notes: |
+      - Import `ReactMarkdown` from 'react-markdown' and `remarkGfm` from 'remark-gfm'.
+      - Display `data.title` as a main `Heading` (e.g., h1 or h2).
+      - Render `data.purpose` using `ReactMarkdown components={[remarkGfm]}`.
+      - Add a `Separator`.
+      - Iterate through `data.research_nodes`:
+        - For each `node`, render an `AccordionItem`.
+        - The `AccordionTrigger` should display `node.node_id}: ${node.title}` and a `Badge` for `node.priority`.
+        - The `AccordionContent` should contain:
+          - A `Heading` (e.g., h4) for "Scope". Render `node.scope` using `ReactMarkdown`.
+          - A `Heading` (e.g., h4) for "Core Questions". Iterate through `node.core_questions` and render each as a list item (Markdown list format, then rendered by `ReactMarkdown`).
+          - A `Heading` (e.g., h4) for "Key Outputs or Impact on COS". Iterate through `node.key_outputs_or_impact_on_cos` and render each as a list item (Markdown list format, then rendered by `ReactMarkdown`).
+      - Add a `Separator`.
+      - Display a `Heading` (e.g., h3) for "How to Use This Spine".
+      - Render `data.how_to_use_this_spine` (which is already in Markdown list format) using `ReactMarkdown components={[remarkGfm]}`. This section could be wrapped in an `Alert` with `AlertDescription` for emphasis.
+
+  - component_name: "DataTable.tsx"
+    # ... (content from previous YAML, no changes here) ...
+    purpose: "A generic, reusable component to render tabular data using Shadcn Table. This can be enhanced to support sorting, filtering later."
+    props:
+      - name: "columns"
+        type: "Array<{ header: string; accessorKey: string; cell?: (row: any) => React.ReactNode }>" # cell for custom rendering
+        description: "Defines table columns. `accessorKey` maps to data object key. `cell` allows custom render functions for a column."
+      - name: "data"
+        type: "Array<object>"
+        description: "Array of data objects to display."
+    shadcn_components_to_use:
+      - "Table, TableHeader, TableRow, TableHead, TableBody, TableCell"
+    behavior_notes: "Renders a Shadcn Table. If `column.cell` function is provided, use it to render cell content, otherwise display `row[column.accessorKey]`. This component would be used by `ProjectPlanView` for tasks."
+
+  - component_name: "InfoCard.tsx"
+    # ... (content from previous YAML, no changes here) ...
+    purpose: "A generic, reusable card component for displaying summarized information."
+    props:
+      - name: "title"
+        type: "string"
+        description: "Card title."
+      - name: "description"
+        type: "string"
+        description: "Card description or subtitle."
+      - name: "metrics"
+        type: "Array<{ label: string; value: string; unit?: string }>" # Example: [{label: 'Current', value: '100', unit: 'USD'}]
+        description: "Key metrics to display in the card content."
+      - name: "statusBadge" # More specific prop for status
+        type: "{ text: string; variant?: 'default' | 'destructive' | 'outline' | 'secondary' }" # Shadcn Badge variants
+        description: "Optional status to display as a Badge."
+      - name: "footerText"
+        type: "string"
+        description: "Optional text for the card footer."
+      - name: "tooltipText" # For title tooltip
+        type: "string"
+        description: "Optional tooltip text for the card title."
+    shadcn_components_to_use:
+      - "Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter"
+      - "Badge"
+      - "Tooltip, TooltipTrigger, TooltipContent, TooltipProvider"
+    behavior_notes: "Used by `KpiDashboardView`. Title can have a `Tooltip`. Metrics displayed in `CardContent`. Status shown as `Badge`. Footer for extra info."
+
+
+styling_notes:
+  - "Prioritize clarity and readability. Use appropriate font sizes and spacing from Tailwind/Shadcn defaults."
+  - "Use Shadcn UI component defaults and variants semantically (e.g., Badge variants for status/priority)."
+  - "Employ Tailwind CSS for layout (flexbox, grid) and any custom spacing/typography needs not covered by Shadcn."
+  - "Ensure a clean, professional, and 'expository' look and feel. Good contrast for text."
+  - "The app should be responsive. Test on mobile viewport. Sidebar should become a Shadcn `Sheet` triggered by a menu icon."
+  - "Consider using `lucide-react` for icons in navigation and buttons where appropriate (e.g., `BookOpen` for Research Spine nav item)."
+  - "For Markdown content rendered by `react-markdown`, ensure basic styling for headings, lists, paragraphs, and tables is applied, potentially through Tailwind's typography plugin or custom CSS targeting the rendered HTML elements if Shadcn doesn't style them by default."
+
+initialization_and_setup:
+  - "Ensure `npx shadcn-ui@latest init` has been run. Key components to add/ensure are present via CLI: `button`, `card`, `table`, `accordion`, `badge`, `separator`, `sheet`, `scroll-area`, `tooltip`, `resizable` (optional), `alert`, `heading` (if using a specific heading component from Shadcn, otherwise standard HTML tags styled by Tailwind)."
+  - "Set up Tailwind CSS correctly as per Shadcn UI documentation. Consider adding `@tailwindcss/typography` plugin if more advanced Markdown styling is desired."
+  - "Install `react-markdown` and `remark-gfm`: `npm install react-markdown remark-gfm`."
+  - "For MVP, JSON data can be imported directly into `App.tsx` and passed down, or imported within each specific view component if simpler for AI generation."
+  - "Install `lucide-react` if icons are desired: `npm install lucide-react`."
+
+function_definitions_summary_for_ai: |
+  Please define the following React functional components (preferably TypeScript) with the specified props and behaviors, using Shadcn UI components and Tailwind CSS for styling:
+  1.  `App.tsx` (Main application component, handles view state and data loading for MVP)
+  2.  `MainLayout.tsx` (Overall page structure: header, sidebar, content area; responsive sidebar)
+  3.  `SidebarNav.tsx` (Navigation links, highlights active view)
+  4.  `ContentDisplay.tsx` (Dynamically renders the active view component and passes its data)
+  5.  `ProjectPlanView.tsx` (Displays project plan data using Accordion, Card, Table, Badge)
+  6.  `KpiDashboardView.tsx` (Displays KPI data using a grid of Cards, Badges, Tooltips)
+  7.  `FeatureTrackerView.tsx` (Displays feature tracker data using Accordion/Cards and Badges)
+  8.  `ResearchSpineView.tsx` (Displays research spine data using Accordion, Card, Badge, and react-markdown for content)
+  9.  (Optional but highly recommended for cleaner code) `DataTable.tsx` (Reusable Shadcn Table component)
+  10. (Optional if KPIs are simple enough) `InfoCard.tsx` (Reusable Shadcn Card for KPI display)
+
+  Load data from the provided sample JSON structures for the MVP. Ensure modularity for future expansion by designing components to accept data via props. The application should be responsive. Utilize `react-markdown` with `remark-gfm` for rendering Markdown content in the `ResearchSpineView`.
